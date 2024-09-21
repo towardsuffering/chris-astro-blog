@@ -1,2 +1,2 @@
 // List of categories for blog posts
-export const CATEGORIES = ['Business', 'Economics', 'Web Development', 'Data Analytics'] as const
+export const CATEGORIES = ['Business', 'Data Analytics', 'Economics', 'Web Development'] as const
