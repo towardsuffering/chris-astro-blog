@@ -1,0 +1,118 @@
+---
+heroImage: ../../assets/images/iris.png
+category: Data Analytics
+description: 'Explore practical R programming techniques using the famous iris dataset, covering data manipulation, statistical analysis, and basic problem-solving in R.'
+pubDate: 2024-09-18T08:00:00.000Z
+tags:
+  ['R Programming', 'Data Analysis', 'Iris Dataset', 'Statistical Analysis', 'Data Manipulation']
+title: 'R in Action: Analyzing the Iris Dataset'
+---
+
+import OutputDisplay from '../../components/OutputDisplay.astro'
+
+In this post, we'll dive into some practical R programming examples using the famous iris dataset. We'll cover various techniques for data manipulation and analysis, demonstrating how R can be used to solve real-world data problems.
+
+Before we begin, you can access the raw data used in this analysis here:
+
+- [Iris Data](https://raw.githubusercontent.com/towardsuffering/data/main/Iris.csv)
+
+## 1. Median Sepal Length by Species
+
+Let's start by calculating the median sepal length for each iris species:
+
+```r
+aggregate(Sepal.Length ~ Species, FUN=median, data=iris)
+```
+
+<OutputDisplay>Species Sepal.Length 1 setosa 5.0 2 versicolor 5.9 3 virginica 6.5</OutputDisplay>
+
+This code uses the `aggregate()` function to group the data by species and calculate the median sepal length for each group.
+
+## 2. Comparing Sepal and Petal Lengths
+
+Now, let's find the average difference between sepal and petal lengths:
+
+```r
+# Approach 1: Using means
+mean(iris$Sepal.Length) - mean(iris$Petal.Length)
+
+# Approach 2: Calculate difference for each iris, then take average
+iris$Length.Diff <- iris$Sepal.Length - iris$Petal.Length
+mean(iris$Length.Diff)
+```
+
+<OutputDisplay>[1] 2.09 [1] 2.09</OutputDisplay>
+
+Both approaches give the same result: on average, sepals are 2.09 cm longer than petals.
+
+## 3. Maximum Sepal Length
+
+Let's find the maximum sepal length and which species it belongs to:
+
+```r
+max(iris$Sepal.Length)
+iris[iris$Sepal.Length == max(iris$Sepal.Length), "Species"]
+```
+
+<OutputDisplay>[1] 7.9 [1] virginica Levels: setosa versicolor virginica</OutputDisplay>
+
+The maximum sepal length is 7.9 cm, belonging to the virginica species.
+
+## 4. Finding a Specific Value in a Vector
+
+This example demonstrates how to find the position of a specific value in a vector:
+
+```r
+set.seed(123, sample.kind="Rejection")
+aVec <- sample(1:100)
+
+# Using a for loop
+pos44 <- NA
+for (i in 1:length(aVec)) {
+    if (aVec[i] == 44) {
+        pos44 <- i
+        break
+    }
+}
+print(pos44)
+
+# Using which()
+which(aVec == 44)
+```
+
+<OutputDisplay>[1] 89 [1] 89</OutputDisplay>
+
+Both methods find that 44 is at position 89 in our randomly generated vector.
+
+## 5. Comparing Petal Length and Sepal Width
+
+Finally, let's compare petal length and sepal width:
+
+```r
+sum(iris$Petal.Length < iris$Sepal.Width)
+iris[iris$Petal.Length < iris$Sepal.Width, "Species"]
+```
+
+<OutputDisplay>
+	[1] 50 [1] setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa
+	[13] setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa [25]
+	setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa [37] setosa
+	setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa [49] setosa setosa
+	Levels: setosa versicolor virginica
+</OutputDisplay>
+
+We find that there are 50 irises where the petal length is less than the sepal width, and they are all of the setosa species.
+
+## Conclusion
+
+These examples demonstrate various R techniques for data analysis:
+
+1. Using `aggregate()` for groupwise calculations
+2. Performing arithmetic on vectors
+3. Finding maximum values and corresponding data
+4. Searching for specific values in vectors
+5. Comparing different measurements and subsetting data
+
+The iris dataset proves to be a versatile tool for learning R, offering opportunities to practice different data manipulation and analysis techniques. As you become more comfortable with these basics, you can start exploring more complex analyses and visualizations in R.
+
+Remember, practice is key in learning R. Try modifying these examples or applying similar techniques to other datasets to reinforce your learning!

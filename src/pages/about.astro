@@ -1,0 +1,136 @@
+---
+import BaseLayout from '..//layouts/BaseLayout.astro'
+import { Image } from 'astro:assets'
+import devImage from '../assets/images/dev.svg' // Adjust this path as needed
+
+const title = 'About Chris'
+---
+
+<BaseLayout title={title}>
+	<div class='container mx-auto px-4 py-8 max-w-3xl'>
+		<h1 class='text-4xl font-bold mb-6 text-center'>Hello, my name is Chris.</h1>
+
+		<div class='flex flex-col md:flex-row items-center gap-8 mb-12'>
+			<Image
+				src={devImage}
+				alt='Developer illustration'
+				width={300}
+				height={300}
+				class='w-full md:w-1/2 mb-4 md:mb-0'
+			/>
+			<p class='w-full md:w-1/2 text-lg leading-relaxed'>
+				I am a single, 32-year-old developer based out of Nashville, Tennessee. I am committed to
+				sharing my interests in music, behavioral economics, and tech with individuals, teams, and
+				organizations.
+			</p>
+		</div>
+
+		<div class='mb-12'>
+			<div class='video-container relative w-full' style='padding-top: 56.25%;'>
+				<iframe
+					class='absolute top-0 left-0 w-full h-full'
+					width='560'
+					height='315'
+					src='https://www.youtube.com/embed/ShWxwITZlgQ?si=VAXV4OGka2cFY4l6'
+					title='YouTube video player'
+					frameborder='0'
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+					referrerpolicy='strict-origin-when-cross-origin'
+					allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<style>
+			.video-container {
+				border-radius: 20px;
+				padding: 10px;
+				background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2);
+				box-shadow:
+					0 0 15px rgba(255, 182, 193, 0.7),
+					0 0 30px rgba(255, 182, 193, 0.5),
+					0 0 45px rgba(255, 182, 193, 0.3);
+				overflow: hidden;
+			}
+
+			.video-container::before {
+				content: '';
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				bottom: 5px;
+				left: 5px;
+				background: white;
+				border-radius: 15px;
+				z-index: -1;
+			}
+
+			.video-container iframe {
+				border-radius: 10px;
+			}
+		</style>
+
+		<div class='mb-12'>
+			<h2 class='text-2xl font-semibold mb-4'>What I Love</h2>
+			<ul class='list-disc list-inside space-y-2 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg'>
+				<li>Reading books, practicing Spanish, producing and distributing music</li>
+				<li>Compiling databases, dashboards, and the internet</li>
+				<li>Caring for my cat and dog and searching for beneficial connections</li>
+				<li>Learning, growing, and evolving</li>
+			</ul>
+		</div>
+
+		<div class='mb-12'>
+			<h2 class='text-2xl font-semibold mb-4'>Mission</h2>
+			<div class='bg-blue-100 dark:bg-blue-900 p-6 rounded-lg'>
+				<h3 class='font-bold mb-2 text-blue-800 dark:text-blue-200'>Innovative Digital Presence</h3>
+				<ul class='list-disc list-inside space-y-2'>
+					<li>Create innovative digital products</li>
+					<li>Cultivate internet-based businesses</li>
+					<li>Strategic online presence</li>
+					<li>Data-driven insights</li>
+					<li>Engaged community building</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</BaseLayout>
+
+<style>
+	/* Add any page-specific styles here */
+	:root {
+		--text-color: #333;
+		--bg-color: #fff;
+		--section-bg-color: #f3f4f6;
+		--mission-bg-color: #e6f2ff;
+		--mission-text-color: #1e40af;
+	}
+
+	:global(.dark) {
+		--text-color: #fff;
+		--bg-color: #0a0910;
+		--section-bg-color: #1f2937;
+		--mission-bg-color: #1e3a8a;
+		--mission-text-color: #93c5fd;
+	}
+
+	body {
+		color: var(--text-color);
+		background-color: var(--bg-color);
+	}
+
+	.bg-gray-100 {
+		background-color: var(--section-bg-color);
+	}
+
+	.bg-blue-100 {
+		background-color: var(--mission-bg-color);
+	}
+
+	h3.text-blue-800 {
+		color: var(--mission-text-color);
+	}
+
+	ul li {
+		color: var(--text-color);
+	}
+</style>

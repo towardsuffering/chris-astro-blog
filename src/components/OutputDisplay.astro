@@ -1,0 +1,18 @@
+---
+interface Props {
+	title?: string
+}
+
+const { title = 'Output:' } = Astro.props
+---
+
+<div class='output-display my-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-inner'>
+	{title && <h4 class='text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2'>{title}</h4>}
+	<pre class='whitespace-pre-wrap font-mono text-sm text-gray-800 dark:text-gray-200'><slot /></pre>
+</div>
+
+<style>
+	.output-display {
+		overflow-x: auto;
+	}
+</style>

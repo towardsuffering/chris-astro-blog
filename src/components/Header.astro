@@ -7,63 +7,74 @@ import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
 
-// ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
 	{
 		name: 'Github',
-		url: 'https://github.com/danielcgilibert/blog-template',
+		url: 'https://github.com/towardsuffering',
 		icon: GithubIcon
 	},
-
 	{
 		name: 'Twitter',
-		url: 'https://github.com/danielcgilibert/blog-template',
+		url: 'https://x.com/ChrisRotunno',
 		icon: TwitterIcon
 	}
 ]
 ---
 
-<header class='relative flex items-center h-12 font-semibold'>
-	<a class='text-lg mr-auto' href='/'>Home</a>
+<header class='relative flex items-center justify-between h-12 font-semibold'>
+	<!-- Primary Navigation -->
+	<nav class='flex items-center gap-6'>
+		<HeaderLink href='/'>Home</HeaderLink>
+		<HeaderLink href='/about'>About</HeaderLink>
+		<HeaderLink href='/tags' class='flex items-center gap-1'>
+			<TagIcon /> Tags
+		</HeaderLink>
+	</nav>
 
-	<div
-		id='astro-header-drawer'
-		class='shadow rounded-l-lg md:bg-transparent dark:md:bg-transparent bg-white dark:bg-[#0a0910] md:shadow-none md:rounded-none md:border-none md:h-auto md:static absolute transition-transform duration-300 ease-in translate-x-96 md:translate-x-0 top-12 -right-5 pl-4 pt-6 pb-4 md:p-0 h-[200px] w-[200px] z-50'
-	>
-		<nav
-			class='flex h-full flex-col justify-between gap-12 text-left md:flex-row md:w-full md:gap-5'
-		>
-			<div
-				class='flex flex-col gap-4 md:flex-row md:border-r-2 border-black pr-4 dark:border-white'
-			>
-				<HeaderLink href='/tags' class='flex items-center gap-1 text-2xl md:text-base'>
-					<TagIcon /> Tags
-				</HeaderLink>
-			</div>
-
-			<div class='flex justify-center items-center md:justify-end gap-3 md:p-0'>
-				{
-					SOCIALNETWORKS.map((network) => (
-						<HeaderLink class='' href={network.url} target='_blank' aria-label={network.name}>
-							<span>{<network.icon />} </span>
-						</HeaderLink>
-					))
-				}
-			</div>
-		</nav>
-	</div>
-
-	<div class='flex items-center gap-3 md:pl-3' transition:persist='navbar'>
-		<div>
-			<Search />
+	<!-- Social, Search, and Theme Toggle -->
+	<div class='flex items-center gap-4'>
+		<div class='hidden md:flex items-center gap-3'>
+			{
+				SOCIALNETWORKS.map((network) => (
+					<HeaderLink href={network.url} target='_blank' aria-label={network.name}>
+						<span>{<network.icon />} </span>
+					</HeaderLink>
+				))
+			}
 		</div>
+
+		<Search />
 		<ToggleTheme />
-		<button id='astro-header-drawer-button' type='button' class='md:ml-6 md:hidden'>
+
+		<!-- Mobile Menu Button -->
+		<button id='astro-header-drawer-button' type='button' class='md:hidden'>
 			<MenuIcon />
 			<span class='sr-only'>Show Menu</span>
 		</button>
 	</div>
+
+	<!-- Mobile Navigation Drawer -->
+	<div
+		id='astro-header-drawer'
+		class='shadow rounded-l-lg md:hidden bg-white dark:bg-[#0a0910] absolute transition-transform duration-300 ease-in translate-x-full top-12 right-0 pl-4 pt-6 pb-4 h-[200px] w-[75vw] z-50'
+	>
+		<nav class='flex flex-col gap-4'>
+			<HeaderLink href='/'>Home</HeaderLink>
+			<HeaderLink href='/about'>About</HeaderLink>
+			<HeaderLink href='/tags' class='flex items-center gap-1'>
+				<TagIcon /> Tags
+			</HeaderLink>
+			{
+				SOCIALNETWORKS.map((network) => (
+					<HeaderLink href={network.url} target='_blank' aria-label={network.name}>
+						<span>{<network.icon />} </span>
+					</HeaderLink>
+				))
+			}
+		</nav>
+	</div>
 </header>
+
 <script>
 	document.addEventListener('click', (event) => {
 		const menu = document.getElementById('astro-header-drawer')
@@ -73,9 +84,9 @@ const SOCIALNETWORKS = [
 			menuButton?.contains(event.target as HTMLButtonElement)
 
 		if (isClickInside) {
-			menu?.classList.toggle('translate-x-96')
+			menu?.classList.toggle('translate-x-full') // Updated for full-screen mobile slide
 		} else {
-			menu?.classList.add('translate-x-96')
+			menu?.classList.add('translate-x-full') // Hides the menu off-screen
 		}
 	})
 </script>

@@ -1,0 +1,88 @@
+---
+heroImage: ../../assets/images/six-sided-dice.png
+category: Data Analytics
+description: 'Explore practical data analysis techniques in R using sequence generation, die roll simulation, and random number analysis, uncovering insights into statistical concepts and R programming.'
+pubDate: 2024-09-18T07:00:00.000Z
+tags:
+  [
+    'R Programming',
+    'Data Analysis',
+    'Sequence Generation',
+    'Simulation',
+    'Random Numbers',
+    'Statistical Analysis'
+  ]
+title: 'R Analysis: Sequences, Simulations, and Random Numbers'
+---
+
+import OutputDisplay from '../../components/OutputDisplay.astro'
+
+In this post, we'll explore three simple R programming examples that demonstrate basic data manipulation and analysis techniques. These examples are great for beginners learning R and provide a foundation for more complex analyses.
+
+## 1. Generating a Sequence
+
+Let's create a sequence of the first 30 multiples of 8:
+
+```r
+aVec <- seq(from=8, by=8, length.out=30)
+print(head(aVec))
+mean(aVec)
+```
+
+<OutputDisplay>[1] 8 16 24 32 40 48 [1] 124</OutputDisplay>
+
+This code creates a sequence starting at 8, increasing by 8 each time, with 30 numbers in total. The mean of this sequence is 124.
+
+## 2. Simulating Die Rolls
+
+Now, let's simulate rolling a six-sided die 500 times:
+
+```r
+set.seed(1234)
+rolls <- sample(1:6, size=500, replace=TRUE)
+sum((rolls > 1) & (rolls < 6))
+```
+
+<OutputDisplay>[1] 326</OutputDisplay>
+
+This simulation shows that out of 500 rolls, 326 were between 2 and 5 (inclusive).
+
+## 3. Analyzing Random Numbers
+
+Finally, let's generate 1000 random numbers between 1 and 100:
+
+```r
+set.seed(1234)
+numVec <- floor(runif(1000, min=1, max=101))
+
+# How many less than 50?
+sum(numVec < 50)
+
+# How many between 40 and 60?
+sum((numVec > 40) & (numVec < 60))
+
+# Standard deviation of numbers less than 40
+sd(numVec[numVec < 40])
+```
+
+<OutputDisplay>[1] 476 [1] 185 [1] 11.20581</OutputDisplay>
+
+This analysis shows that:
+
+- 476 numbers are less than 50
+- 185 numbers are between 41 and 59
+- The standard deviation of numbers less than 40 is about 11.21
+
+## Conclusion
+
+These examples demonstrate basic R functions for:
+
+1. Generating sequences
+2. Simulating random events
+3. Analyzing sets of numbers
+
+They provide a starting point for understanding how R can be used for data manipulation and analysis.
+
+## Next Steps
+
+Try modifying these examples to see how the results change!
