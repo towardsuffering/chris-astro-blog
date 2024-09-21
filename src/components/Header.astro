@@ -22,7 +22,6 @@ const SOCIALNETWORKS = [
 ---
 
 <header class='relative flex items-center justify-between h-12 font-semibold'>
-	<!-- Primary Navigation -->
 	<nav class='flex items-center gap-6'>
 		<HeaderLink href='/'>Home</HeaderLink>
 		<HeaderLink href='/about'>About</HeaderLink>
@@ -31,7 +30,6 @@ const SOCIALNETWORKS = [
 		</HeaderLink>
 	</nav>
 
-	<!-- Social, Search, and Theme Toggle -->
 	<div class='flex items-center gap-4'>
 		<div class='hidden md:flex items-center gap-3'>
 			{
@@ -46,19 +44,17 @@ const SOCIALNETWORKS = [
 		<Search />
 		<ToggleTheme />
 
-		<!-- Mobile Menu Button -->
-		<button id='astro-header-drawer-button' type='button' class='md:hidden'>
+		<button id='menu-toggle' type='button' class='md:hidden'>
 			<MenuIcon />
-			<span class='sr-only'>Show Menu</span>
+			<span class='sr-only'>Toggle Menu</span>
 		</button>
 	</div>
 
-	<!-- Mobile Navigation Drawer -->
 	<div
-		id='astro-header-drawer'
-		class='shadow rounded-l-lg md:hidden bg-white dark:bg-[#0a0910] absolute transition-transform duration-300 ease-in translate-x-full top-12 right-0 pl-4 pt-6 pb-4 h-[200px] w-[75vw] z-50'
+		id='mobile-menu'
+		class='fixed inset-y-0 right-0 z-50 w-64 overflow-y-auto bg-white dark:bg-[#0a0910] shadow-lg transform transition-transform duration-300 ease-in-out translate-x-full md:hidden'
 	>
-		<nav class='flex flex-col gap-4'>
+		<nav class='flex flex-col gap-4 p-4'>
 			<HeaderLink href='/'>Home</HeaderLink>
 			<HeaderLink href='/about'>About</HeaderLink>
 			<HeaderLink href='/tags' class='flex items-center gap-1'>
@@ -76,17 +72,27 @@ const SOCIALNETWORKS = [
 </header>
 
 <script>
-	document.addEventListener('click', (event) => {
-		const menu = document.getElementById('astro-header-drawer')
-		const menuButton = document.getElementById('astro-header-drawer-button')
-		const isClickInside =
-			menu?.contains(event.target as HTMLDivElement) ||
-			menuButton?.contains(event.target as HTMLButtonElement)
+	const menuToggle = document.getElementById('menu-toggle')
+	const mobileMenu = document.getElementById('mobile-menu')
 
-		if (isClickInside) {
-			menu?.classList.toggle('translate-x-full') // Updated for full-screen mobile slide
-		} else {
-			menu?.classList.add('translate-x-full') // Hides the menu off-screen
+	function toggleMenu() {
+		mobileMenu?.classList.toggle('translate-x-full')
+		document.body.classList.toggle('overflow-hidden')
+	}
+
+	menuToggle?.addEventListener('click', toggleMenu)
+
+	document.addEventListener('click', (event) => {
+		const isClickInside =
+			mobileMenu?.contains(event.target as Node) || menuToggle?.contains(event.target as Node)
+		if (!isClickInside && !mobileMenu?.classList.contains('translate-x-full')) {
+			toggleMenu()
 		}
 	})
 </script>
+
+<style>
+	body.overflow-hidden {
+		overflow: hidden;
+	}
+</style>
