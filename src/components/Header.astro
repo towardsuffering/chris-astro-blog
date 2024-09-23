@@ -21,72 +21,82 @@ const SOCIALNETWORKS = [
 ]
 ---
 
-<header class='relative flex items-center justify-between h-12 font-semibold'>
-	<!-- Primary Navigation -->
-	<nav class='flex items-center gap-6'>
+<header class='relative flex items-center justify-between h-12 font-semibold px-4'>
+	<div class='flex items-center'>
+		<HeaderLink href='/' class='text-xl font-bold'>Chris Blogs</HeaderLink>
+	</div>
+
+	<nav class='hidden md:flex items-center gap-4'>
 		<HeaderLink href='/'>Home</HeaderLink>
 		<HeaderLink href='/about'>About</HeaderLink>
 		<HeaderLink href='/tags' class='flex items-center gap-1'>
 			<TagIcon /> Tags
 		</HeaderLink>
+		{
+			SOCIALNETWORKS.map((network) => (
+				<HeaderLink href={network.url} target='_blank' aria-label={network.name}>
+					<span>{<network.icon />} </span>
+				</HeaderLink>
+			))
+		}
 	</nav>
 
-	<!-- Social, Search, and Theme Toggle -->
-	<div class='flex items-center gap-4'>
-		<div class='hidden md:flex items-center gap-3'>
-			{
-				SOCIALNETWORKS.map((network) => (
-					<HeaderLink href={network.url} target='_blank' aria-label={network.name}>
-						<span>{<network.icon />} </span>
-					</HeaderLink>
-				))
-			}
-		</div>
-
+	<div class='flex items-center gap-2'>
 		<Search />
 		<ToggleTheme />
 
-		<!-- Mobile Menu Button -->
-		<button id='astro-header-drawer-button' type='button' class='md:hidden'>
+		<button id='menu-toggle' class='md:hidden'>
 			<MenuIcon />
-			<span class='sr-only'>Show Menu</span>
 		</button>
-	</div>
-
-	<!-- Mobile Navigation Drawer -->
-	<div
-		id='astro-header-drawer'
-		class='shadow rounded-l-lg md:hidden bg-white dark:bg-[#0a0910] fixed transition-transform duration-300 ease-in translate-x-full top-12 right-0 bottom-0 pl-4 pt-6 pb-4 w-[75vw] z-50 h-auto max-h-[80vh] overflow-y-auto'
-	>
-		<nav class='flex flex-col gap-4'>
-			<HeaderLink href='/'>Home</HeaderLink>
-			<HeaderLink href='/about'>About</HeaderLink>
-			<HeaderLink href='/tags' class='flex items-center gap-1'>
-				<TagIcon /> Tags
-			</HeaderLink>
-			{
-				SOCIALNETWORKS.map((network) => (
-					<HeaderLink href={network.url} target='_blank' aria-label={network.name}>
-						<span>{<network.icon />} </span>
-					</HeaderLink>
-				))
-			}
-		</nav>
 	</div>
 </header>
 
-<script>
-	document.addEventListener('click', (event) => {
-		const menu = document.getElementById('astro-header-drawer')
-		const menuButton = document.getElementById('astro-header-drawer-button')
-		const isClickInside =
-			menu?.contains(event.target as HTMLDivElement) ||
-			menuButton?.contains(event.target as HTMLButtonElement)
-
-		if (isClickInside) {
-			menu?.classList.toggle('translate-x-full')
-		} else {
-			menu?.classList.add('translate-x-full')
+<div
+	id='mobile-menu'
+	class='fixed inset-0 bg-white dark:bg-gray-800 z-50 hidden flex-col items-center justify-center'
+>
+	<button id='close-menu' class='absolute top-3 right-4 text-2xl'>&times;</button>
+	<nav class='flex flex-col items-center gap-4'>
+		<HeaderLink href='/'>Home</HeaderLink>
+		<HeaderLink href='/about'>About</HeaderLink>
+		<HeaderLink href='/tags' class='flex items-center gap-1'>
+			<TagIcon /> Tags
+		</HeaderLink>
+		{
+			SOCIALNETWORKS.map((network) => (
+				<HeaderLink href={network.url} target='_blank' aria-label={network.name}>
+					<span>{<network.icon />} </span>
+				</HeaderLink>
+			))
 		}
+	</nav>
+</div>
+
+<script>
+	const menuToggle = document.getElementById('menu-toggle')
+	const closeMenu = document.getElementById('close-menu')
+	const mobileMenu = document.getElementById('mobile-menu')
+
+	menuToggle.addEventListener('click', () => {
+		mobileMenu.classList.remove('hidden')
+		mobileMenu.classList.add('flex')
+	})
+
+	closeMenu.addEventListener('click', () => {
+		mobileMenu.classList.add('hidden')
+		mobileMenu.classList.remove('flex')
+	})
+
+	// Close menu when clicking a link
+	const mobileLinks = mobileMenu.querySelectorAll('a')
+	mobileLinks.forEach((link) => {
+		link.addEventListener('click', () => {
+			mobileMenu.classList.add('hidden')
+			mobileMenu.classList.remove('flex')
+		})
 	})
 </script>
+
+<style>
+	/* Add any additional styles here */
+</style>
