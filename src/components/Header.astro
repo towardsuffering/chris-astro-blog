@@ -56,7 +56,7 @@ const SOCIALNETWORKS = [
 	<!-- Mobile Navigation Drawer -->
 	<div
 		id='astro-header-drawer'
-		class='shadow rounded-l-lg md:hidden bg-white dark:bg-[#0a0910] absolute transition-transform duration-300 ease-in translate-x-full top-12 right-0 pl-4 pt-6 pb-4 h-[200px] w-[75vw] z-50'
+		class='shadow rounded-l-lg md:hidden bg-white dark:bg-[#0a0910] fixed transition-transform duration-300 ease-in translate-x-full top-12 right-0 bottom-0 pl-4 pt-6 pb-4 w-[75vw] z-50 h-auto max-h-[80vh] overflow-y-auto'
 	>
 		<nav class='flex flex-col gap-4'>
 			<HeaderLink href='/'>Home</HeaderLink>
@@ -84,9 +84,9 @@ const SOCIALNETWORKS = [
 			menuButton?.contains(event.target as HTMLButtonElement)
 
 		if (isClickInside) {
-			menu?.classList.toggle('translate-x-full') // Updated for full-screen mobile slide
+			menu?.classList.toggle('translate-x-full')
 		} else {
-			menu?.classList.add('translate-x-full') // Hides the menu off-screen
+			menu?.classList.add('translate-x-full')
 		}
 	})
 </script>
