@@ -7,6 +7,7 @@ import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
 
+// ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
 	{
 		name: 'Github',
@@ -65,17 +66,24 @@ const SOCIALNETWORKS = [
 </header>
 
 <script>
-	document.addEventListener('click', (event) => {
+	document.addEventListener('DOMContentLoaded', () => {
 		const menu = document.getElementById('astro-header-drawer')
 		const menuButton = document.getElementById('astro-header-drawer-button')
-		const isClickInside =
-			menu?.contains(event.target as HTMLDivElement) ||
-			menuButton?.contains(event.target as HTMLButtonElement)
 
-		if (isClickInside) {
-			menu?.classList.toggle('translate-x-96')
-		} else {
-			menu?.classList.add('translate-x-96')
+		// Ensure menuButton and menu are defined
+		if (menu && menuButton) {
+			menuButton.addEventListener('click', () => {
+				menu.classList.toggle('translate-x-full')
+			})
+
+			// Close the menu when clicking outside
+			document.addEventListener('click', (event) => {
+				const isClickInside = menu.contains(event.target) || menuButton.contains(event.target)
+
+				if (!isClickInside) {
+					menu.classList.add('translate-x-full')
+				}
+			})
 		}
 	})
 </script>

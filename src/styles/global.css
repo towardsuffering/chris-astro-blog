@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 @layer base {
-	/* Be careful with overly generic selectors */
-	/* Adjusting the specificity or limiting scope */
+	/* body {
+		transition: background-color 0.5s ease;
+	} */
+
 	.prose code {
 		@apply text-base;
 	}
 
-	/* More specific prose styles */
+	/* prose styles here */
 	.prose h1,
-	.prose h2,
-	.prose h3,
-	.prose h4,
-	.prose h5,
-	.prose h6 {
-		@apply text-zinc-800 dark:text-zinc-100 !important;
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-zinc-800 dark:text-zinc-100   !important;
 	}
 
 	html.dark .shiki,
@@ -36,3 +38,5 @@
 .shadow {
 	box-shadow: -5px 3px 8px 1px rgba(0, 0, 0, 0.12);
 }
+
+
