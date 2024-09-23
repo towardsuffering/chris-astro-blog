@@ -3,22 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-	/* body {
-		transition: background-color 0.5s ease;
-	} */
-
+	/* Be careful with overly generic selectors */
+	/* Adjusting the specificity or limiting scope */
 	.prose code {
 		@apply text-base;
 	}
 
-	/* prose styles here */
+	/* More specific prose styles */
 	.prose h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		@apply text-zinc-800 dark:text-zinc-100   !important;
+	.prose h2,
+	.prose h3,
+	.prose h4,
+	.prose h5,
+	.prose h6 {
+		@apply text-zinc-800 dark:text-zinc-100 !important;
 	}
 
 	html.dark .shiki,
