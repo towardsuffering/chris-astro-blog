@@ -7,16 +7,16 @@ const title = 'About Chris'
 ---
 
 <BaseLayout title={title}>
-	<div class='container mx-auto px-4 py-8 max-w-3xl debug-outline'>
+	<div class='container mx-auto px-4 py-8 max-w-3xl'>
 		<h1 class='text-2xl sm:text-4xl font-bold mb-6 text-center'>Hello, my name is Chris.</h1>
 
-		<div class='flex flex-col sm:flex-row items-center gap-8 mb-12 debug-outline'>
+		<div class='flex flex-col sm:flex-row items-center gap-8 mb-12'>
 			<Image
 				src={devImage}
 				alt='Developer illustration'
-				width={300}
-				height={300}
-				class='w-full max-w-[200px] sm:max-w-[300px] mb-4 sm:mb-0'
+				width={200}
+				height={200}
+				class='w-full max-w-[200px] mb-4 sm:mb-0'
 			/>
 			<p class='text-base sm:text-lg leading-relaxed'>
 				I am a single, 32-year-old developer based out of Nashville, Tennessee. I am committed to
@@ -25,10 +25,9 @@ const title = 'About Chris'
 			</p>
 		</div>
 
-		<div class='mb-12 debug-outline'>
-			<div class='video-container relative w-full' style='padding-top: 56.25%;'>
+		<div class='mb-12'>
+			<div class='video-wrapper'>
 				<iframe
-					class='absolute inset-0 w-full h-full'
 					src='https://www.youtube.com/embed/ShWxwITZlgQ?si=VAXV4OGka2cFY4l6'
 					title='YouTube video player'
 					frameborder='0'
@@ -37,7 +36,7 @@ const title = 'About Chris'
 			</div>
 		</div>
 
-		<div class='mb-12 debug-outline'>
+		<div class='mb-12'>
 			<h2 class='text-xl sm:text-2xl font-semibold mb-4'>What I Love</h2>
 			<ul
 				class='list-disc list-inside space-y-2 bg-gray-100 dark:bg-gray-800 p-4 sm:p-6 rounded-lg'
@@ -49,7 +48,7 @@ const title = 'About Chris'
 			</ul>
 		</div>
 
-		<div class='mb-12 debug-outline'>
+		<div class='mb-12'>
 			<h2 class='text-xl sm:text-2xl font-semibold mb-4'>Mission</h2>
 			<div class='bg-blue-100 dark:bg-blue-900 p-4 sm:p-6 rounded-lg'>
 				<h3 class='font-bold mb-2 text-blue-800 dark:text-blue-200'>Innovative Digital Presence</h3>
@@ -103,19 +102,40 @@ const title = 'About Chris'
 		color: var(--text-color);
 	}
 
-	.video-container {
-		border-radius: 10px;
+	.video-wrapper {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 aspect ratio */
+		height: 0;
 		overflow: hidden;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		max-width: 100%;
 	}
 
-	.debug-outline {
-		outline: 1px solid blue;
+	.video-wrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
 	}
 
-	@media (min-width: 640px) {
-		.debug-outline {
-			outline: none;
+	@media (max-width: 640px) {
+		.container {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		h2 {
+			font-size: 1.25rem;
+		}
+
+		p,
+		li {
+			font-size: 0.9rem;
 		}
 	}
 </style>
