@@ -34,7 +34,7 @@
 	},
 	"dependencies": {
 		"@astrojs/rss": "4.0.1",
-		"astro": "4.0.8",
+		"astro": "4.16.0",
 		"astro-font": "^0.0.72",
 		"katex": "^0.16.11",
 		"rehype-katex": "^7.0.1",
