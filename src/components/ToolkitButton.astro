@@ -1,0 +1,67 @@
+---
+interface Module {
+	name: string
+	description: string
+}
+
+interface Props {
+	modules: Module[]
+}
+
+const { modules } = Astro.props
+---
+
+<style>
+	.toolkit-container {
+		@apply flex flex-wrap gap-12 justify-center;
+	}
+
+	.module-card {
+		@apply relative bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex justify-center items-center transition-all ease-in-out cursor-pointer rounded-lg shadow-lg;
+		width: 150px;
+		height: 80px;
+		overflow: hidden;
+		transform: scale(1);
+		backface-visibility: hidden;
+		z-index: 1;
+	}
+
+	.module-card:hover {
+		@apply bg-gray-200 dark:bg-gray-800;
+		transform: scale(1.1);
+		z-index: 10;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		width: 250px;
+		height: 160px;
+	}
+
+	.module-title {
+		@apply text-xl transition-opacity ease-in-out;
+	}
+
+	.module-description {
+		@apply absolute text-base opacity-0 transition-opacity ease-in-out text-center;
+		padding: 10px;
+		max-width: 100%;
+		white-space: normal;
+	}
+
+	.module-card:hover .module-title {
+		@apply opacity-0;
+	}
+
+	.module-card:hover .module-description {
+		@apply opacity-100;
+	}
+</style>
+
+<div class='toolkit-container'>
+	{
+		modules.map((module) => (
+			<div class='module-card'>
+				<div class='module-title'>{module.name}</div>
+				<div class='module-description'>{module.description}</div>
+			</div>
+		))
+	}
+</div>

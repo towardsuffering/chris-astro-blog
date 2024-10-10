@@ -1,0 +1,75 @@
+---
+interface Props {
+	leftTitle: string
+	leftItems: string[]
+	rightTitle: string
+	rightItems: string[]
+}
+
+const { leftTitle, leftItems, rightTitle, rightItems }: Props = Astro.props
+---
+
+<style>
+	.two-column-wrapper {
+		max-width: 800px; /* Adjust container width */
+		margin: 0; /* Remove auto-centering */
+		padding: 0 20px; /* Padding for responsiveness */
+	}
+
+	.two-column-container {
+		@apply flex justify-start gap-8;
+	}
+
+	.column {
+		@apply flex-1 p-4 shadow-lg rounded-lg bg-gray-100 dark:bg-gray-900;
+		max-width: 45%; /* Control column width */
+	}
+
+	.column-title {
+		@apply text-xl mb-2 text-zinc-800 dark:text-zinc-100;
+	}
+
+	.column-list {
+		@apply list-disc pl-5 prose;
+	}
+
+	.column-list li {
+		@apply mb-2 text-base text-zinc-700 dark:text-zinc-300;
+	}
+
+	.bold-concept {
+		@apply font-bold;
+	}
+</style>
+
+<div class='two-column-wrapper'>
+	<div class='two-column-container'>
+		<div class='column'>
+			<div class='column-title'>{leftTitle}</div>
+			<ul class='column-list'>
+				{
+					leftItems.map((item) => (
+						<li>
+							<span class='bold-concept'>{item.split(':')[0]}</span>
+							{`: ${item.split(':').slice(1).join(':')}`}
+						</li>
+					))
+				}
+			</ul>
+		</div>
+
+		<div class='column'>
+			<div class='column-title'>{rightTitle}</div>
+			<ul class='column-list'>
+				{
+					rightItems.map((item) => (
+						<li>
+							<span class='bold-concept'>{item.split(':')[0]}</span>
+							{`: ${item.split(':').slice(1).join(':')}`}
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</div>
+</div>

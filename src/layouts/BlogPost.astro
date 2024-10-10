@@ -5,6 +5,7 @@ import BaseLayout from '@/layouts/BaseLayout'
 import Tag from '@/components/Tag'
 import type { MarkdownHeading } from 'astro'
 import { Image } from 'astro:assets'
+import 'katex/dist/katex.min.css'
 
 type Props = {
 	id: CollectionEntry<'blog'>['id']
@@ -72,6 +73,18 @@ const articleDate = pubDate.toISOString()
 </BaseLayout>
 
 <script>
+	import renderMathInElement from 'katex/dist/contrib/auto-render.mjs'
+
+	document.addEventListener('DOMContentLoaded', function () {
+		renderMathInElement(document.body, {
+			delimiters: [
+				{ left: '$$', right: '$$', display: true },
+				{ left: '$', right: '$', display: false }
+			],
+			throwOnError: false
+		})
+	})
+
 	const fnObserver = () => {
 		function handleIntersection(
 			entries: IntersectionObserverEntry[],
