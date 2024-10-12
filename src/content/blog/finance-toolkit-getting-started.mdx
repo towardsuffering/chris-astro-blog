@@ -183,14 +183,6 @@ This function returns a DataFrame containing daily historical price data for our
 
 The power of this data lies in its ability to show trends over time. For instance, we can visualize cumulative returns to compare the performance of different companies:
 
-{/\* ```python
-
-# Visualizing cumulative returns
-
-companies.get_historical_data(period="quarterly")["Cumulative Return"].plot()
-
-````*/}
-
 <PlotlyDataframe />
 
 This visualization shows how each company's stock has performed relative to others and the benchmark (S&P 500) over time, revealing patterns such as which companies have outperformed the market or how different companies were affected by major economic events.
@@ -203,7 +195,7 @@ The Income Statement shows a company's revenues and expenses over a specific per
 
 ```python
 companies.get_income_statement()
-````
+```
 
 ![Get Income Statement](../../assets/images/get_is.png)
 
