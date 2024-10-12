@@ -5,6 +5,7 @@ import tailwind from '@astrojs/tailwind'
 import { remarkReadingTime } from './src/utils/readTime.ts'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
+import react from '@astrojs/react'
 
 // https://astro.build/config
 export default defineConfig({
@@ -33,7 +34,8 @@ export default defineConfig({
 			rehypePlugins: [rehypeKatex],
 		}),
 		sitemap(),
-		tailwind()
+		tailwind(),
+		react()
 	],
 	vite: {
 		ssr: {
