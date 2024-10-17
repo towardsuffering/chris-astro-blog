@@ -36,16 +36,6 @@ try {
 // Client-side script for Plotly
 const clientScript = `
   (function() {
-    if (typeof Plotly === 'undefined') {
-      const plotlyScript = document.createElement('script');
-      plotlyScript.src = 'https://cdn.plot.ly/plotly-latest.min.js';
-      document.head.appendChild(plotlyScript);
-
-      plotlyScript.onload = () => initPlotly();
-    } else {
-      initPlotly();
-    }
-
     const records = ${JSON.stringify(records)};
     const companies = ${JSON.stringify(companies)};
     const dataTypes = ${JSON.stringify(dataTypes)};
@@ -105,6 +95,14 @@ const clientScript = `
 
       Plotly.relayout('plotlyChart', update);
     }
+
+    // Add these event listeners
+    window.addEventListener('plotlyLoaded', initPlotly);
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.Plotly) {
+        initPlotly();
+      }
+    });
 
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {

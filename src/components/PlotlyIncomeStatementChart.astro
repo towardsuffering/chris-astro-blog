@@ -123,11 +123,13 @@ const clientScript = `
     Plotly.relayout('incomePlotlyChart', update);
   }
 
-  if (typeof Plotly !== 'undefined') {
-    initIsolatedPlotly();
-  } else {
-    document.querySelector('script[src="https://cdn.plot.ly/plotly-latest.min.js"]').onload = initIsolatedPlotly;
-  }
+  // Add these event listeners
+  window.addEventListener('plotlyLoaded', initIsolatedPlotly);
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.Plotly) {
+      initIsolatedPlotly();
+    }
+  });
 
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
@@ -163,8 +165,6 @@ const clientScript = `
 
 	<div id='incomePlotlyChart' class='w-full h-[600px]'></div>
 </div>
-
-<!-- <script defer src='https://cdn.plot.ly/plotly-latest.min.js'></script> -->
 
 <script set:html={clientScript} />
 

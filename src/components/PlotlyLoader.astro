@@ -1,41 +1,47 @@
 ---
+import PlotlyLineChart from './PlotlyLineChart.astro'
+import PlotlyStackedBar from './PlotlyStackedBar.astro'
+import PlotlyIncomeStatementChart from './PlotlyIncomeStatementChart.astro'
+import PlotlyCashFlowsChart from './PlotlyCashFlowsChart.astro'
 
+const { charts = ['line', 'bar', 'income', 'cashflow'] } = Astro.props
 ---
 
+<div class='plotly-charts-container'>
+	{charts.includes('line') && <PlotlyLineChart />}
+	{charts.includes('bar') && <PlotlyStackedBar />}
+	{charts.includes('income') && <PlotlyIncomeStatementChart />}
+	{charts.includes('cashflow') && <PlotlyCashFlowsChart />}
+</div>
+
 <script>
-	// This function will be called to initialize all charts
-	function initAllCharts() {
-		if (window.initCharts && Array.isArray(window.initCharts)) {
-			window.initCharts.forEach((initFunction) => {
-				if (typeof initFunction === 'function') {
-					initFunction()
-				}
-			})
-		}
+	function initializePlotlyCharts() {
+		const event = new Event('plotlyLoaded')
+		window.dispatchEvent(event)
 	}
 
-	// Check if Plotly is already loaded
-	if (typeof Plotly === 'undefined') {
-		// If Plotly is not loaded, create a script element to load it
-		const plotlyScript = document.createElement('script')
-		plotlyScript.src = 'https://cdn.plot.ly/plotly-latest.min.js'
-		plotlyScript.async = true
-
-		// Set up onload handler to initialize charts after Plotly is loaded
-		plotlyScript.onload = initAllCharts
-
-		// Append the script to the document head
-		document.head.appendChild(plotlyScript)
+	if (typeof window.Plotly === 'undefined') {
+		const script = document.createElement('script')
+		script.src = 'https://cdn.plot.ly/plotly-latest.min.js'
+		script.async = true
+		script.onload = initializePlotlyCharts
+		document.head.appendChild(script)
 	} else {
 		// If Plotly is already loaded, initialize charts immediately
-		initAllCharts()
+		initializePlotlyCharts()
 	}
 
-	// Set up a global error handler for Plotly
-	window.addEventListener('error', function (event) {
-		if (event.error && event.error.message && event.error.message.includes('Plotly')) {
-			console.error('Plotly error:', event.error)
-			// You can add additional error handling here, such as displaying an error message to the user
-		}
-	})
+	// Expose the initialization function globally
+	window.initializePlotlyCharts = initializePlotlyCharts
 </script>
+
+<style>
+	.plotly-charts-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+</style>
