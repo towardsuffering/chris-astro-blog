@@ -1,0 +1,29 @@
+---
+import CashFlowChart from './CashFlowChart.astro'
+import IncomeStatementChart from './IncomeStatementChart.astro'
+import HistoricalDataChart from './HistoricalDataChart.astro'
+import BalanceSheetChart from './BalanceSheetChart.astro'
+---
+
+<div class='charts-container'>
+	<CashFlowChart />
+	<IncomeStatementChart />
+	<HistoricalDataChart />
+	<BalanceSheetChart />
+</div>
+
+<script>
+	// Load Plotly once for all charts
+	import('https://cdn.plot.ly/plotly-latest.min.js').then(() => {
+		// Initialize all charts after Plotly has loaded
+		document.dispatchEvent(new Event('plotlyLoaded'))
+	})
+</script>
+
+<style>
+	.charts-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+</style>
