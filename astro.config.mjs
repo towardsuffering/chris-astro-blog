@@ -9,37 +9,38 @@ import react from '@astrojs/react'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://chrisblogs.dev', // Write here your website url
-	markdown: {
-		remarkPlugins: [remarkReadingTime, remarkMath],
-		rehypePlugins: [rehypeKatex],
-		drafts: true,
-		shikiConfig: {
-			theme: 'material-theme-palenight',
-			wrap: true
-		}
-	},
-	integrations: [
-		mdx({
-			syntaxHighlight: 'shiki',
-			shikiConfig: {
-				experimentalThemes: {
-					light: 'vitesse-light',
-					dark: 'material-theme-palenight',
-				},
-				wrap: true
-			},
-			drafts: true,
-			remarkPlugins: [remarkMath],
-			rehypePlugins: [rehypeKatex],
-		}),
-		sitemap(),
-		tailwind(),
-		react()
-	],
-	vite: {
-		ssr: {
-			external: ['katex']
-		}
-	}
+  site: 'https://chrisblogs.dev', // Your website url
+  markdown: {
+    remarkPlugins: [remarkReadingTime, remarkMath],
+    rehypePlugins: [rehypeKatex],
+    drafts: true,
+    shikiConfig: {
+      theme: 'material-theme-palenight',
+      wrap: true
+    }
+  },
+  integrations: [
+    mdx({
+      syntaxHighlight: 'shiki',
+      shikiConfig: {
+        experimentalThemes: {
+          light: 'vitesse-light',
+          dark: 'material-theme-palenight',
+        },
+        wrap: true
+      },
+      drafts: true,
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    }),
+    sitemap(),
+    tailwind(),
+    react()
+  ],
+  vite: {
+    ssr: {
+      external: ['katex']
+    },
+    assetsInclude: ['**/*.csv'] // Add this line to include CSV files
+  }
 })

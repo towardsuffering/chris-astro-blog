@@ -1,0 +1,157 @@
+---
+import { parse } from 'csv-parse/sync'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+function readCSV(filename) {
+	const csvPath = join(process.cwd(), 'public', filename)
+	try {
+		const csvData = readFileSync(csvPath, 'utf-8')
+		return parse(csvData, { columns: true, skip_empty_lines: true })
+	} catch (e) {
+		console.error(`Error reading or parsing ${filename}:`, e.message)
+		return null
+	}
+}
+
+const balanceSheetData = readCSV('balance_sheet.csv')
+const columns = Object.keys(balanceSheetData[0])
+const isHistoricalData = columns.includes('Date')
+const balanceSheetCompanies = isHistoricalData
+	? ['AAPL', 'MSFT', 'GOOGL', 'AMZN']
+	: [...new Set(columns.map((col) => col.split(' ')[0]).filter((co) => co !== ''))]
+const balanceSheetMetrics = isHistoricalData
+	? [...new Set(columns.map((col) => col.split('_')[0]).filter((type) => type !== 'Date'))]
+	: [...new Set(columns.map((col) => col.split(' ').slice(1).join(' ')).filter(Boolean))]
+---
+
+<div>
+	<h2 class='text-xl font-bold mb-4'>Balance Sheet Data Chart</h2>
+	<div class='controls-container mb-2 flex items-center gap-4'>
+		<div class='filter-container'>
+			<label
+				for='balanceSheetMetricSelect'
+				class='text-sm font-medium text-gray-700 dark:text-gray-300 mr-2'
+			>
+				Select Metric:
+			</label>
+			<select
+				id='balanceSheetMetricSelect'
+				class='text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500'
+			>
+				{balanceSheetMetrics.map((metric) => <option value={metric}>{metric}</option>)}
+			</select>
+		</div>
+		<div class='company-legend flex items-center gap-4'>
+			<span class='text-sm font-medium text-gray-700 dark:text-gray-300'>Legend:</span>
+			{
+				balanceSheetCompanies.map((company) => (
+					<div class='flex items-center'>
+						<div
+							class='w-3 h-3 mr-1 rounded-full'
+							style={`background-color: ${colorScheme[company]};`}
+						/>
+						<span class='text-xs text-gray-700 dark:text-gray-300'>{company}</span>
+					</div>
+				))
+			}
+		</div>
+	</div>
+	<div id='balanceSheetChart' class='w-full h-[600px]'></div>
+</div>
+
+<script
+	define:vars={{ balanceSheetData, balanceSheetCompanies, balanceSheetMetrics, isHistoricalData }}
+>
+	const colorScheme = {
+		AAPL: '#FF9900',
+		AMZN: '#FF6600',
+		MSFT: '#7FBA00',
+		GOOGL: '#4285F4'
+	}
+
+	async function initChart() {
+		const Plotly = await window.loadPlotly()
+		const metricSelect = document.getElementById('balanceSheetMetricSelect')
+
+		function updateChart() {
+			const selectedMetric = metricSelect.value
+
+			const chartData = balanceSheetCompanies.map((company) => ({
+				x: isHistoricalData
+					? balanceSheetData.map((record) => record.Date)
+					: balanceSheetData.map((record) => record['']),
+				y: isHistoricalData
+					? balanceSheetData.map((record) =>
+							parseFloat(record[`${selectedMetric}_${company}`] || 0)
+					  )
+					: balanceSheetData.map((record) =>
+							parseFloat(record[`${company} ${selectedMetric}`] || 0)
+					  ),
+				type: isHistoricalData ? 'scatter' : 'bar',
+				mode: isHistoricalData ? 'lines' : undefined,
+				name: company,
+				marker: { color: colorScheme[company] }
+			}))
+
+			const layout = {
+				title: `${selectedMetric} for ${balanceSheetCompanies.join(', ')}`,
+				xaxis: { title: isHistoricalData ? 'Date' : 'Year' },
+				yaxis: {
+					title: selectedMetric,
+					tickformat: ',.0f'
+				},
+				height: 600,
+				autosize: true,
+				showlegend: true,
+				legend: { orientation: 'h', y: -0.2 },
+				margin: { t: 50, b: 100, l: 50, r: 20 },
+				plot_bgcolor: 'rgba(0,0,0,0)',
+				paper_bgcolor: 'rgba(0,0,0,0)',
+				barmode: isHistoricalData ? undefined : 'stack'
+			}
+
+			const config = {
+				responsive: true,
+				displayModeBar: false
+			}
+
+			Plotly.newPlot('balanceSheetChart', chartData, layout, config)
+			updateChartTheme()
+		}
+
+		function updateChartTheme() {
+			const isDark = document.documentElement.classList.contains('dark')
+			const textColor = isDark ? '#e5e7eb' : '#374151'
+			const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'
+
+			const update = {
+				'xaxis.color': textColor,
+				'yaxis.color': textColor,
+				'xaxis.gridcolor': gridColor,
+				'yaxis.gridcolor': gridColor,
+				'font.color': textColor
+			}
+
+			Plotly.relayout('balanceSheetChart', update)
+		}
+
+		metricSelect.addEventListener('change', updateChart)
+		updateChart()
+
+		const observer = new MutationObserver((mutations) => {
+			mutations.forEach((mutation) => {
+				if (mutation.attributeName === 'class') {
+					updateChartTheme()
+				}
+			})
+		})
+
+		observer.observe(document.documentElement, {
+			attributes: true,
+			attributeFilter: ['class']
+		})
+	}
+
+	initChart()
+</script>

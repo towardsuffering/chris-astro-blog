@@ -1,0 +1,190 @@
+---
+import { parse } from 'csv-parse/sync'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+const csvPath = join(process.cwd(), 'public', 'income_statement.csv')
+let csvData, records, columns, companiesList, metricsList, error
+
+const colorScheme = {
+	AAPL: '#FF9900',
+	AMZN: '#FF6600',
+	MSFT: '#7FBA00',
+	GOOGL: '#4285F4'
+}
+
+try {
+	csvData = readFileSync(csvPath, 'utf-8')
+	records = parse(csvData, { columns: true, skip_empty_lines: true })
+	columns = Object.keys(records[0])
+
+	const isHistoricalData = columns.includes('Date')
+
+	if (isHistoricalData) {
+		companiesList = ['AAPL', 'MSFT', 'GOOGL', 'AMZN']
+		metricsList = [
+			...new Set(columns.map((col) => col.split('_')[0]).filter((type) => type !== 'Date'))
+		]
+	} else {
+		companiesList = [...new Set(columns.map((col) => col.split(' ')[0]).filter((co) => co !== ''))]
+		metricsList = [
+			...new Set(columns.map((col) => col.split(' ').slice(1).join(' ')).filter(Boolean))
+		]
+	}
+} catch (e) {
+	error = e.message
+	console.error('Error reading or parsing CSV:', error)
+}
+
+const clientScript = `
+(function() {
+  const isolatedData = ${JSON.stringify(records)};
+  const isolatedCompanies = ${JSON.stringify(companiesList)};
+  const isolatedMetrics = ${JSON.stringify(metricsList)};
+  const isolatedColors = ${JSON.stringify(colorScheme)};
+  const isHistoricalData = ${JSON.stringify(columns.includes('Date'))};
+
+  function initIsolatedPlotly() {
+    const metricSelect = document.getElementById('incomeMetricSelect');
+    isolatedMetrics.forEach(metric => {
+      const option = document.createElement('option');
+      option.value = metric;
+      option.textContent = metric;
+      metricSelect.appendChild(option);
+    });
+
+    metricSelect.value = isolatedMetrics[22];
+    updateIsolatedChart();
+    metricSelect.addEventListener('change', updateIsolatedChart);
+  }
+
+  function updateIsolatedChart() {
+    const selectedMetric = document.getElementById('incomeMetricSelect').value;
+    
+    const chartData = isolatedCompanies.map(company => {
+      const x = isHistoricalData ? isolatedData.map(record => record.Date) : isolatedData.map(record => record['']);
+      const y = isHistoricalData
+        ? isolatedData.map(record => parseFloat(record[\`\${selectedMetric}_\${company}\`] || 0))
+        : isolatedData.map(record => parseFloat(record[\`\${company} \${selectedMetric}\`] || 0));
+
+      return {
+        x: x,
+        y: y,
+        type: isHistoricalData ? 'scatter' : 'bar',
+        mode: isHistoricalData ? 'lines' : undefined,
+        name: company,
+        marker: { color: isolatedColors[company] }
+      };
+    });
+
+    const layout = {
+      title: \`\${selectedMetric} for \${isolatedCompanies.join(', ')}\`,
+      xaxis: { title: isHistoricalData ? 'Date' : 'Year' },
+      yaxis: { 
+        title: {
+          text: selectedMetric,
+          standoff: 80,
+        },
+        showticklabels: false,
+        ticks: '',
+        showgrid: false,
+      },
+      height: 600,
+      autosize: true,
+      showlegend: true,
+      legend: { orientation: 'h', y: -0.2 },
+      margin: { t: 50, b: 100, l: 50, r: 20 },
+      plot_bgcolor: 'rgba(0,0,0,0)',
+      paper_bgcolor: 'rgba(0,0,0,0)',
+      barmode: isHistoricalData ? undefined : 'stack'
+    };
+
+    const config = {
+      responsive: true,
+      displayModeBar: false
+    };
+
+    Plotly.newPlot('incomePlotlyChart', chartData, layout, config);
+    updateIsolatedChartTheme(document.documentElement.classList.contains('dark'));
+  }
+
+  function updateIsolatedChartTheme(isDark) {
+    const textColor = isDark ? '#e5e7eb' : '#374151';
+    const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+
+    const update = {
+      'xaxis.color': textColor,
+      'yaxis.color': textColor,
+      'xaxis.gridcolor': gridColor,
+      'yaxis.gridcolor': gridColor,
+      'font.color': textColor,
+    };
+
+    Plotly.relayout('incomePlotlyChart', update);
+  }
+
+  if (typeof Plotly !== 'undefined') {
+    initIsolatedPlotly();
+  } else {
+    document.querySelector('script[src="https://cdn.plot.ly/plotly-latest.min.js"]').onload = initIsolatedPlotly;
+  }
+
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.attributeName === 'class') {
+        const isDark = document.documentElement.classList.contains('dark');
+        updateIsolatedChartTheme(isDark);
+      }
+    });
+  });
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class'],
+  });
+})();
+`
+---
+
+<div class='isolated-chart-container'>
+	<div class='controls-container mb-2 flex items-center gap-4'>
+		<div class='filter-container'>
+			<label
+				for='incomeMetricSelect'
+				class='text-sm font-medium text-gray-700 dark:text-gray-300 mr-2'>Select Metric:</label
+			>
+			<select
+				id='incomeMetricSelect'
+				class='text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500'
+			>
+			</select>
+		</div>
+	</div>
+
+	<div id='incomePlotlyChart' class='w-full h-[600px]'></div>
+</div>
+
+<script defer src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script set:html={clientScript} />
+
+<style>
+	.isolated-chart-container {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		font-family: Arial, sans-serif;
+	}
+	.controls-container {
+		align-items: flex-start;
+	}
+	select {
+		padding: 2px 20px 2px 8px;
+		font-size: 14px;
+		appearance: none;
+		-webkit-appearance: none;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: right 0.5em top 50%;
+		background-size: 0.65em auto;
+	}
+</style>

@@ -1,0 +1,45 @@
+---
+// DynamicChart.astro
+import { parse } from 'csv-parse/sync'
+
+interface Props {
+	csvPath: string
+	chartType: string
+	layout?: Record<string, any>
+	config?: Record<string, any>
+}
+
+const { csvPath, chartType, layout = {}, config = {} } = Astro.props
+
+// Read and parse CSV file
+const response = await fetch(new URL(csvPath, Astro.url))
+const csvData = await response.text()
+const records = parse(csvData, { columns: true, skip_empty_lines: true })
+
+// Generate a unique ID for this chart instance
+const chartId = `chart-${Math.random().toString(36).substr(2, 9)}`
+---
+
+<div id={chartId}></div>
+
+<script define:vars={{ chartId, records, chartType, layout, config }}>
+	// This script will run on the client side
+	import Plotly from 'plotly.js-dist'
+
+	// Function to create the chart data based on the CSV records
+	function createChartData(records, chartType) {
+		const keys = Object.keys(records[0])
+		return keys.slice(1).map((key) => ({
+			x: records.map((record) => record[keys[0]]),
+			y: records.map((record) => record[key]),
+			type: chartType,
+			name: key
+		}))
+	}
+
+	// Create the chart data
+	const data = createChartData(records, chartType)
+
+	// Render the chart
+	Plotly.newPlot(chartId, data, layout, config)
+</script>

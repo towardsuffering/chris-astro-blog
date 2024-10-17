@@ -1,5 +1,5 @@
 ---
-heroImage: ../../assets/images/financialReportAnalyzed.png
+heroImage: ../../assets/images/financetoolkit.png
 category: 'Analytics'
 description: 'Learn to gather stock prices, financial statements, and visualize data using Python and the Finance Toolkit.'
 pubDate: 2024-10-10T15:42:00.000Z
@@ -20,10 +20,10 @@ import OutputDisplay from '../../components/OutputDisplay.astro'
 import ToolkitButton from '../../components/ToolkitButton.astro'
 import TwoColumnList from '../../components/TwoColumnList.astro'
 import 'katex/dist/katex.min.css'
-import PlotlyDataframe from '../../components/PlotlyDataframe.astro'
-import PlotlyDataframeBS from '../../components/PlotlyDataframeBS.astro'
-
-## 1. Introduction
+import PlotlyLineChart from '../../components/PlotlyLineChart.astro'
+import PlotlyStackedBar from '../../components/PlotlyStackedBar.astro'
+import PlotlyCashFlowsChart from '../../components/PlotlyCashFlowsChart.astro'
+import PlotlyIncomeStatementChart from '../../components/PlotlyIncomeStatementChart.astro'
 
 In today's data-driven business world, having the ability to analyze and interpret financial data is a core competency many organizations must have to sustain their competitive advantage. Python, with its rich ecosystem of packages, has become a go-to language for financial analysis.
 
@@ -98,7 +98,7 @@ Finance Toolkit includes several specialized modules, each focusing on different
 	]}
 />
 
-There are numerous functions available in each module, which are detailed in the [documentation](https://www.jeroenbouma.com/projects/financetoolkit/docs). However, this guide only provides just a glimpse, showcasing a few functions such as `get_historical_data`, `get_balance_sheet_statement`, `get_cash_flow_statement`, and a handful of others.
+There are numerous functions available in each module, which are detailed in the [documentation](https://www.jeroenbouma.com/projects/financetoolkit/docs). However, this guide only provides just a glimpse, showcasing a few functions such as `get_historical_data`, `get_income_statement`, `get_balance_sheet_statement`, & `get_cash_flow_statement`.
 
 ### 2.3. Key Python and Finance Concepts
 
@@ -183,11 +183,9 @@ This function returns a DataFrame containing daily historical price data for our
 
 The power of this data lies in its ability to show trends over time. For instance, we can visualize cumulative returns to compare the performance of different companies:
 
-<PlotlyDataframe />
+<PlotlyLineChart />
 
-This visualization shows how each company's stock has performed relative to others and the benchmark (S&P 500) over time, revealing patterns such as which companies have outperformed the market or how different companies were affected by major economic events.
-
-Financial statements provide a structured view of a company's financial health and performance. The Finance Toolkit allows us to retrieve three key financial statements: the Income Statement, Balance Sheet, and Cash Flow Statement.
+This chart shows total investment returns for Apple, Microsoft, Google, and Amazon from 2006 to 2024. Apple leads dramatically, especially post-2019, reaching nearly 250% return. Amazon follows with high but volatile growth. Google and Microsoft show steady but slower growth. This metric is crucial as it reflects total value creation, including capital gains and reinvested dividends. It demonstrates each company's success in their markets - Apple's expansion into smartphones and services, Amazon's e-commerce dominance, Google's ad revenue consistency, and Microsoft's cloud pivot. For investors, it clearly illustrates long-term wealth generation potential in the tech sector.
 
 #### 3.3.2. Income Statement
 
@@ -201,6 +199,10 @@ companies.get_income_statement()
 
 This statement tells the story of a company's profitability. It's important to remember that while revenues are generally straightforward, many expenses involve management decisions and accounting rules. Analyzing trends in revenues, expenses, and profit margins can reveal a lot about a company's operational efficiency and competitive position.
 
+<PlotlyIncomeStatementChart />
+
+`Net income` is a crucial measure of a company's profitability. Apple consistently leads, reflecting its high-margin products and efficient operations. Microsoft shows strong growth, likely due to its cloud services and software dominance. Google maintains steady profits from its advertising business. Amazon's fluctuating net income may reflect its strategy of reinvesting heavily in growth. This metric is vital as it directly impacts shareholder value and a company's ability to fund future innovations.
+
 #### 3.3.3. Balance Sheet
 
 The Balance Sheet provides a snapshot of a company's financial position at a specific point in time:
@@ -213,7 +215,9 @@ companies.get_balance_sheet_statement()
 
 This statement is based on the accounting equation: `Assets = Liabilities + Shareholders' Equity`. It's crucial to understand that many values on the Balance Sheet are based on estimates and assumptions. Analyzing the Balance Sheet can provide insights into a company's liquidity, solvency, and overall financial flexibility.
 
-<PlotlyDataframeBS />
+<PlotlyStackedBar />
+
+`Shareholders equity` represents the total value of a company owned by its shareholders. Microsoft and Google show significant growth in shareholder equity, indicating strong retained earnings and possibly successful equity offerings. Apple's relatively stable equity suggests consistent returns to shareholders through dividends and buybacks. Amazon's growing equity reflects its strategy of reinvesting profits. High shareholder equity can provide a buffer during economic downturns and fuel future growth, making it a key indicator of long-term financial health.
 
 #### 3.3.4. Cash Flow Statement
 
@@ -250,7 +254,9 @@ shareholder_value.plot.bar(
 )
 ```
 
-![Total Shareholders Equity](../../assets/images/total_shareholders_equity.png)
+<PlotlyCashFlowsChart />
+
+`Free cash flow` shows a company's ability to generate cash after accounting for capital expenditures. Apple leads in this metric, demonstrating its efficiency in converting revenue to cash. Microsoft and Google also show strong and growing free cash flow, indicating robust operational efficiency. Amazon's lower free cash flow might reflect its heavy investments in infrastructure and new technologies. This metric is crucial as it represents the cash a company can use for acquisitions, debt repayment, dividends, or reinvestment, directly impacting its ability to create future value for shareholders.
 
 These stacked bar charts show the total shareholder equity for each company from 2019 to 2022. Such a visualization can reveal trends in company growth and financial strength over time.
 
