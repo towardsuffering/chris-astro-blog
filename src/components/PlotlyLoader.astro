@@ -1,0 +1,41 @@
+---
+
+---
+
+<script>
+	// This function will be called to initialize all charts
+	function initAllCharts() {
+		if (window.initCharts && Array.isArray(window.initCharts)) {
+			window.initCharts.forEach((initFunction) => {
+				if (typeof initFunction === 'function') {
+					initFunction()
+				}
+			})
+		}
+	}
+
+	// Check if Plotly is already loaded
+	if (typeof Plotly === 'undefined') {
+		// If Plotly is not loaded, create a script element to load it
+		const plotlyScript = document.createElement('script')
+		plotlyScript.src = 'https://cdn.plot.ly/plotly-latest.min.js'
+		plotlyScript.async = true
+
+		// Set up onload handler to initialize charts after Plotly is loaded
+		plotlyScript.onload = initAllCharts
+
+		// Append the script to the document head
+		document.head.appendChild(plotlyScript)
+	} else {
+		// If Plotly is already loaded, initialize charts immediately
+		initAllCharts()
+	}
+
+	// Set up a global error handler for Plotly
+	window.addEventListener('error', function (event) {
+		if (event.error && event.error.message && event.error.message.includes('Plotly')) {
+			console.error('Plotly error:', event.error)
+			// You can add additional error handling here, such as displaying an error message to the user
+		}
+	})
+</script>
