@@ -78,28 +78,27 @@ const clientScript = `
     });
 
     const layout = {
-    title: \`\${selectedMetric} for \${isolatedCompanies.join(', ')}\`,
-    xaxis: { title: isHistoricalData ? 'Date' : 'Year' },
-    yaxis: { 
+      title: \`\${selectedMetric} for \${isolatedCompanies.join(', ')}\`,
+      xaxis: { title: isHistoricalData ? 'Date' : 'Year' },
+      yaxis: { 
         title: {
-        text: selectedMetric,
-        standoff: 80,  // Space between the label and axis values
+          text: selectedMetric,
+          standoff: 80,
         },
-        showticklabels: false,  // Hides the vertical y-axis labels (numbers)
-        ticks: '',  // Removes the vertical ticks
-        showgrid: false,  // This will remove the horizontal grid lines (optional)
-    },
-    height: 600,
-    autosize: true,
-    showlegend: true,
-    legend: { orientation: 'h', y: -0.2 },
-    margin: { t: 50, b: 100, l: 50, r: 20 }, // Adjust margins as needed
-    plot_bgcolor: 'rgba(0,0,0,0)',
-    paper_bgcolor: 'rgba(0,0,0,0)',
-    barmode: isHistoricalData ? undefined : 'stack'
+        showticklabels: false,
+        ticks: '',
+        showgrid: false,
+      },
+      height: 600,
+      autosize: true,
+      showlegend: true,
+      legend: { orientation: 'h', y: -0.2 },
+      margin: { t: 50, b: 100, l: 50, r: 20 },
+      plot_bgcolor: 'rgba(0,0,0,0)',
+      paper_bgcolor: 'rgba(0,0,0,0)',
+      barmode: isHistoricalData ? undefined : 'stack'
     };
 
-    
     const config = {
       responsive: true,
       displayModeBar: false
@@ -124,11 +123,13 @@ const clientScript = `
     Plotly.relayout('isolatedPlotlyChart2', update);
   }
 
-  if (typeof Plotly !== 'undefined') {
-    initIsolatedPlotly();
-  } else {
-    document.querySelector('script[src="https://cdn.plot.ly/plotly-latest.min.js"]').onload = initIsolatedPlotly;
-  }
+  // Add these event listeners
+  window.addEventListener('plotlyLoaded', initIsolatedPlotly);
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.Plotly) {
+      initIsolatedPlotly();
+    }
+  });
 
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
@@ -165,7 +166,6 @@ const clientScript = `
 	<div id='isolatedPlotlyChart2' class='w-full h-[600px]'></div>
 </div>
 
-<!-- <script defer src='https://cdn.plot.ly/plotly-latest.min.js'></script> -->
 <script set:html={clientScript} />
 
 <style>
