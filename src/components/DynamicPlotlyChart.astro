@@ -1,0 +1,22 @@
+---
+const { type } = Astro.props
+---
+
+<div id={`plotly-${type}-chart`} class='w-full h-[600px]'></div>
+
+<script define:vars={{ type }}>
+	function initChart() {
+		// This function will be defined in your blog post
+		if (typeof window[`initPlotly${type}Chart`] === 'function') {
+			window[`initPlotly${type}Chart`]()
+		} else {
+			console.error(`Chart initialization function for ${type} not found`)
+		}
+	}
+
+	if (typeof Plotly !== 'undefined') {
+		initChart()
+	} else {
+		document.addEventListener('DOMContentLoaded', initChart)
+	}
+</script>
