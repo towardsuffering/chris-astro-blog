@@ -9,108 +9,64 @@ interface Props {
 const { leftTitle, leftItems, rightTitle, rightItems }: Props = Astro.props
 ---
 
-<style>
-	.two-column-wrapper {
-		max-width: 100%;
-		margin: 0 auto;
-		padding: 0 20px;
-	}
-
-	.two-column-container {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
-
-	@media (min-width: 768px) {
-		.two-column-container {
-			flex-direction: row;
-			justify-content: space-between;
-		}
-	}
-
-	.column {
-		flex: 1;
-		padding: 20px;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		border-radius: 8px;
-		background-color: #f3f4f6;
-	}
-
-	.dark .column {
-		background-color: #1f2937;
-	}
-
-	@media (min-width: 768px) {
-		.column {
-			max-width: calc(50% - 10px);
-		}
-	}
-
-	.column-title {
-		font-size: 1.25rem;
-		margin-bottom: 1rem;
-		color: #1f2937;
-	}
-
-	.dark .column-title {
-		color: #f3f4f6;
-	}
-
-	.column-list {
-		list-style-type: disc;
-		padding-left: 1.5rem;
-	}
-
-	.column-list li {
-		margin-bottom: 0.5rem;
-		font-size: 1rem;
-		color: #4b5563;
-	}
-
-	.dark .column-list li {
-		color: #d1d5db;
-	}
-
-	.bold-concept {
-		font-weight: 700;
-	}
-</style>
-
-<div class='two-column-wrapper'>
-	<div class='two-column-container'>
-		<div class='column'>
-			<h3 class='column-title'>{leftTitle}</h3>
-			<ul class='column-list'>
-				{
-					leftItems.map((item) => {
-						const [concept, ...description] = item.split(':')
-						return (
-							<li>
-								<span class='bold-concept'>{concept}</span>
-								{description.length > 0 && `: ${description.join(':')}`}
-							</li>
-						)
-					})
-				}
-			</ul>
+<div class='w-full'>
+	<div class='flex flex-col md:flex-row gap-5'>
+		<div class='flex-1'>
+			<div class='bg-[#6366f1] rounded-lg'>
+				<h3 class='text-xl font-semibold !text-white py-8 text-center'>{leftTitle}</h3>
+			</div>
+			<div
+				class='rounded-lg mt-2 bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-700'
+			>
+				<ul class='p-6 space-y-4 list-disc list-inside'>
+					{
+						leftItems.map((item) => {
+							const [concept, ...description] = item.split(':')
+							return (
+								<li>
+									<span class='font-semibold text-indigo-600 dark:text-indigo-400 mb-2 inline-block'>
+										{concept}
+									</span>
+									{description.length > 0 && (
+										<span class='text-gray-700 dark:text-gray-300 block ml-5'>
+											{description.join(':')}
+										</span>
+									)}
+								</li>
+							)
+						})
+					}
+				</ul>
+			</div>
 		</div>
 
-		<div class='column'>
-			<h3 class='column-title'>{rightTitle}</h3>
-			<ul class='column-list'>
-				{
-					rightItems.map((item) => {
-						const [concept, ...description] = item.split(':')
-						return (
-							<li>
-								<span class='bold-concept'>{concept}</span>
-								{description.length > 0 && `: ${description.join(':')}`}
-							</li>
-						)
-					})
-				}
-			</ul>
+		<div class='flex-1'>
+			<div class='bg-[#6366f1] rounded-lg'>
+				<h3 class='text-xl font-semibold !text-white py-8 text-center'>{rightTitle}</h3>
+			</div>
+			<div
+				class='rounded-lg mt-2 bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-700'
+			>
+				<ul class='p-6 space-y-4 list-disc list-inside'>
+					{
+						rightItems.map((item) => {
+							const [concept, ...description] = item.split(':')
+							return (
+								<li>
+									<span class='font-semibold text-indigo-600 dark:text-indigo-400 mb-2 inline-block'>
+										{concept}
+									</span>
+									{description.length > 0 && (
+										<span class='text-gray-700 dark:text-gray-300 block ml-5'>
+											{description.join(':')}
+										</span>
+									)}
+								</li>
+							)
+						})
+					}
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>

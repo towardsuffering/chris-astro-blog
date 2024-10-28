@@ -1,0 +1,23 @@
+---
+// CodeHighlight.astro
+interface Props {
+	class?: string
+}
+
+const { class: className } = Astro.props
+---
+
+<span
+	class:list={[
+		'inline-block px-2 py-0.5 font-mono text-sm rounded-md border transition-colors',
+		'bg-slate-100 text-slate-700 border-slate-200',
+		'dark:bg-slate-800 dark:text-slate-100 dark:border-slate-700',
+		'hover:bg-slate-200 dark:hover:bg-slate-700',
+		'hover:border-slate-300 dark:hover:border-slate-600',
+		'shadow-sm',
+		'font-bold', // added font-bold class
+		className
+	]}
+>
+	<slot />
+</span>

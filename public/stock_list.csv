@@ -1,0 +1,1001 @@
+Symbol,Name,Market Cap,Sector,Industry,Beta,Price,Dividend,Volume,Exchange,Exchange Code,Country,isFund
+SPAN,1922,,,,,,0.0,0,NASDAQ,NASDAQ,,True
+SHLM,"A. Schulman, Inc.",,,,,,0.0,0,NASDAQ,NASDAQ,,True
+NMRX,5294,,,,,,0.0,0,NASDAQ,NASDAQ,,True
+AAPL,Apple Inc.,3598354347000.0,Technology,Consumer Electronics,1.239,236.67,1.0,20934508,NASDAQ Global Select,NASDAQ,US,False
+NVDA,NVIDIA Corporation,3489331175000.0,Technology,Semiconductors,1.669,142.2475,0.04,179410389,NASDAQ Global Select,NASDAQ,US,False
+MSFT,Microsoft Corporation,3099747153312.0,Technology,Software - Infrastructure,0.896,417.0228,3.32,6966949,NASDAQ Global Select,NASDAQ,US,False
+VSMPX,Vanguard Total Stock Mkt Idx Instl Pls,2233924321246.0,,,1.01,263.8,1.784,0,Nasdaq,NASDAQ,,True
+GOOG,Alphabet Inc.,2029741571863.0,Communication Services,Internet Content & Information,1.038,165.78,0.8,6180952,NASDAQ Global Select,NASDAQ,US,False
+GOOGL,Alphabet Inc.,2027361259231.0,Communication Services,Internet Content & Information,1.038,164.065,0.8,8252217,NASDAQ Global Select,NASDAQ,US,False
+AMZN,"Amazon.com, Inc.",1980414764000.0,Consumer Cyclical,Specialty Retail,1.147,188.69,0.0,14462445,NASDAQ Global Select,NASDAQ,US,False
+META,"Meta Platforms, Inc.",1450723322962.0,Communication Services,Internet Content & Information,1.216,573.45,2.0,5222942,NASDAQ Global Select,NASDAQ,US,False
+VFIAX,Vanguard 500 Index Fd Admiral Shs,1277424697298.0,,,1.0,541.49,5.1332,0,NASDAQ,NASDAQ,,True
+VOO,Vanguard 500 Index Fund,1274001257672.0,Financial Services,Asset Management,1.0,535.9199,6.7661,2260464,New York Stock Exchange Arca,AMEX,US,True
+VITSX,Vanguard Total Stock Market Index Fund,1190890045314.0,Financial Services,Asset Management,1.01,140.63,0.9520000000000001,0,NASDAQ,NASDAQ,US,True
+VTSAX,Vanguard Total Stock Market Index Fund,1190720700415.0,Financial Services,Asset Management,1.01,140.61,0.9450000000000001,0,NASDAQ,NASDAQ,US,True
+BRK-B,Berkshire Hathaway Inc.,998781888868.0,Financial Services,Insurance - Diversified,0.869,463.13,0.0,1427038,New York Stock Exchange,NYSE,US,False
+BRK-A,Berkshire Hathaway Inc.,998103442655.0,Financial Services,Insurance - Diversified,0.869,695517.75,0.0,1528,New York Stock Exchange,NYSE,US,False
+TSM,Taiwan Semiconductor Manufacturing Company Limited,881175214788.0,Technology,Semiconductors,1.268,201.8,2.47,10862388,New York Stock Exchange,NYSE,TW,False
+LLY,Eli Lilly and Company,863822232454.0,Healthcare,Drug Manufacturers - General,0.41600000000000004,908.879,5.2,746752,New York Stock Exchange,NYSE,US,False
+AVGO,Broadcom Inc.,838369110000.0,Technology,Semiconductors,1.184,179.5,2.12,7205160,NASDAQ Global Select,NASDAQ,US,False
+TSLA,"Tesla, Inc.",694169714880.0,Consumer Cyclical,Auto - Manufacturers,2.297,217.292,0.0,37561852,NASDAQ Global Select,NASDAQ,US,False
+WMT,Walmart Inc.,650776720000.0,Consumer Defensive,Discount Stores,0.516,80.96,0.8300000000000001,3537754,New York Stock Exchange,NYSE,US,False
+JPM,JPMorgan Chase & Co.,636094981844.0,Financial Services,Banks - Diversified,1.102,223.5709,5.0,2656627,New York Stock Exchange,NYSE,US,False
+FXAIX,Fidelity 500 Index Fund,599394746296.0,Financial Services,Asset Management,1.0,203.77,1.88,0,NASDAQ,NASDAQ,US,True
+VTI,Vanguard Total Stock Market Index Fund,596648079245.0,Financial Services,Asset Management,1.01,287.7187,3.7348,1677104,New York Stock Exchange Arca,AMEX,US,True
+V,Visa Inc.,568409129005.0,Financial Services,Financial - Credit Services,0.961,287.67,2.08,2150867,New York Stock Exchange,NYSE,US,False
+SPY,SPDR S&P 500 ETF Trust,535048595832.0,Financial Services,Asset Management,1.0,582.98,7.00556,20407972,New York Stock Exchange Arca,AMEX,US,False
+XOM,Exxon Mobil Corporation,533806024500.0,Energy,Oil & Gas Integrated,0.877,120.15,3.8,4523315,New York Stock Exchange,NYSE,US,False
+UNH,UnitedHealth Group Incorporated,529949590200.0,Healthcare,Medical - Healthcare Plans,0.593,573.9,8.4,1754547,New York Stock Exchange,NYSE,US,False
+IVV,iShares Core S&P 500 ETF,517466616486.0,Financial Services,Asset Management,1.0,585.76,7.43637,1469008,New York Stock Exchange Arca,AMEX,US,False
+NVO,Novo Nordisk A/S,515382393541.0,Healthcare,Biotechnology,0.148,117.425,1.45,2043202,New York Stock Exchange,NYSE,DK,False
+ORCL,Oracle Corporation,481831912800.0,Technology,Software - Infrastructure,1.008,173.88,1.6,1745879,New York Stock Exchange,NYSE,US,False
+MA,Mastercard Incorporated,473371226180.0,Financial Services,Financial - Credit Services,1.103,516.38,2.64,981249,New York Stock Exchange,NYSE,US,False
+VTIAX,Vanguard Total International Stock Index Fd Admiral,463318679549.0,,,1.03,34.3,0.97,0,NASDAQ,NASDAQ,,True
+VTPSX,Vanguard Total Intl Stock Idx InstlPls,463318679456.0,,,1.03,137.19,3.927,0,Nasdaq,NASDAQ,,True
+VXUS,Vanguard Total Intl Stock Idx Fund,459043623949.0,Financial Services,Asset Management,1.03,63.1915,1.8264,1718293,NASDAQ Global Market,NASDAQ,US,True
+HD,"The Home Depot, Inc.",402807925045.0,Consumer Cyclical,Home Improvement,1.008,405.5278,9.0,1779411,New York Stock Exchange,NYSE,US,False
+PG,The Procter & Gamble Company,398111365300.0,Consumer Defensive,Household & Personal Products,0.40700000000000003,169.43,4.03,2618835,New York Stock Exchange,NYSE,US,False
+COST,Costco Wholesale Corporation,393702308487.0,Consumer Defensive,Discount Stores,0.787,888.5701,4.64,521019,NASDAQ Global Select,NASDAQ,US,False
+JNJ,Johnson & Johnson,393391160800.0,Healthcare,Drug Manufacturers - General,0.518,163.42,4.96,2954127,New York Stock Exchange,NYSE,US,False
+VBTLX,Vanguard Total Bond Market Index Fund Admiral Shares,343379345399.0,Financial Services,Asset Management - Bonds,0.99,9.72,0.28500000000000003,0,NASDAQ,NASDAQ,US,True
+VBMPX,Vanguard Total Bond Market Idx InstlPls,343379345399.0,Financial Services,Asset Management - Bonds,0.99,9.72,0.314,0,NASDAQ,NASDAQ,,True
+VBMFX,Vanguard Total Bond Market Index Fund Investor Shares,343379345399.0,Financial Services,Asset Management - Bonds,0.99,9.72,0.275,0,NASDAQ,NASDAQ,,True
+CHTEX.BR,Chevron Corporation,343087513388.0,Energy,Oil & Gas Integrated,1.164436,170.32,6.04,6,Brussels,EURONEXT,US,False
+BND,Vanguard Total Bond Market Index Fund,341495201837.0,Financial Services,Asset Management - Bonds,0.99,73.405,2.5684,3386168,NASDAQ Global Market,NASDAQ,US,True
+VMCPX,Vanguard Mid-Cap Index Fund Institutional Plus Shares,339695599596.0,Financial Services,Asset Management,1.04,364.69,3.07083,0,NASDAQ,NASDAQ,,True
+ABBV,AbbVie Inc.,330420392100.0,Healthcare,Drug Manufacturers - General,0.618,187.065,6.2,2202391,New York Stock Exchange,NYSE,US,False
+NFLX,"Netflix, Inc.",329512887000.0,Communication Services,Entertainment,1.2610000000000001,767.8,0.0,4485174,NASDAQ Global Select,NASDAQ,US,False
+BAC,Bank of America Corporation,321698136800.0,Financial Services,Banks - Diversified,1.338,41.84,1.04,15115111,New York Stock Exchange,NYSE,US,False
+VIMAX,Vanguard Mid-Cap Index Fund Admiral Shares,311807574000.0,Financial Services,Asset Management,1.04,334.75,2.6020000000000003,0,NASDAQ,NASDAQ,,True
+VINIX,Vanguard Institutional Index Fund Institutional Shares,309798010754.0,Financial Services,Asset Management,1.0,482.87,3.232999999999999,0,NASDAQ,NASDAQ,US,True
+VIIIX,Vanguard Institutional Index Fund,309798010751.0,Financial Services,Asset Management,1.0,482.86,3.264999999999999,0,NASDAQ,NASDAQ,US,True
+VTBNX,Vanguard Total Bond Market II Idx I,307551764472.0,Financial Services,Asset Management - Bonds,0.99,9.59,0.316,0,Nasdaq,NASDAQ,,True
+MC.PA,"LVMH Moët Hennessy - Louis Vuitton, Société Européenne",305221871578.0,Consumer Cyclical,Luxury Goods,0.963,611.0,13.0,343944,Paris,EURONEXT,FR,False
+KO,The Coca-Cola Company,300225544200.0,Consumer Defensive,Beverages - Non-Alcoholic,0.608,69.66,1.94,7062704,New York Stock Exchange,NYSE,US,False
+RGAGX,American Funds The Growth Fund of America Class R-6,281980108752.0,Financial Services,Asset Management,1.11,79.65,0.5650000000000001,0,NASDAQ,NASDAQ,,True
+GAFFX,American Funds The Growth Fund of America Class F-3,281696894970.0,Financial Services,Asset Management,1.11,79.57,0.5650000000000001,0,NASDAQ,NASDAQ,,True
+AGTHX,American Funds The Growth Fund of America Class A,281059655664.0,Financial Services,Asset Management,1.11,79.39,0.37,0,NASDAQ,NASDAQ,US,True
+ASML,ASML Holding N.V.,280037173228.0,Technology,Semiconductors,1.052,711.7982,6.78,1676895,NASDAQ Global Select,NASDAQ,NL,False
+GFAFX,The Growth Fund of America Class F-1 Shares,278510665695.0,Financial Services,Asset Management,1.11,78.67,0.34,0,NASDAQ,NASDAQ,,True
+CRM,"Salesforce, Inc.",277794480000.0,Technology,Software - Application,1.3,290.58,1.6,1267693,New York Stock Exchange,NYSE,US,False
+CGFAX,American Funds Growth Fund of Amer 529A,276457324498.0,,,1.11,78.09,0.35000000000000003,0,Nasdaq,NASDAQ,,True
+CVX,Chevron Corporation,276075474000.0,Energy,Oil & Gas Integrated,1.079,150.95,6.52,2407008,New York Stock Exchange,NYSE,US,False
+MRK,"Merck & Co., Inc.",271583599096.0,Healthcare,Drug Manufacturers - General,0.399,107.1416,3.08,4358772,New York Stock Exchange,NYSE,US,False
+SAP,SAP SE,268026705000.0,Technology,Software - Application,0.921,229.77,2.39,746794,New York Stock Exchange,NYSE,DE,False
+MRK.PA,"Merck & Co., Inc.",260608147402.0,Healthcare,Drug Manufacturers - General,0.355383,101.4,2.27,250,Paris,EURONEXT,US,False
+TMUS,"T-Mobile US, Inc.",260407794300.0,Communication Services,Telecommunications Services,0.508,223.185,3.52,2603693,NASDAQ Global Select,NASDAQ,US,False
+ASML.AS,ASML Holding N.V.,258714401237.0,Technology,Semiconductors,1.052,657.6,6.24,714227,Amsterdam,EURONEXT,NL,False
+AMD,"Advanced Micro Devices, Inc.",253858588000.0,Technology,Semiconductors,1.695,156.85,0.0,17660922,NASDAQ Global Select,NASDAQ,US,False
+RGABX,American Funds The Growth Fund of America Class R-2,252489908170.0,Financial Services,Asset Management,1.11,71.32,0.0,0,NASDAQ,NASDAQ,US,True
+RGAAX,The Growth Fund of America Class R-1 Shares,248701845458.0,Financial Services,Asset Management,1.11,70.25,0.0,0,NASDAQ,NASDAQ,US,True
+RY.TO,Royal Bank of Canada,243533890000.0,Financial Services,Banks - Diversified,0.843,172.45,5.68,1410526,Toronto Stock Exchange,TSX,CA,False
+GFACX,American Funds The Growth Fund of America,243285295068.0,Financial Services,Asset Management,1.11,68.72,0.0,0,NASDAQ,NASDAQ,US,True
+FIYY,Barclays ETN+ FI Enhanced Global High Yield ETN B,241841962935.0,,,0.0,103.263,0.0,1094,New York Stock Exchange Arca,AMEX,,False
+BABA,Alibaba Group Holding Limited,240767061233.0,Consumer Cyclical,Specialty Retail,0.341,100.53,2.0,7096367,New York Stock Exchange,NYSE,CN,False
+AZN,AstraZeneca PLC,240682522500.0,Healthcare,Drug Manufacturers - General,0.166,77.625,1.49,1331276,NASDAQ Global Select,NASDAQ,GB,False
+PEP,"PepsiCo, Inc.",240647046000.0,Consumer Defensive,Beverages - Non-Alcoholic,0.539,175.4,5.42,2881673,NASDAQ Global Select,NASDAQ,US,False
+RLBGX,American Funds American Balanced Fund Class R-6,237681016824.0,Financial Services,Asset Management,0.9400000000000001,36.63,0.889,0,NASDAQ,NASDAQ,,True
+CLBAX,American Funds American Balanced 529A,237681016823.0,,,0.9400000000000001,36.53,0.773,0,Nasdaq,NASDAQ,,True
+AFMBX,American Funds American Balanced Fund,237681016820.0,Financial Services,Asset Management,0.9400000000000001,36.6,0.751,0,NASDAQ,NASDAQ,,True
+ABALX,American Funds American Balanced Fund Class A,237681016816.0,Financial Services,Asset Management,0.9400000000000001,36.61,0.675,0,NASDAQ,NASDAQ,US,True
+BALFX,"American Funds American Balanced Fund, Class F-1 Shs",237681016809.0,Financial Services,Asset Management,0.9400000000000001,36.58,0.766,0,NASDAQ,NASDAQ,,True
+AMBFX,American Balanced Fund Class F-2 Shs,237681016809.0,Financial Services,Asset Management,0.9400000000000001,36.58,0.854,0,NASDAQ,NASDAQ,,True
+ACN,Accenture plc,235108318560.0,Technology,Information Technology Services,1.239,376.26,5.92,729807,New York Stock Exchange,NYSE,IE,False
+LIN,Linde plc,230836887775.0,Basic Materials,Chemicals - Specialty,0.9440000000000001,483.425,5.5600000000000005,459958,NASDAQ Global Select,NASDAQ,GB,False
+CIS.BR,"Cisco Systems, Inc.",228207362036.0,Technology,Communication Equipment,0.954356,53.06,1.56,1,Brussels,EURONEXT,US,False
+TM,Toyota Motor Corporation,227676356885.0,Consumer Cyclical,Auto - Manufacturers,0.434,169.03,4.01,288586,New York Stock Exchange,NYSE,JP,False
+TMO,Thermo Fisher Scientific Inc.,227062242360.0,Healthcare,Medical - Diagnostics & Research,0.777,594.41,1.56,362653,New York Stock Exchange,NYSE,US,False
+NVS,Novartis AG,227030662593.0,Healthcare,Drug Manufacturers - General,0.498,116.04,3.7800000000000002,322435,New York Stock Exchange,NYSE,CH,False
+VERIZ.BR,Verizon Communications Inc.,227018156544.0,Communication Services,Telecommunications Services,0.328492,54.0,2.46,500,Brussels,EURONEXT,US,False
+CSCO,"Cisco Systems, Inc.",226832694127.0,Technology,Communication Equipment,0.8220000000000001,56.8399,1.6,4982438,NASDAQ Global Select,NASDAQ,US,False
+MCD,McDonald's Corporation,226199768190.0,Consumer Cyclical,Restaurants,0.726,315.33,7.08,1102995,New York Stock Exchange,NYSE,US,False
+ADBE,Adobe Inc.,218603320000.0,Technology,Software - Infrastructure,1.289,496.6,0.0,796109,NASDAQ Global Select,NASDAQ,US,False
+WFC,Wells Fargo & Company,217875317700.0,Financial Services,Banks - Diversified,1.159,64.01,1.6,9100101,New York Stock Exchange,NYSE,US,False
+RMS.PA,Hermès International Société en commandite par actions,216372473372.0,Consumer Cyclical,Luxury Goods,0.706,2066.0,15.0,46939,Paris,EURONEXT,FR,False
+VEMRX,Vanguard Emerging Mkts Stock Idx InsPlus,214440968168.0,,,0.86,100.55,2.26,0,Nasdaq,NASDAQ,,True
+VEMPX,Vanguard Extended Market Index InstlPlus,213756395375.0,,,1.11,351.58,2.328999999999999,0,NASDAQ,NASDAQ,,True
+IBM,International Business Machines Corporation,212952192132.0,Technology,Information Technology Services,0.6970000000000001,231.1813,6.68,1348361,New York Stock Exchange,NYSE,US,False
+FFEU,Barclays ETN+ FI Enhanced Europe 50 ETN Series C,212775878565.0,,,0.0,90.8522,0.0,327,New York Stock Exchange Arca,AMEX,,False
+VB,Vanguard Small Cap Index Fund,211680716641.0,Financial Services,Asset Management,1.07,239.605,3.305099999999999,281697,New York Stock Exchange Arca,AMEX,US,True
+GE,General Electric Company,209163290569.0,Industrials,Aerospace & Defense,1.181,192.8999,1.12,2462187,New York Stock Exchange,NYSE,US,False
+SHEL,Shell plc,209052848250.0,Energy,Oil & Gas Integrated,0.506,67.05,2.75,2348673,New York Stock Exchange,NYSE,GB,False
+RY-PZ.TO,Royal Bank of Canada,208618588225.0,Financial Services,Banks - Diversified,0.8320000000000001,25.0,0.925,448,Toronto Stock Exchange,TSX,CA,False
+VTMGX,Vanguard Developed Markets Index Admiral,206981562362.0,,,1.09,16.64,0.433,0,NASDAQ,NASDAQ,,True
+VTMNX,Vanguard Developed Markets Index Fund Institutional Shares,206981562352.0,Financial Services,Asset Management,1.09,16.67,0.436,0,NASDAQ,NASDAQ,US,True
+MER-PK,Merrill Lynch Capital Trust I GTD CAP 6.45%,206476379280.0,,,0.0,26.1432,0.0,18628,New York Stock Exchange,NYSE,,True
+VEA,Vanguard Developed Markets Index Fund,204763017458.0,Financial Services,Asset Management,1.09,51.2151,1.5013,3714528,New York Stock Exchange Arca,AMEX,US,True
+ABT,Abbott Laboratories,203724891000.0,Healthcare,Medical - Devices,0.722,117.09,2.2,4210139,New York Stock Exchange,NYSE,US,False
+DHR,Danaher Corporation,196156661865.0,Healthcare,Medical - Diagnostics & Research,0.862,271.605,1.08,1081493,New York Stock Exchange,NYSE,US,False
+QQQ,Invesco QQQ Trust,194415465022.0,Financial Services,Asset Management,1.18,494.57,3.035909999999999,19316700,NASDAQ Global Market,NASDAQ,US,False
+OR.PA,L'Oréal S.A.,194089596100.0,Consumer Defensive,Household & Personal Products,0.711,363.7,6.6,291564,Paris,EURONEXT,FR,False
+SHELL.AS,Shell plc,192621699700.0,Energy,Oil & Gas Integrated,0.506,30.89,1.23,4685391,Amsterdam,EURONEXT,GB,False
+AXP,American Express Company,191836048640.0,Financial Services,Financial - Credit Services,1.213,269.845,2.8,2395943,New York Stock Exchange,NYSE,US,False
+MS,Morgan Stanley,191198694800.0,Financial Services,Financial - Capital Markets,1.3559999999999999,118.18,3.7,3407003,New York Stock Exchange,NYSE,US,False
+CAT,Caterpillar Inc.,189202350620.0,Industrials,Agricultural - Machinery,1.093,390.19,5.64,1026262,New York Stock Exchange,NYSE,US,False
+NOW,"ServiceNow, Inc.",187989420000.0,Technology,Software - Application,0.988,912.57,0.0,642372,New York Stock Exchange,NYSE,US,False
+QCOM,QUALCOMM Incorporated,186567150000.0,Technology,Semiconductors,1.282,167.475,3.4,3775990,NASDAQ Global Select,NASDAQ,US,False
+PM,Philip Morris International Inc.,185487640000.0,Consumer Defensive,Tobacco,0.5760000000000001,119.3,5.4,1496480,New York Stock Exchange,NYSE,US,False
+ISRG,"Intuitive Surgical, Inc.",184990860493.0,Healthcare,Medical - Instruments & Supplies,1.393,520.5819,0.0,756743,NASDAQ Global Select,NASDAQ,US,False
+VTV,Vanguard Value Index Fund,184847341506.0,Financial Services,Asset Management,0.8,176.1801,3.9664,1174636,New York Stock Exchange Arca,AMEX,US,True
+VZ,Verizon Communications Inc.,184061262000.0,Communication Services,Telecommunications Services,0.41100000000000003,43.725,2.71,8587055,New York Stock Exchange,NYSE,US,False
+TXN,Texas Instruments Incorporated,178215440039.0,Technology,Semiconductors,0.973,195.1878,5.44,2517261,NASDAQ Global Select,NASDAQ,US,False
+RY,Royal Bank of Canada,176016608000.0,Financial Services,Banks - Diversified,0.843,124.64,4.22,174621,New York Stock Exchange,NYSE,CA,False
+VO,Vanguard Mid Cap Index Fund,174769728472.0,Financial Services,Asset Management,1.04,268.299,4.0331,230174,New York Stock Exchange Arca,AMEX,US,True
+DIS,The Walt Disney Company,174621513150.0,Communication Services,Entertainment,1.401,96.285,0.75,4003394,New York Stock Exchange,NYSE,US,False
+PDD,PDD Holdings Inc.,173582439169.0,Consumer Cyclical,Specialty Retail,0.6980000000000001,124.99,0.0,3327422,NASDAQ Global Select,NASDAQ,CN,False
+NEE,"NextEra Energy, Inc.",172382204500.0,Utilities,Regulated Electric,0.552,83.87,2.06,2929730,New York Stock Exchange,NYSE,US,False
+INTU,Intuit Inc.,171454616400.0,Technology,Software - Application,1.241,611.7,4.16,340114,NASDAQ Global Select,NASDAQ,US,False
+GNE.PA,General Electric Company,171320982528.0,Industrials,Industrial - Machinery,1.218,158.0,1.03,360,Paris,EURONEXT,US,False
+TD-PFK.TO,The Toronto-Dominion Bank,171265638380.0,Financial Services,Banks - Diversified,0.854,24.965,0.89063,2041,Toronto Stock Exchange,TSX,CA,False
+AMGN,Amgen Inc.,170741663040.0,Healthcare,Drug Manufacturers - General,0.602,317.76,9.0,722376,NASDAQ Global Select,NASDAQ,US,False
+UBER,"Uber Technologies, Inc.",168863052500.0,Technology,Software - Application,1.331,80.375,0.0,7425626,New York Stock Exchange,NYSE,US,False
+PONPX,PIMCO Income Fund,167236632566.0,Financial Services,Asset Management - Income,0.78,10.69,0.5940000000000001,0,NASDAQ,NASDAQ,,True
+PIMIX,PIMCO Income Fund Institutional Class,167236632566.0,Financial Services,Asset Management - Income,0.78,10.69,0.55,0,NASDAQ,NASDAQ,US,True
+VZA,"Verizon Communications, 5.9% 15 Feb 2054",166981344195.0,Communication Services,Telecommunications Services,0.0,25.55,0.0,63656,New York Stock Exchange,NYSE,,False
+RTX,RTX Corporation,166353163200.0,Industrials,Aerospace & Defense,0.543,125.055,2.52,1954524,New York Stock Exchange,NYSE,US,False
+VIGIX,Vanguard Growth Index Institutional,166029180810.0,,,1.2,201.87,0.536,0,NASDAQ,NASDAQ,,True
+VIGAX,Vanguard Growth Index Fd Admiral Shs,166012747637.0,,,1.2,201.85,0.527,0,NASDAQ,NASDAQ,,True
+SPGI,S&P Global Inc.,163980700000.0,Financial Services,Financial - Data & Stock Exchanges,1.176,523.9,3.64,370064,New York Stock Exchange,NYSE,US,False
+PFE,Pfizer Inc.,163965964500.0,Healthcare,Drug Manufacturers - General,0.617,28.935,1.6800000000000002,14406917,New York Stock Exchange,NYSE,US,False
+GS,"The Goldman Sachs Group, Inc.",163392267280.0,Financial Services,Financial - Capital Markets,1.35,517.3916,12.0,894904,New York Stock Exchange,NYSE,US,False
+HSBC,HSBC Holdings plc,160457354596.0,Financial Services,Banks - Diversified,0.524,44.1518,3.05,488046,New York Stock Exchange,NYSE,GB,False
+CATR.PA,Caterpillar Inc.,159920328384.0,Industrials,Agricultural - Machinery,1.178,327.0,4.78,152,Paris,EURONEXT,US,False
+ARM,Arm Holdings plc American Depositary Shares,158143200000.0,Technology,Semiconductors,3.92,150.9,0.0,2667764,NASDAQ,NASDAQ,GB,False
+CMCSA,Comcast Corporation,157284487900.0,Communication Services,Telecommunications Services,1.012,40.715,1.24,7055828,NASDAQ Global Select,NASDAQ,US,False
+LOW,"Lowe's Companies, Inc.",156703621620.0,Consumer Cyclical,Home Improvement,1.093,276.23,4.6,845305,New York Stock Exchange,NYSE,US,False
+T,AT&T Inc.,155346117696.0,Communication Services,Telecommunications Services,0.737,21.665399999999998,1.11,15394726,New York Stock Exchange,NYSE,US,False
+TBC,AT&T Inc. 5.625% Global Notes d,155236501386.0,Communication Services,Telecommunications Services,0.27570259999999996,24.91,1.757839999999999,30068,New York Stock Exchange,NYSE,US,False
+TBB,AT&T Inc. 5.35% GLB NTS 66,154944615285.0,Communication Services,Telecommunications Services,0.25385892,24.2401,1.6719,39920,New York Stock Exchange,NYSE,US,False
+UL,Unilever PLC,154461180494.0,Consumer Defensive,Household & Personal Products,0.219,62.2808,1.85,519523,New York Stock Exchange,NYSE,GB,False
+RICAX,American Funds Investment Company of America Class R-1,152865652733.0,Financial Services,Asset Management,0.92,61.27,0.316,0,NASDAQ,NASDAQ,,True
+CICAX,American Funds Invmt Co of Amer 529A,152865652717.0,,,0.92,61.76,0.7030000000000001,0,Nasdaq,NASDAQ,,True
+AICFX,American Funds Investment Co of America Cl F-1 Shs,152865652717.0,Financial Services,Asset Management,0.92,61.76,0.6880000000000001,0,NASDAQ,NASDAQ,,True
+AIVSX,American Funds Invmt Co of Amer A,152865652701.0,Financial Services,Asset Management,0.92,61.98,0.725,0,NASDAQ,NASDAQ,,True
+RICBX,American Funds Invmt Co of Amer R2,152865652699.0,Financial Services,Asset Management,0.92,61.36,0.308,0,Nasdaq,NASDAQ,,True
+AICCX,American Funds Investment Co of America C,152865652686.0,Financial Services,Asset Management,0.92,61.08,0.322,0,NASDAQ,NASDAQ,,True
+FFICX,American Funds Invmt Co of Amer F3,152865652679.0,,,0.92,61.95,0.887,0,Nasdaq,NASDAQ,,True
+HDB,HDFC Bank Limited,152399380350.0,Financial Services,Banks - Regional,0.833,63.45,0.7000000000000001,2230519,New York Stock Exchange,NYSE,IN,False
+AMAT,"Applied Materials, Inc.",152156124260.0,Technology,Semiconductors,1.54,184.565,1.6,2359246,NASDAQ Global Select,NASDAQ,US,False
+VGSLX,Vanguard Real Estate Index Fund Admiral Shares,152017190886.0,Real Estate,Real Estate - General,1.2,138.21,2.977999999999999,0,NASDAQ,NASDAQ,,True
+TTE,TotalEnergies SE,150142759715.0,Energy,Oil & Gas Integrated,0.737,65.0,3.43,549738,New York Stock Exchange,NYSE,FR,False
+FCNTX,Fidelity Contrafund Fund,149070348269.0,Financial Services,Asset Management,1.02,21.62,0.081,0,NASDAQ,NASDAQ,US,True
+BLK,"BlackRock, Inc.",148128000000.0,Financial Services,Asset Management,1.318,1000.0,20.4,144374,New York Stock Exchange,NYSE,US,False
+INCO.BR,Intel Corporation,147040680000.0,Technology,Semiconductors,0.886929,35.11,0.5,3,Brussels,EURONEXT,US,False
+SHOP.TO,Shopify Inc.,146959881476.0,Technology,Software - Application,2.3609999999999998,113.77,0.0,539141,Toronto Stock Exchange,TSX,CA,False
+PGR,The Progressive Corporation,146949706970.0,Financial Services,Insurance - Property & Casualty,0.35100000000000003,250.91,0.4,872876,New York Stock Exchange,NYSE,US,False
+AWSHX,American Funds Washington Mutual Investors Fund Class A,146614960067.0,Financial Services,Asset Management,0.8200000000000001,65.28,0.9580000000000001,0,NASDAQ,NASDAQ,,True
+RWMFX,American Funds Washington Mutual Investors Fund Class R-5,146525126644.0,Financial Services,Asset Management,0.8200000000000001,65.24,1.108,0,NASDAQ,NASDAQ,,True
+LMT,Lockheed Martin Corporation,146314866510.0,Industrials,Aerospace & Defense,0.47000000000000003,613.845,13.2,454781,New York Stock Exchange,NYSE,US,False
+UNP,Union Pacific Corporation,146183152080.0,Industrials,Railroads,1.05,239.96,5.36,680980,New York Stock Exchange,NYSE,US,False
+BKNG,Booking Holdings Inc.,146166384000.0,Consumer Cyclical,Travel Services,1.4020000000000001,4360.0,35.0,63229,NASDAQ Global Select,NASDAQ,US,False
+CWMAX,American Funds Washington Mutual Investors Fund Class 529-A,146120851455.0,Financial Services,Asset Management,0.8200000000000001,65.06,0.7370000000000001,0,NASDAQ,NASDAQ,,True
+NPFFX,"New Perspective Fund, Class F-1 Shares",146073780216.0,Financial Services,Asset Management,1.1,65.73,0.493,0,NASDAQ,NASDAQ,,True
+ANWPX,American Funds New Perspective Fund Class A,146073780210.0,Financial Services,Asset Management,1.1,66.27,0.523,0,NASDAQ,NASDAQ,US,True
+RNPGX,American Funds New Perspective Fund Class R-6,146073780180.0,Financial Services,Asset Management,1.1,66.47,0.7010000000000001,0,NASDAQ,NASDAQ,US,True
+FNPFX,American Funds New Perspective Fund,146073780160.0,Financial Services,Asset Management,1.1,66.43,0.7010000000000001,0,NASDAQ,NASDAQ,,True
+WSHFX,Washington Mutual Invs Fund Cl F-1 Shs,145806426098.0,Financial Services,Asset Management,0.8200000000000001,64.92,0.919999999999999,0,NASDAQ,NASDAQ,,True
+WSHCX,American Funds Washington Mutual Investors Fund Class C,143852453862.0,Financial Services,Asset Management,0.8200000000000001,64.05,0.514,0,NASDAQ,NASDAQ,,True
+HON,Honeywell International Inc.,143846904465.0,Industrials,Conglomerates,1.027,221.415,4.52,1589441,NASDAQ Global Select,NASDAQ,US,False
+RWMBX,American Funds Washington Mutual Investors Fund,143448178667.0,Financial Services,Asset Management,0.8200000000000001,63.87,0.502,0,NASDAQ,NASDAQ,,True
+UNA.AS,Unilever PLC,142654029845.0,Consumer Defensive,Household & Personal Products,0.219,57.52,1.72,774532,Amsterdam,EURONEXT,GB,False
+BHP,BHP Group Limited,142414433302.0,Basic Materials,Industrial Materials,0.839,56.15,2.92,1033769,New York Stock Exchange,NYSE,AU,False
+RFNCX,American Funds Fundamental Invs R3,141875019756.0,,,0.97,86.87,0.581,0,Nasdaq,NASDAQ,,True
+FUNFX,American Funds Fundamental Invs F3,141875019752.0,,,0.97,87.12,0.843,0,Nasdaq,NASDAQ,,True
+AFIFX,"Fundamental Investors, Class F01 Shares",141875019752.0,Financial Services,Asset Management,0.97,87.12,0.792,0,NASDAQ,NASDAQ,,True
+ANCFX,American Funds Fundamental Investors,141875019749.0,Financial Services,Asset Management,0.97,87.17,0.8380000000000001,0,NASDAQ,NASDAQ,,True
+CFNAX,American Funds Fundamental Investors Class 529-A,141875019742.0,Financial Services,Asset Management,0.97,86.97,0.647,0,NASDAQ,NASDAQ,,True
+SYK,Stryker Corporation,140685268500.0,Healthcare,Medical - Devices,0.918,369.18,3.2,435645,New York Stock Exchange,NYSE,US,False
+RERGX,American Funds EuroPacific Growth Fund Class R-6,140248858622.0,Financial Services,Asset Management,1.06,59.74,1.1520000000000001,0,NASDAQ,NASDAQ,US,True
+AEPGX,American Funds EuroPacific Growth Fund Class A,140248858617.0,Financial Services,Asset Management,1.06,59.61,0.9410000000000001,0,NASDAQ,NASDAQ,,True
+RERHX,American Funds Europacific Growth R5E,140248858605.0,Financial Services,Asset Management,1.06,59.18,1.063,0,Nasdaq,NASDAQ,,True
+AEGFX,American Funds EuroPacific Growth Cl F-1 Shs,140248858592.0,Financial Services,Asset Management,1.06,59.31,0.921,0,NASDAQ,NASDAQ,,True
+AEPFX,American Funds EuroPacific Growth Fund,140248858591.0,Financial Services,Asset Management,1.06,59.53,1.093,0,NASDAQ,NASDAQ,US,True
+TTE.PA,TotalEnergies SE,138454723343.0,Energy,Oil & Gas Integrated,0.737,59.94,3.16,2818310,Paris,EURONEXT,FR,False
+ETN,Eaton Corporation plc,137881935000.0,Industrials,Industrial - Machinery,1.01,346.35,3.76,489593,New York Stock Exchange,NYSE,IE,False
+TD.TO,The Toronto-Dominion Bank,137017881000.0,Financial Services,Banks - Diversified,0.8240000000000001,78.39,4.08,3438619,Toronto Stock Exchange,TSX,CA,False
+SU.PA,Schneider Electric S.E.,136517904368.0,Industrials,Industrial - Machinery,0.964,243.3,3.5,495115,Paris,EURONEXT,FR,False
+TD-PFI.TO,The Toronto-Dominion Bank,135899002370.0,Financial Services,Banks - Diversified,0.8240000000000001,25.88,1.57524,400,Toronto Stock Exchange,TSX,CA,False
+TD-PFL.TO,The Toronto-Dominion Bank,135459323988.0,Financial Services,Banks - Diversified,0.8280000000000001,24.99,1.3,1407,Toronto Stock Exchange,TSX,CA,False
+BOEI.BR,The Boeing Company,135117688832.0,Industrials,Aerospace & Defense,1.428423,224.0,13.695,22,Brussels,EURONEXT,US,False
+SNY,Sanofi,134922815400.0,Healthcare,Drug Manufacturers - General,0.423,53.815,2.04,973144,NASDAQ Global Select,NASDAQ,FR,False
+IBMA.BR,International Business Machines Corporation,132095872320.0,Technology,Information Technology Services,0.8499300000000001,145.0,6.64,45,Brussels,EURONEXT,US,False
+TJX,"The TJX Companies, Inc.",130331017850.0,Consumer Cyclical,Apparel - Retail,0.888,115.555,1.5,2933188,New York Stock Exchange,NYSE,US,False
+BSX,Boston Scientific Corporation,130165765700.0,Healthcare,Medical - Devices,0.797,88.39,0.0,2985887,New York Stock Exchange,NYSE,US,False
+BX,Blackstone Inc.,129572730375.0,Financial Services,Asset Management,1.502,170.995,3.39,1845864,New York Stock Exchange,NYSE,US,False
+CWGIX,American Funds Capital World Growth and Income Fund Class A,129358020592.0,Financial Services,Asset Management - Income,0.99,69.45,1.109999999999999,0,NASDAQ,NASDAQ,US,True
+RWICX,American Funds Capital World Growth and Income Fund Class R-3,129358020591.0,Financial Services,Asset Management - Income,0.98,68.87,0.915999999999999,0,NASDAQ,NASDAQ,,True
+CWIAX,American Funds Capital World Growth and Income Fund Class 529-A,129358020564.0,Financial Services,Asset Management - Income,0.99,69.14,1.089,0,NASDAQ,NASDAQ,,True
+CWGFX,American Funds Capital World Growth & Income Fund Class F-1 Shs,129358020549.0,Financial Services,Asset Management - Income,0.99,69.26,1.069,0,NASDAQ,NASDAQ,,True
+AMECX,American Funds The Income Fund of America Class A,129161650174.0,Financial Services,Asset Management - Income,0.89,26.21,0.857,0,NASDAQ,NASDAQ,US,True
+IFAFX,"The Income Fund of America, Class F-1 Shares",129161650169.0,Financial Services,Asset Management - Income,0.89,26.12,0.8400000000000001,0,NASDAQ,NASDAQ,,True
+RIDGX,American Funds The Income Fund of America,129161650159.0,Financial Services,Asset Management - Income,0.89,26.22,0.931999999999999,0,NASDAQ,NASDAQ,,True
+FIFAX,American Funds Income Fund of Amer F3,129161650159.0,,,0.89,26.19,0.931999999999999,0,Nasdaq,NASDAQ,,True
+BUD,Anheuser-Busch InBev SA/NV,129074235079.0,Consumer Defensive,Beverages - Alcoholic,0.982,65.13,0.87,376575,New York Stock Exchange,NYSE,BE,False
+ANET,"Arista Networks, Inc.",128034625915.0,Technology,Computer Hardware,1.075,407.555,0.0,566501,New York Stock Exchange,NYSE,US,False
+ENB-PA.TO,Enbridge Inc,127308514107.0,,,0.0,23.5,1.375,950,Toronto Stock Exchange,TSX,US,False
+SCHW,The Charles Schwab Corporation,126206994600.0,Financial Services,Financial - Capital Markets,0.963,70.965,1.0,2189622,New York Stock Exchange,NYSE,US,False
+ENB-PN.TO,Enbridge Inc,126053224730.0,,,0.0,22.01,1.57338,10000,Toronto Stock Exchange,TSX,US,False
+ENB-PT.TO,Enbridge Inc,125739089215.0,,,0.0,20.7,1.15831,6300,Toronto Stock Exchange,TSX,US,False
+SAN.PA,Sanofi,125144891400.0,Healthcare,Drug Manufacturers - General,0.423,99.83,3.76,1059995,Paris,EURONEXT,FR,False
+ENB.TO,Enbridge Inc.,125049230600.0,Energy,Oil & Gas Midstream,0.904,57.43,3.66,1178930,Toronto Stock Exchange,TSX,CA,False
+IEFA,iShares Core MSCI EAFE ETF,124858599329.0,Financial Services,Asset Management,1.08,75.435,2.27745,3618455,New York Stock Exchange Arca,AMEX,US,False
+VRTX,Vertex Pharmaceuticals Incorporated,124740721927.0,Healthcare,Biotechnology,0.402,483.3001,0.0,344126,NASDAQ Global Select,NASDAQ,US,False
+KKR,KKR & Co. Inc.,124658696800.0,Financial Services,Asset Management,1.616,140.47,0.7000000000000001,1555482,New York Stock Exchange,NYSE,US,False
+MUFG,"Mitsubishi UFJ Financial Group, Inc.",124570715278.0,Financial Services,Banks - Diversified,0.5750000000000001,10.6861,0.27,740407,New York Stock Exchange,NYSE,JP,False
+PANW,"Palo Alto Networks, Inc.",122700732000.0,Technology,Software - Infrastructure,1.127,376.845,0.0,1226241,NASDAQ Global Select,NASDAQ,US,False
+COP,ConocoPhillips,122279625000.0,Energy,Oil & Gas Exploration & Production,1.223,105.3,3.12,1935083,New York Stock Exchange,NYSE,US,False
+NKE,"NIKE, Inc.",121573837617.0,Consumer Cyclical,Apparel - Footwear & Accessories,1.017,81.67,1.48,3595677,New York Stock Exchange,NYSE,US,False
+JJEB,iPath B Bloomberg Engy Ttl Ret ETN,121175089106.0,,,0.0,51.74,0.0,2700,New York Stock Exchange Arca,AMEX,US,False
+CB,Chubb Limited,120836365000.0,Financial Services,Insurance - Property & Casualty,0.674,299.0,3.64,512025,New York Stock Exchange,NYSE,CH,False
+MU,"Micron Technology, Inc.",120409164000.0,Technology,Semiconductors,1.179,108.6,0.46,9311635,NASDAQ Global Select,NASDAQ,US,False
+ADP,"Automatic Data Processing, Inc.",118652896440.0,Industrials,Staffing & Employment Services,0.801,290.94,5.6,315759,NASDAQ Global Select,NASDAQ,US,False
+AGG,iShares Core U.S. Aggregate Bond ETF,118346048187.0,Financial Services,Asset Management,1.0,98.935,3.52279,3262835,New York Stock Exchange Arca,AMEX,US,False
+C,Citigroup Inc.,117147122000.0,Financial Services,Banks - Diversified,1.434,61.94,2.15,5619475,New York Stock Exchange,NYSE,US,False
+MDT,Medtronic plc,117040037400.0,Healthcare,Medical - Devices,0.854,91.26,2.8,2372801,New York Stock Exchange,NYSE,IE,False
+BN.TO,Brookfield Corporation,116003207400.0,Financial Services,Asset Management,1.746,76.94,0.43,301316,Toronto Stock Exchange,TSX,CA,False
+DOXGX,Dodge & Cox Stock X,115760373723.0,,,0.86,279.44,2.226,0,Nasdaq,NASDAQ,,True
+ANTM,Elevance Health Inc.,114592481640.0,Healthcare,Medical - Healthcare Plans,0.973684,482.58,29.00299999999999,1274535,New York Stock Exchange,NYSE,US,False
+ABI.BR,Anheuser-Busch InBev SA/NV,114549936343.0,Consumer Defensive,Beverages - Alcoholic,0.982,60.18,0.8200000000000001,868367,Brussels,EURONEXT,BE,False
+VWELX,Vanguard Wellington Fund,114067628004.0,Financial Services,Asset Management,0.9500000000000001,46.71,0.75,0,NASDAQ,NASDAQ,US,True
+VWENX,Vanguard Wellington Fund Admiral Shares,114067628002.0,Financial Services,Asset Management,0.9500000000000001,80.65,1.341,0,NASDAQ,NASDAQ,US,True
+FISV,"Fiserv, Inc.",113584785210.0,Technology,Information Technology Services,0.854327,114.23,0.0,0,NASDAQ Global Market,NASDAQ,US,False
+FI,"Fiserv, Inc.",113354495250.0,Technology,Information Technology Services,0.933,196.89,0.0,1522270,New York Stock Exchange,NYSE,US,False
+UPS,"United Parcel Service, Inc.",112862680519.0,Industrials,Integrated Freight & Logistics,0.979,131.76,6.52,2317201,New York Stock Exchange,NYSE,US,False
+COWB,iPath B Bloomberg Lvstck Ttl Ret ETN,112228638706.0,,,0.0,47.92,0.0,470,New York Stock Exchange Arca,AMEX,US,False
+JJTB,iPath B Bloomberg Tin Ttl Ret ETN,112134971348.0,,,0.0,47.88,0.0,0,New York Stock Exchange Arca,AMEX,US,False
+VSMAX,Vanguard Small Cap Index Fd Admiral Shs,111952789457.0,,,1.07,116.17,0.922,0,NASDAQ,NASDAQ,,True
+VSCIX,Vanguard Small-Cap Index Fund Institutional Shares,111943163862.0,Financial Services,Asset Management,1.07,116.16,1.2534,0,NASDAQ,NASDAQ,US,True
+BALB,iPath B Bloomberg Cotton Ttl Ret ETN,111736823769.0,,,0.0,47.71,0.0,2220,New York Stock Exchange Arca,AMEX,DE,False
+DE,Deere & Company,111617856000.0,Industrials,Agricultural - Machinery,0.932,407.96,5.88,360683,New York Stock Exchange,NYSE,US,False
+ADI,"Analog Devices, Inc.",111348485110.0,Technology,Semiconductors,1.071,224.27,3.68,979755,NASDAQ Global Select,NASDAQ,US,False
+JJGB,iPath B Bloomberg Grains Ttl Ret ETN,111151325173.0,,,0.0,47.46,0.0,2778,New York Stock Exchange Arca,AMEX,US,False
+SONY,Sony Group Corporation,110989365803.0,Technology,Consumer Electronics,0.8200000000000001,18.06,0.11,979980,New York Stock Exchange,NYSE,JP,False
+CIRAX,American Funds Capital Income Builder Class 529-A,110615601152.0,Financial Services,Asset Management - Income,0.9400000000000001,73.99,2.246,0,NASDAQ,NASDAQ,,True
+CIBFX,Capital  Income Builder Cl F-1 Shs,110615601103.0,Financial Services,Asset Management - Income,0.9400000000000001,74.02,2.224,0,NASDAQ,NASDAQ,,True
+CAIBX,American Funds Capital Income Builder Class A,110615601103.0,Financial Services,Asset Management - Income,0.9400000000000001,74.02,2.27,0,NASDAQ,NASDAQ,,True
+RIRGX,American Funds Capital Income Builder,110615601080.0,Financial Services,Asset Management - Income,0.9400000000000001,74.0,2.49,0,NASDAQ,NASDAQ,,True
+RIO,Rio Tinto Group,109907154664.0,Basic Materials,Industrial Materials,0.594,64.785,4.35,1183175,New York Stock Exchange,NYSE,GB,False
+AIR.PA,Airbus SE,109892494776.0,Industrials,Aerospace & Defense,1.592,138.84,1.8,901298,Paris,EURONEXT,NL,False
+MMC,"Marsh & McLennan Companies, Inc.",109521437540.0,Financial Services,Insurance - Brokers,0.935,222.715,3.26,709106,New York Stock Exchange,NYSE,US,False
+PLD,"Prologis, Inc.",109359348210.0,Real Estate,REIT - Industrial,1.081,118.11,3.84,1576947,New York Stock Exchange,NYSE,US,False
+SBUX,Starbucks Corporation,109206484000.0,Consumer Cyclical,Restaurants,0.961,96.37,2.2800000000000002,2107245,NASDAQ Global Select,NASDAQ,US,False
+IWF,iShares Russell 1000 Growth ETF,108561881483.0,Financial Services,Asset Management,1.1400000000000001,383.34,2.01661,405687,New York Stock Exchange Arca,AMEX,US,False
+SIA.BR,Siemens Aktiengesellschaft,108303572695.0,Industrials,Industrial - Machinery,1.147522,136.72,4.25,400,Brussels,EURONEXT,DE,False
+GILD,"Gilead Sciences, Inc.",107928183100.0,Healthcare,Drug Manufacturers - General,0.199,86.69,3.08,1976978,NASDAQ Global Select,NASDAQ,US,False
+JJAB,iPath B Bloomberg Agltr Ttl Ret ETN,107450966010.0,,,0.0,45.88,0.0,505,New York Stock Exchange Arca,AMEX,US,False
+BJJN,iPath B Bloomberg Nickel Ttl Ret ETN,107287027696.0,,,0.0,45.81,0.0,510,New York Stock Exchange Arca,AMEX,US,False
+HCA,"HCA Healthcare, Inc.",106894250800.0,Healthcare,Medical - Care Facilities,1.677,414.2,2.64,441566,New York Stock Exchange,NYSE,US,False
+EP-PC,El Paso Energy Capital Trust I PFD CV TR SECS,106874520000.0,Energy,Oil & Gas Midstream,0.0,48.12,1.1875,567,New York Stock Exchange,NYSE,,True
+BMY,Bristol-Myers Squibb Company,106337130000.0,Healthcare,Drug Manufacturers - General,0.46,52.45,2.4,2660554,New York Stock Exchange,NYSE,US,False
+SHOP,Shopify Inc.,106218783984.0,Technology,Software - Application,2.3609999999999998,82.23,0.0,2980329,New York Stock Exchange,NYSE,CA,False
+MELI,"MercadoLibre, Inc.",106008263400.0,Consumer Cyclical,Specialty Retail,1.6059999999999999,2091.0,0.0,107099,NASDAQ Global Select,NASDAQ,UY,False
+REGN,"Regeneron Pharmaceuticals, Inc.",105865947990.0,Healthcare,Biotechnology,0.115,976.47,0.0,342417,NASDAQ Global Select,NASDAQ,US,False
+CNQ.TO,Canadian Natural Resources Limited,104558783400.0,Energy,Oil & Gas Exploration & Production,1.8860000000000001,49.26,2.14,1379918,Toronto Stock Exchange,TSX,CA,False
+TRI.TO,Thomson Reuters Corporation,104337913130.0,Industrials,Specialty Business Services,0.395,232.01,2.93,58010,Toronto Stock Exchange,TSX,CA,False
+VTTHX,Vanguard Target Retirement 2035 Fund,104179458027.0,Financial Services,Asset Management,1.08,25.16,0.548,0,NASDAQ,NASDAQ,,True
+IBN,ICICI Bank Limited,104050579150.0,Financial Services,Banks - Regional,0.841,29.53,0.24,1652448,New York Stock Exchange,NYSE,IN,False
+CDI.PA,Christian Dior SE,103736361800.0,Consumer Cyclical,Luxury Goods,1.038,575.0,13.0,5824,Paris,EURONEXT,FR,False
+UBS,UBS Group AG,103509066209.0,Financial Services,Banks - Diversified,1.015,32.325,0.35000000000000003,539382,New York Stock Exchange,NYSE,CH,False
+AMT,American Tower Corporation,103173742980.0,Real Estate,REIT - Specialty,0.8320000000000001,220.89,6.48,599752,New York Stock Exchange,NYSE,US,False
+JJSB,iPath B Bloomberg Softs Ttl Ret ETN,102696706007.0,,,0.0,43.85,0.0,100,New York Stock Exchange Arca,AMEX,US,False
+VDADX,Vanguard Dividend Appreciation Index Fund Admiral Shs,102115614668.0,Financial Services,Asset Management,0.85,54.68,0.487,0,NASDAQ,NASDAQ,,True
+CP.TO,Canadian Pacific Railway Limited,102083875000.0,Industrials,Railroads,0.786,109.4,0.76,287139,Toronto Stock Exchange,TSX,CA,False
+JJPB,iPath B Bloomberg Prec Mtls Ttl Ret ETN,101970690014.0,,,0.0,43.54,0.0,31,New York Stock Exchange Arca,AMEX,US,False
+SGGB,iPath B Bloomberg Sugar Ttl Ret ETN,101877006308.0,,,0.0,43.5,0.0,5879,New York Stock Exchange Arca,AMEX,US,False
+SO,The Southern Company,101822374250.0,Utilities,Regulated Electric,0.51,93.025,2.88,1574518,New York Stock Exchange,NYSE,US,False
+SOJD,Southern Company (The) Series 2,101466423806.0,Utilities,Regulated Electric,0.62447757,23.405,1.23752,64664,New York Stock Exchange,NYSE,US,False
+VIG,Vanguard Dividend Appreciation Index Fund,101421295287.0,Financial Services,Asset Management,0.85,200.12,3.4191000000000003,440061,New York Stock Exchange Arca,AMEX,US,True
+FSKAX,Fidelity Total Market Index Fund,100705296340.0,Financial Services,Asset Management,1.02,161.81,1.9,0,NASDAQ,NASDAQ,US,True
+SOJC,The Southern Company JR 2017B NT 77,100391658161.0,Utilities,Regulated Electric,0.5251929,24.41,1.31249,12007,New York Stock Exchange,NYSE,US,False
+JJMB,iPath B Bloomberg Indl Mtls Ttl Ret ETN,100261027834.0,,,0.0,42.81,0.0,62,New York Stock Exchange Arca,AMEX,US,False
+SOJE,Southern Company (The) Series 2,100162097741.0,Utilities,Regulated Electric,0.60440594,21.14,1.3125,40442,New York Stock Exchange,NYSE,US,False
+JJCB,iPath B Bloomberg Copper Ttl Ret ETN,99638288369.0,,,0.0,42.5441,0.0,214,New York Stock Exchange Arca,AMEX,US,False
+DTEL.BR,Deutsche Telekom AG,99454003200.0,Communication Services,Telecommunications Services,0.535285,20.0,0.7000000000000001,3420,Brussels,EURONEXT,DE,False
+EL.PA,EssilorLuxottica Société anonyme,99131884902.0,Healthcare,Medical - Instruments & Supplies,0.919,217.6,3.95,522831,Paris,EURONEXT,FR,False
+AI.PA,L'Air Liquide S.A.,99071683392.0,Basic Materials,Chemicals - Specialty,0.63,171.88,2.91,511776,Paris,EURONEXT,FR,False
+VTHRX,Vanguard Target Retirement 2030 Fund,99058384883.0,Financial Services,Asset Management,1.01,39.92,0.92,0,NASDAQ,NASDAQ,,True
+TD,The Toronto-Dominion Bank,99003503060.0,Financial Services,Banks - Diversified,0.8240000000000001,56.6414,2.9699999999999998,2329520,New York Stock Exchange,NYSE,CA,False
+RY-PT,Royal Bank of Canada,98818866872.0,Financial Services,Banks - Diversified,0.779847,25.008,1.69,102,New York Stock Exchange,NYSE,CA,False
+TBCIX,T. Rowe Price Blue Chip Growth Fund I Class,98666577870.0,Financial Services,Asset Management,1.16,196.77,0.0,0,NASDAQ,NASDAQ,US,True
+ELV,Elevance Health Inc.,98424642355.0,Healthcare,Medical - Healthcare Plans,0.8280000000000001,424.385,6.52,1043228,New York Stock Exchange,NYSE,US,False
+VTABX,Vanguard Total International Bond Index Fd Admiral Shs,98308980735.0,Financial Services,Asset Management - Bonds,0.73,20.09,0.9415000000000001,0,NASDAQ,NASDAQ,,True
+VTIFX,Vanguard Total International Bond Index Fund Institutional Shares,98308980707.0,Financial Services,Asset Management - Bonds,0.73,30.15,1.373999999999999,0,NASDAQ,NASDAQ,,True
+CNR.TO,Canadian National Railway Company,98302720000.0,Industrials,Railroads,0.649,156.16,3.38,352238,Toronto Stock Exchange,TSX,CA,False
+BA,The Boeing Company,98125580617.0,Industrials,Aerospace & Defense,1.569,159.2516,0.0,10488168,New York Stock Exchange,NYSE,US,False
+TRBCX,T. Rowe Price Blue Chip Growth Fund,98039791466.0,Financial Services,Asset Management,1.16,195.52,0.0,0,NASDAQ,NASDAQ,US,True
+JLGMX,JPMorgan Large Cap Growth Fund Class R6,98005909468.0,Financial Services,Asset Management,1.06,82.61,0.197,0,NASDAQ,NASDAQ,US,True
+OLGAX,JPMorgan Large Cap Growth A,98005909456.0,,,1.06,76.3,0.0,0,Nasdaq,NASDAQ,,True
+JLGRX,JPMorgan Large Cap Growth Fund,98005909437.0,Financial Services,Asset Management,1.06,81.51,0.14100000000000001,0,NASDAQ,NASDAQ,,True
+SEEGX,JPMorgan Large Cap Growth Fund I Class,98005909428.0,Financial Services,Asset Management,1.06,78.56,0.074,0,NASDAQ,NASDAQ,US,True
+BNDX,Vanguard Total International Bond Index Fund,97985595910.0,Financial Services,Asset Management - Bonds,0.73,49.995,2.3671,1580812,NASDAQ Global Market,NASDAQ,US,True
+BJO,iPath B Bloomberg Coffee Ttl Ret ETN,97848762340.0,,,0.0,41.78,0.0,22287,New York Stock Exchange Arca,AMEX,SE,False
+DODGX,Dodge & Cox Funds - Dodge & Cox Stock Fund,97569275774.0,Financial Services,Asset Management,0.86,279.42,2.102999999999999,0,NASDAQ,NASDAQ,US,True
+PGMB,iPath B Bloomberg Platinum Ttl Ret ETN,97067704285.0,,,0.0,41.4465,0.0,186,New York Stock Exchange Arca,AMEX,US,False
+SHW,The Sherwin-Williams Company,96680401080.0,Basic Materials,Chemicals - Specialty,1.169,383.26,2.86,617776,New York Stock Exchange,NYSE,US,False
+INTC,Intel Corporation,96405413200.0,Technology,Semiconductors,1.023,22.5457,0.5,20140806,NASDAQ Global Select,NASDAQ,US,False
+ICE,"Intercontinental Exchange, Inc.",95528616670.0,Financial Services,Financial - Data & Stock Exchanges,1.09,166.385,1.8,1072259,New York Stock Exchange,NYSE,US,False
+VUG,Vanguard Growth Index Fund,95092389552.0,Financial Services,Asset Management,1.2,392.835,1.9629,673188,New York Stock Exchange Arca,AMEX,US,True
+PABGX,T. Rowe Price Blue Chip Growth Fund Advisor Class,94850695148.0,Financial Services,Asset Management,1.16,189.16,0.0,0,NASDAQ,NASDAQ,US,True
+MDLZ,"Mondelez International, Inc.",94454418000.0,Consumer Defensive,Food Confectioners,0.549,70.71,1.88,2194699,NASDAQ Global Select,NASDAQ,US,False
+LRCX,Lam Research Corporation,94201274800.0,Technology,Semiconductors,1.4809999999999999,72.68,0.92,6493338,NASDAQ Global Select,NASDAQ,US,False
+BMO.TO,Bank of Montreal,93299216830.0,Financial Services,Banks - Diversified,1.158,127.91,6.2,644539,Toronto Stock Exchange,TSX,CA,False
+VFORX,Vanguard Target Retirement 2040 Fund,93114802157.0,Financial Services,Asset Management,1.1400000000000001,45.14,0.936,0,NASDAQ,NASDAQ,,True
+CSU.TO,Constellation Software Inc.,93077306300.0,Technology,Software - Application,0.805,4392.2,5.48,8839,Toronto Stock Exchange,TSX,CA,False
+DUKB,Duke Energy Corporation 5.625% ,92959478210.0,Utilities,Regulated Electric,0.0,25.1673,1.40624,12538,New York Stock Exchange,NYSE,US,False
+DUK,Duke Energy Corporation,92818680400.0,Utilities,Regulated Electric,0.456,120.2,4.18,1125297,New York Stock Exchange,NYSE,US,False
+CFAAX,American Funds Bond Fund of Amer 529A,92470222842.0,,,0.99,11.43,0.389999999999999,0,Nasdaq,NASDAQ,,True
+BFAFX,"The Bond Fund of America, Class F-1 Shares",92470222842.0,Financial Services,Asset Management - Bonds,0.99,11.43,0.388999999999999,0,NASDAQ,NASDAQ,,True
+INFY,Infosys Limited,91949361728.0,Technology,Information Technology Services,0.5690000000000001,22.145,0.55,5521367,New York Stock Exchange,NYSE,IN,False
+DELL,Dell Technologies Inc.,91663064815.0,Technology,Computer Hardware,0.9590000000000001,125.825,1.78,2366915,New York Stock Exchange,NYSE,US,False
+DGE.PA,Diageo plc,91576000480.0,Consumer Defensive,Beverages - Wineries & Distilleries,0.35512499999999997,40.0,0.8122,1055,Paris,EURONEXT,GB,False
+NGT.TO,Newmont Corporation,91438696700.0,Basic Materials,Gold,0.513,79.69,1.35,90974,Toronto Stock Exchange,TSX,US,False
+IJH,iShares Core S&P Mid-Cap ETF,91412363889.0,Financial Services,Asset Management,1.05,63.185,0.80161,3685981,New York Stock Exchange Arca,AMEX,US,False
+PLTR,Palantir Technologies Inc.,91305464168.0,Technology,Software - Infrastructure,2.7199999999999998,42.6199,0.0,23430431,New York Stock Exchange,NYSE,US,False
+VGT,Vanguard Information Technology Index Fund,91172152590.0,Financial Services,Asset Management,1.26,604.78,3.7331000000000003,259592,New York Stock Exchange Arca,AMEX,US,True
+VTIVX,Vanguard Target Retirement 2045 Fund,91013119998.0,Financial Services,Asset Management,1.2,30.93,0.608,0,NASDAQ,NASDAQ,,True
+VITAX,Vanguard Information Technology Index Fund Admiral Shs,90973159313.0,Financial Services,Asset Management,1.26,308.99,0.798,0,NASDAQ,NASDAQ,,True
+TT,Trane Technologies plc,90565884400.0,Industrials,Construction,1.214,401.32,3.36,284792,New York Stock Exchange,NYSE,IE,False
+ENB,Enbridge Inc.,90362930000.0,Energy,Oil & Gas Midstream,0.904,41.5,2.71,1690969,New York Stock Exchange,NYSE,CA,False
+KLAC,KLA Corporation,90104339618.0,Technology,Semiconductors,1.271,672.5409,5.8,332287,NASDAQ Global Select,NASDAQ,US,False
+BNS.TO,The Bank of Nova Scotia,90072150350.0,Financial Services,Banks - Diversified,0.974,73.255,4.24,691755,Toronto Stock Exchange,TSX,CA,False
+CI,Cigna Corporation,89760388410.0,Healthcare,Medical - Healthcare Plans,0.506,321.09,5.6,2816460,New York Stock Exchange,NYSE,US,False
+SAF.PA,Safran SA,89750949593.0,Industrials,Aerospace & Defense,1.316,213.5,2.2,440315,Paris,EURONEXT,FR,False
+AMPFX,American Funds AMCAP Fund,89594806244.0,Financial Services,Asset Management,1.06,44.66,0.108,0,NASDAQ,NASDAQ,,True
+AMCPX,American Funds AMCAP A,89594806230.0,Financial Services,Asset Management,1.06,45.23,0.123,0,Nasdaq,NASDAQ,,True
+RAFFX,American Funds AMCAP R5,89594806229.0,Financial Services,Asset Management,1.06,46.46,0.20800000000000002,0,Nasdaq,NASDAQ,,True
+RRBGX,T. Rowe Price Blue Chip Growth Fund Class R,88898699153.0,Financial Services,Asset Management,1.16,177.29,0.0,0,NASDAQ,NASDAQ,US,True
+DODIX,Dodge & Cox Income Fund - Class I,88582946812.0,Financial Services,Asset Management - Income,0.99,12.76,0.263,0,NASDAQ,NASDAQ,US,True
+RELX,RELX PLC,88556494421.0,Communication Services,Publishing,0.47800000000000004,47.6662,0.77,279310,New York Stock Exchange,NYSE,GB,False
+MCO,Moody's Corporation,88440507000.0,Financial Services,Financial - Data & Stock Exchanges,1.287,485.67,3.4,402786,New York Stock Exchange,NYSE,US,False
+ABNB,"Airbnb, Inc.",88005072676.0,Consumer Cyclical,Travel Services,1.172,137.16,0.0,1590502,NASDAQ Global Select,NASDAQ,US,False
+SCCO,Southern Copper Corporation,87571330320.0,Basic Materials,Copper,1.181,111.48,2.4,292466,New York Stock Exchange,NYSE,US,False
+PBR-A,Petróleo Brasileiro S.A. - Petrobras,86781459900.0,Energy,Oil & Gas Integrated,0.935,12.7114,1.88,3487951,New York Stock Exchange,NYSE,BR,False
+VIEIX,Vanguard Extended Market Index Fund Institutional Shares,86620045231.0,Financial Services,Asset Management,1.11,142.47,0.9380000000000001,0,NASDAQ,NASDAQ,US,True
+VEXAX,Vanguard Extended Market Index Fd Admiral Shs,86620045231.0,,,1.11,142.47,0.931999999999999,0,NASDAQ,NASDAQ,,True
+PBR,Petróleo Brasileiro S.A. - Petrobras,86437057975.0,Energy,Oil & Gas Integrated,0.935,13.93,1.88,8850677,New York Stock Exchange,NYSE,BR,False
+RACE,Ferrari N.V.,86144208386.0,Consumer Cyclical,Auto - Manufacturers,0.994,479.225,2.62,93513,New York Stock Exchange,NYSE,IT,False
+ZTS,Zoetis Inc.,86061567960.0,Healthcare,Drug Manufacturers - Specialty & Generic,0.886,189.96,1.73,463548,New York Stock Exchange,NYSE,US,False
+PRUFX,T. Rowe Price Growth Stock Fund I Class,85787172797.0,Financial Services,Asset Management,1.1400000000000001,108.63,0.0,0,NASDAQ,NASDAQ,US,True
+PRGFX,T. Rowe Price Growth Stock Fund,85439700990.0,Financial Services,Asset Management,1.1400000000000001,108.19,0.0,0,NASDAQ,NASDAQ,US,True
+CTAS,Cintas Corporation,85410662220.0,Industrials,Specialty Business Services,1.311,211.78,1.56,305937,NASDAQ Global Select,NASDAQ,US,False
+CEG,Constellation Energy Corporation,84976389816.0,Utilities,Renewable Utilities,0.768,271.76,1.4100000000000001,1007780,NASDAQ Global Select,NASDAQ,US,False
+WM,"Waste Management, Inc.",84777793750.0,Industrials,Waste Management,0.751,211.25,3.0,381623,New York Stock Exchange,NYSE,US,False
+VEMAX,Vanguard Emerging Markets Stock Index Fund Admiral Shares,84774027257.0,Financial Services,Asset Management,0.86,39.75,0.877,0,NASDAQ,NASDAQ,US,True
+GD,General Dynamics Corporation,84667345140.0,Industrials,Aerospace & Defense,0.606,308.13,5.68,439002,New York Stock Exchange,NYSE,US,False
+MO,"Altria Group, Inc.",83937322278.0,Consumer Defensive,Tobacco,0.684,49.1949,4.08,2312866,New York Stock Exchange,NYSE,US,False
+EQIX,"Equinix, Inc.",83898149250.0,Real Estate,REIT - Specialty,0.7030000000000001,883.65,17.04,113378,NASDAQ Global Select,NASDAQ,US,False
+BN,Brookfield Corporation,83843753100.0,Financial Services,Asset Management,1.746,55.61,0.32,934412,New York Stock Exchange,NYSE,CA,False
+BP,BP p.l.c.,83596138350.0,Energy,Oil & Gas Integrated,0.491,31.485,1.92,4338940,New York Stock Exchange,NYSE,GB,False
+FKINX,Franklin Income Fund Class A1,83370065918.0,Financial Services,Asset Management - Income,0.78,2.45,0.10999999999999902,0,NASDAQ,NASDAQ,US,True
+SMFG,"Sumitomo Mitsui Financial Group, Inc.",82742214907.0,Financial Services,Banks - Diversified,0.599,12.775,0.35000000000000003,338143,New York Stock Exchange,NYSE,JP,False
+FNCFX,Franklin Income Fund Class R6,82689499135.0,Financial Services,Asset Management - Income,0.79,2.43,0.10999999999999902,0,NASDAQ,NASDAQ,US,True
+PYPL,"PayPal Holdings, Inc.",82553249733.0,Financial Services,Financial - Credit Services,1.441,80.7501,0.0,4898839,NASDAQ Global Select,NASDAQ,US,False
+APO,"Apollo Global Management, Inc.",82354616400.0,Financial Services,Asset Management - Global,1.613,144.6,1.85,835209,New York Stock Exchange,NYSE,US,False
+FRIAX,Franklin Income Fund,82349211647.0,,,0.8,2.42,0.10999999999999902,0,Nasdaq,NASDAQ,,True
+PH,Parker-Hannifin Corporation,82216269261.0,Industrials,Industrial - Machinery,1.431,638.97,6.52,156879,New York Stock Exchange,NYSE,US,False
+TRSAX,T. Rowe Price Growth Stock Fund Advisor Class,82146566115.0,Financial Services,Asset Management,1.1400000000000001,104.02,0.0,0,NASDAQ,NASDAQ,US,True
+CME,CME Group Inc.,81970357784.0,Financial Services,Financial - Data & Stock Exchanges,0.561,227.636,4.6,415774,NASDAQ Global Select,NASDAQ,US,False
+REN.AS,RELX PLC,81708099757.0,Communication Services,Publishing,0.47800000000000004,43.98,0.71,475737,Amsterdam,EURONEXT,GB,False
+CMG,"Chipotle Mexican Grill, Inc.",81641550200.0,Consumer Cyclical,Restaurants,1.255,59.615,0.0,2645808,New York Stock Exchange,NYSE,US,False
+CL,Colgate-Palmolive Company,81361438025.0,Consumer Defensive,Household & Personal Products,0.397,99.575,2.0,1109037,New York Stock Exchange,NYSE,US,False
+CM.TO,Canadian Imperial Bank of Commerce,80797101735.0,Financial Services,Banks - Diversified,1.123,86.205,3.6,755842,Toronto Stock Exchange,TSX,CA,False
+APH,Amphenol Corporation,80699472900.0,Technology,"Hardware, Equipment & Parts",1.2429999999999999,67.01,0.66,2417100,New York Stock Exchange,NYSE,US,False
+WELL,Welltower Inc.,80614768640.0,Real Estate,REIT - Healthcare Facilities,1.203,130.34,2.68,957619,New York Stock Exchange,NYSE,US,False
+MSI,"Motorola Solutions, Inc.",79766682100.0,Technology,Communication Equipment,0.977,478.1,3.92,248064,New York Stock Exchange,NYSE,US,False
+VTTVX,Vanguard Target Retirement 2025 Fund,78754652159.0,Financial Services,Asset Management,0.93,20.42,0.505,0,NASDAQ,NASDAQ,,True
+VPMCX,Vanguard PrimeCap Fund,78333517687.0,Financial Services,Asset Management,0.9500000000000001,176.76,1.659,0,NASDAQ,NASDAQ,US,True
+VPMAX,Vanguard PRIMECAP Fund Admiral Shares,78333517654.0,Financial Services,Asset Management,0.9500000000000001,183.18,1.83,0,NASDAQ,NASDAQ,US,True
+GSK,GSK plc,77918906475.0,Healthcare,Drug Manufacturers - General,0.309,38.205,1.53,1468125,New York Stock Exchange,NYSE,GB,False
+AON,Aon plc,77820429240.0,Financial Services,Insurance - Brokers,0.917,358.22,2.7,277146,New York Stock Exchange,NYSE,IE,False
+RRGSX,T. Rowe Price Growth Stock Fund R Class,77660962723.0,Financial Services,Asset Management,1.1400000000000001,98.34,0.0,0,NASDAQ,NASDAQ,US,True
+TDG,TransDigm Group Incorporated,77614971822.0,Industrials,Aerospace & Defense,1.411,1383.23,110.0,84986,New York Stock Exchange,NYSE,US,False
+VFIFX,Vanguard Target Retirement 2050 Fund,77440982995.0,Financial Services,Asset Management,1.23,51.94,0.984,0,NASDAQ,NASDAQ,,True
+SNPS,"Synopsys, Inc.",77436817400.0,Technology,Software - Infrastructure,1.075,504.1,0.0,397415,NASDAQ Global Select,NASDAQ,US,False
+NOC,Northrop Grumman Corporation,77211510200.0,Industrials,Aerospace & Defense,0.337,527.96,8.24,224240,New York Stock Exchange,NYSE,US,False
+RLLGX,American Funds SMALLCAP World Fund,77085384693.0,Financial Services,Asset Management,1.12,73.53,0.665,0,NASDAQ,NASDAQ,,True
+RSLAX,American Funds SMALLCAP World Fund Class R-1,77085384673.0,Financial Services,Asset Management,1.12,59.29,0.2,0,NASDAQ,NASDAQ,,True
+SMCWX,American Funds SMALLCAP World Fund Class A,77085384663.0,Financial Services,Asset Management,1.12,70.59,0.421,0,NASDAQ,NASDAQ,US,True
+SCWFX,American Funds SMALLCAP World Cl F-1 Shs,77085384662.0,Financial Services,Asset Management,1.12,69.41,0.391,0,NASDAQ,NASDAQ,,True
+CSPAX,American Funds SMALLCAP World 529A,77085384662.0,,,1.12,69.41,0.405,0,Nasdaq,NASDAQ,,True
+CS.PA,AXA SA,77055373780.0,Financial Services,Insurance - Diversified,1.238,35.72,1.98,2525686,Paris,EURONEXT,FR,False
+ITW,Illinois Tool Works Inc.,76858503000.0,Industrials,Industrial - Machinery,1.114,258.87,6.0,192128,New York Stock Exchange,NYSE,US,False
+DEO,Diageo plc,76257295754.0,Consumer Defensive,Beverages - Wineries & Distilleries,0.359,137.2713,4.14,312152,New York Stock Exchange,NYSE,GB,False
+VWIUX,Vanguard Intermediate-Term Tax-Exempt Fd Admiral Shs,76253642751.0,,,0.84,13.73,0.37683902,0,NASDAQ,NASDAQ,,True
+VWITX,Vanguard Intermediate Term Tax-Exempt Fund,76253642751.0,Financial Services,Asset Management,0.84,13.73,0.332,0,NASDAQ,NASDAQ,,True
+SAN,"Banco Santander, S.A.",76134386478.0,Financial Services,Banks - Diversified,1.321,5.01,0.22,3978293,New York Stock Exchange,NYSE,ES,False
+DODFX,Dodge & Cox International Stock Fund,76011036629.0,Financial Services,Asset Management,1.0,55.15,1.125,0,NASDAQ,NASDAQ,US,True
+EFA,iShares MSCI EAFE ETF,75963385998.0,Financial Services,Asset Management,1.07,80.9499,2.32354,3430130,New York Stock Exchange Arca,AMEX,US,False
+IWDA.AS,iShares Core MSCI World UCITS ETF USD (Acc),75869287920.0,Financial Services,Asset Management,0.6886855,99.715,0.0,164336,Amsterdam,EURONEXT,NL,False
+CRWD,"CrowdStrike Holdings, Inc.",75841724127.0,Technology,Software - Infrastructure,1.098,309.38,0.0,1705137,NASDAQ Global Select,NASDAQ,US,False
+BTI,British American Tobacco p.l.c.,75655490928.0,Consumer Defensive,Tobacco,0.266,34.266,2.98,2601097,New York Stock Exchange,NYSE,GB,False
+CNQ,Canadian Natural Resources Limited,75585429900.0,Energy,Oil & Gas Exploration & Production,1.8860000000000001,35.61,1.57,1152501,New York Stock Exchange,NYSE,CA,False
+TRI,Thomson Reuters Corporation,75398881580.0,Industrials,Specialty Business Services,0.395,167.66,2.16,88516,New York Stock Exchange,NYSE,CA,False
+GEV,GE Vernova Inc.,75308122311.0,Utilities,Renewable Utilities,1.28,274.045,0.0,1483143,New York Stock Exchange,NYSE,US,False
+PRX.AS,Prosus N.V.,75246593885.0,Communication Services,Internet Content & Information,0.643,38.88,0.1,1801042,Amsterdam,EURONEXT,NL,False
+USB,U.S. Bancorp,74888874900.0,Financial Services,Banks - Regional,1.051,47.99,2.0,3436070,New York Stock Exchange,NYSE,US,False
+VVIAX,Vanguard Value Index Fd Admiral Shs,74726326208.0,,,0.8,69.34,0.795,0,NASDAQ,NASDAQ,,True
+MAR,"Marriott International, Inc.",74566997010.0,Consumer Cyclical,Travel Lodging,1.592,264.87,2.52,407326,NASDAQ Global Select,NASDAQ,US,False
+SPOT,Spotify Technology S.A.,74381110562.0,Communication Services,Internet Content & Information,1.579,380.26,0.0,710209,New York Stock Exchange,NYSE,LU,False
+BNP.PA,BNP Paribas SA,74347150417.0,Financial Services,Banks - Regional,1.605,65.8,4.6,1753455,Paris,EURONEXT,FR,False
+ATVI,"Activision Blizzard, Inc.",74289468671.0,Technology,Electronic Gaming & Multimedia,0.37,94.42,0.99,7127746,NASDAQ Global Select,NASDAQ,US,False
+MMM,3M Company,73959529020.0,Industrials,Conglomerates,0.995,134.63,2.8,2424612,New York Stock Exchange,NYSE,US,False
+ECL,Ecolab Inc.,73829074860.0,Basic Materials,Chemicals - Specialty,1.135,259.47,2.2800000000000002,261077,New York Stock Exchange,NYSE,US,False
+CP,Canadian Pacific Railway Limited,73774728750.0,Industrials,Railroads,0.786,79.062,0.56,802002,New York Stock Exchange,NYSE,CA,False
+PNC,"The PNC Financial Services Group, Inc.",73766570000.0,Financial Services,Banks - Regional,1.127,185.81,6.4,810261,New York Stock Exchange,NYSE,US,False
+MFC.TO,Manulife Financial Corporation,73761395200.0,Financial Services,Insurance - Life,1.058,41.48,1.6,1103394,Toronto Stock Exchange,TSX,CA,False
+APD,"Air Products and Chemicals, Inc.",73546248300.0,Basic Materials,Chemicals - Specialty,0.8300000000000001,330.82,7.08,455458,New York Stock Exchange,NYSE,US,False
+CARR,Carrier Global Corporation,73538177920.0,Industrials,Construction,1.192,81.46,0.76,1002267,New York Stock Exchange,NYSE,US,False
+CVS,CVS Health Corporation,73340234000.0,Healthcare,Medical - Healthcare Plans,0.532,58.3,2.66,8822910,New York Stock Exchange,NYSE,US,False
+RMFGX,American Funds American Mutual Fund Class R-6,73023619030.0,Financial Services,Asset Management,0.71,60.18,1.264,0,NASDAQ,NASDAQ,,True
+AMRFX,American Funds American Mutual Fund,72962949110.0,Financial Services,Asset Management,0.71,60.13,1.205,0,NASDAQ,NASDAQ,,True
+VHYAX,Vanguard High Dividend Yield Index Fund Admiral Shares,72723947496.0,Financial Services,Asset Management,0.77,39.64,0.833,0,NASDAQ,NASDAQ,,True
+AMFFX,American Funds American Mutual Fund Class F-1,72586788827.0,Financial Services,Asset Management,0.71,59.82,1.065,0,NASDAQ,NASDAQ,,True
+SWPPX,Schwab S&P 500 Index Fund- Select Shares,72073756587.0,Financial Services,Asset Management,1.0,90.85,1.046,0,NASDAQ,NASDAQ,,True
+VYM,Vanguard High Dividend Yield Index Fund,72043401795.0,Financial Services,Asset Management,0.77,130.2199,3.6298,605666,New York Stock Exchange Arca,AMEX,US,True
+EOG,"EOG Resources, Inc.",71623699000.0,Energy,Oil & Gas Exploration & Production,1.2850000000000001,125.965,3.64,1240170,New York Stock Exchange,NYSE,US,False
+CNI,Canadian National Railway Company,71057960000.0,Industrials,Railroads,0.649,112.88,2.51,504493,New York Stock Exchange,NYSE,CA,False
+AMPCX,American Funds AMCAP Fund Class C,70898614254.0,Financial Services,Asset Management,1.06,36.34,0.0,0,NASDAQ,NASDAQ,,True
+ORLY,"O'Reilly Automotive, Inc.",70746652005.0,Consumer Cyclical,Specialty Retail,0.924,1219.65,0.0,80203,NASDAQ Global Select,NASDAQ,US,False
+MRVL,"Marvell Technology, Inc.",70361426000.0,Technology,Semiconductors,1.449,81.23,0.24,5024472,NASDAQ Global Select,NASDAQ,US,False
+ATD.TO,Alimentation Couche-Tard Inc.,70188883440.0,Consumer Cyclical,Specialty Retail,0.892,74.04,0.7000000000000001,416170,Toronto Stock Exchange,TSX,CA,False
+CDNS,"Cadence Design Systems, Inc.",69646117000.0,Technology,Software - Application,1.019,254.35,0.0,1420749,NASDAQ Global Select,NASDAQ,US,False
+BDX,"Becton, Dickinson and Company",69530498310.0,Healthcare,Medical - Instruments & Supplies,0.447,240.555,3.8,248288,New York Stock Exchange,NYSE,US,False
+NU,Nu Holdings Ltd.,69265727533.0,Financial Services,Banks - Diversified,1.155,14.49,0.0,10043326,New York Stock Exchange,NYSE,BR,False
+TGT,Target Corporation,69179564750.0,Consumer Defensive,Discount Stores,1.238,150.17,4.48,2304617,New York Stock Exchange,NYSE,US,False
+ABB,ABB Ltd,69020585106.0,Industrials,Electrical Equipment & Parts,1.020889,37.13,0.92,6388230,New York Stock Exchange,NYSE,CH,False
+VMCIX,Vanguard Mid-Cap Index Fund Institutional Shares,68881760212.0,Financial Services,Asset Management,1.04,73.95,0.5780000000000001,0,NASDAQ,NASDAQ,US,True
+FCX,Freeport-McMoRan Inc.,68635066364.0,Basic Materials,Copper,1.895,47.7674,0.6000000000000001,4962295,New York Stock Exchange,NYSE,US,False
+IWM,iShares Russell 2000 ETF,68361792962.0,Financial Services,Asset Management,1.08,222.07,2.5704000000000002,16694868,New York Stock Exchange Arca,AMEX,US,False
+SU.TO,Suncor Energy Inc.,68099008600.0,Energy,Oil & Gas Integrated,1.471,53.62,2.18,1339678,Toronto Stock Exchange,TSX,CA,False
+FIWGX,Strategic Advisers Fidelity Core Inc,68024053759.0,,,1.01,9.24,0.34800000000000003,0,Nasdaq,NASDAQ,US,True
+TRP.TO,TC Energy Corporation,67955595000.0,Energy,Oil & Gas Midstream,0.8190000000000001,65.5,3.84,678710,Toronto Stock Exchange,TSX,CA,False
+FBGRX,Fidelity Blue Chip Growth Fund,67821633397.0,Financial Services,Asset Management,1.27,216.24,12.068000000000001,0,NASDAQ,NASDAQ,US,True
+BMO,Bank of Montreal,67430584785.0,Financial Services,Banks - Diversified,1.158,92.445,4.59,186020,New York Stock Exchange,NYSE,CA,False
+VWO,Vanguard Emerging Markets Stock Index Fund,67268521251.0,Financial Services,Asset Management,0.86,47.435,1.2082,2850943,New York Stock Exchange Arca,AMEX,US,True
+EQNR,Equinor ASA,66678552224.0,Energy,Oil & Gas Integrated,0.259,24.385,1.35,1707989,New York Stock Exchange,NYSE,NO,False
+NEM,Newmont Corporation,66080493700.0,Basic Materials,Gold,0.513,57.59,1.0,5111596,New York Stock Exchange,NYSE,US,False
+MCK,McKesson Corporation,66044495591.0,Healthcare,Medical - Distribution,0.433,509.3,2.84,270340,New York Stock Exchange,NYSE,US,False
+FDGRX,Fidelity Growth Company Fund Retail Class,65908252655.0,Financial Services,Asset Management,1.22,42.08,0.0,0,NASDAQ,NASDAQ,US,True
+IJR,iShares Core S&P Small-Cap ETF,65810023382.0,Financial Services,Asset Management,1.04,116.3235,1.5095200000000002,1682211,New York Stock Exchange Arca,AMEX,US,False
+FDX,FedEx Corporation,65611720035.0,Industrials,Integrated Freight & Logistics,1.179,268.545,5.52,519981,New York Stock Exchange,NYSE,US,False
+AMOV,"América Móvil, S.A.B. de C.V.",65611497344.0,Communication Services,Telecommunications Services,0.278879,20.75,0.64,1089,New York Stock Exchange,NYSE,MX,False
+RSP,Invesco S&P 500 Equal Weight ETF,65498307406.0,Financial Services,Asset Management,0.98,180.33,2.64749,2409519,New York Stock Exchange Arca,AMEX,US,False
+IEMG,iShares Core MSCI Emerging Markets ETF,65469011829.0,Financial Services,Asset Management,0.96,56.89,1.48651,7385499,New York Stock Exchange Arca,AMEX,US,False
+GLD,SPDR Gold Shares,65397748231.0,Financial Services,Asset Management,0.16,251.2399,0.0,7104867,New York Stock Exchange Arca,AMEX,US,False
+CSX,CSX Corporation,65170953900.0,Industrials,Railroads,1.189,33.795,0.48,4240148,NASDAQ Global Select,NASDAQ,US,False
+BNS,The Bank of Nova Scotia,65093066929.0,Financial Services,Banks - Diversified,0.974,52.9397,3.14,301667,New York Stock Exchange,NYSE,CA,False
+NFFFX,American Funds New World F2,64959705085.0,Financial Services,Asset Management,0.9400000000000001,84.48,1.165,0,Nasdaq,NASDAQ,,True
+NWFFX,American Funds New World Fund Cl F-1Shs,64959705075.0,Financial Services,Asset Management,0.9400000000000001,84.02,0.937,0,NASDAQ,NASDAQ,,True
+NEWFX,American Funds New World Fund Class A,64959705020.0,Financial Services,Asset Management,0.9400000000000001,84.6,0.928,0,NASDAQ,NASDAQ,,True
+CNWAX,American Funds New World 529A,64959705008.0,,,0.9400000000000001,83.7,0.912,0,Nasdaq,NASDAQ,,True
+WDAY,"Workday, Inc.",64636668785.0,Technology,Software - Application,1.344,242.995,0.0,369696,NASDAQ Global Select,NASDAQ,US,False
+WCN.TO,"Waste Connections, Inc.",64625366400.0,Industrials,Waste Management,0.718,250.45,1.55,36516,Toronto Stock Exchange,TSX,CA,False
+BDXA,"Becton, Dickinson and Company",64578707437.0,Healthcare,Medical - Instruments & Supplies,0.0,59.24,0.0,6151137,New York Stock Exchange,NYSE,,False
+RSG,"Republic Services, Inc.",64014910100.0,Industrials,Waste Management,0.704,203.825,2.32,238289,New York Stock Exchange,NYSE,US,False
+AJG,Arthur J. Gallagher & Co.,63489702500.0,Financial Services,Insurance - Brokers,0.725,289.775,2.4,217226,New York Stock Exchange,NYSE,US,False
+NGG,National Grid plc,63449104541.0,Utilities,Regulated Electric,0.255,67.06,3.68,196621,New York Stock Exchange,NYSE,GB,False
+WMB,"The Williams Companies, Inc.",63335602800.0,Energy,Oil & Gas Midstream,1.077,51.96,1.9,1742754,New York Stock Exchange,NYSE,US,False
+AFL,Aflac Incorporated,63120530460.0,Financial Services,Insurance - Life,0.9490000000000001,112.71,2.0,555490,New York Stock Exchange,NYSE,US,False
+EPD,Enterprise Products Partners L.P.,63079769500.0,Energy,Oil & Gas Midstream,1.009,29.065,2.1,1892997,New York Stock Exchange,NYSE,US,False
+CRH,CRH plc,63034009568.0,Basic Materials,Construction Materials,1.383,92.32,1.4,1248678,New York Stock Exchange,NYSE,IE,False
+PXD,Pioneer Natural Resources Company,63003455657.0,Energy,Oil & Gas Exploration & Production,1.329,269.62,10.94,4426409,New York Stock Exchange,NYSE,US,False
+XLK,Technology Select Sector SPDR Fund,62926552106.0,Financial Services,Asset Management,1.22,231.3,1.55972,1663600,New York Stock Exchange Arca,AMEX,US,False
+EMR,Emerson Electric Co.,62875644870.0,Industrials,Industrial - Machinery,1.294,109.7881,2.1,686785,New York Stock Exchange,NYSE,US,False
+FTNT,"Fortinet, Inc.",62623017960.0,Technology,Software - Infrastructure,0.997,81.87,0.0,1814231,NASDAQ Global Select,NASDAQ,US,False
+DASH,"DoorDash, Inc.",62611894447.0,Communication Services,Internet Content & Information,1.6960000000000002,152.14,0.0,1071017,NASDAQ Global Select,NASDAQ,US,False
+ADSK,"Autodesk, Inc.",62455350000.0,Technology,Software - Application,1.478,290.49,0.0,622086,NASDAQ Global Select,NASDAQ,US,False
+VWNAX,Vanguard Windsor II Fund Admiral Shares,62415998964.0,Financial Services,Asset Management,0.92,88.51,1.428999999999999,0,NASDAQ,NASDAQ,,True
+VWNFX,Vanguard Windsor II Fund,62415998943.0,Financial Services,Asset Management,0.92,49.89,0.387,0,NASDAQ,NASDAQ,,True
+VMW,"VMware, Inc.",61521441480.0,Technology,Software - Infrastructure,0.8250000000000001,142.48,0.0,1787198,New York Stock Exchange,NYSE,US,False
+DHI,"D.R. Horton, Inc.",61150432200.0,Consumer Cyclical,Residential Construction,1.7269999999999999,187.555,1.2,946668,New York Stock Exchange,NYSE,US,False
+MEIKX,MFS Value Fund Class R6,61044658169.0,Financial Services,Asset Management,0.8,54.76,0.482,0,NASDAQ,NASDAQ,US,True
+MEIAX,MFS Series Trust I - MFS Value Fund Class A,61044658140.0,Financial Services,Asset Management,0.8,54.79,0.386,0,NASDAQ,NASDAQ,US,True
+MEIIX,MFS Value Fund Class I,61044658129.0,Financial Services,Asset Management,0.8,55.19,0.452999999999999,0,NASDAQ,NASDAQ,,True
+SCHD,Schwab U.S. Dividend Equity ETF,60931355544.0,Financial Services,Asset Management,0.77,28.505,2.0296,8085421,New York Stock Exchange Arca,AMEX,US,False
+JD,"JD.com, Inc.",60893671853.0,Consumer Cyclical,Specialty Retail,0.422,39.675,0.76,5731125,NASDAQ Global Select,NASDAQ,CN,False
+SLB,Schlumberger Limited,60754953600.0,Energy,Oil & Gas Equipment & Services,1.525,42.79,1.1,8413850,New York Stock Exchange,NYSE,US,False
+ITUB,Itaú Unibanco Holding S.A.,60294306269.0,Financial Services,Banks - Regional,0.555,6.155,0.17,7936400,New York Stock Exchange,NYSE,BR,False
+DG.PA,Vinci SA,60279706193.0,Industrials,Engineering & Construction,0.99,105.4,4.5,705453,Paris,EURONEXT,FR,False
+FXNAX,Fidelity U.S. Bond Index Fund,60037902334.0,Financial Services,Asset Management - Bonds,1.0,10.47,0.313,0,NASDAQ,NASDAQ,US,True
+IWD,iShares Russell 1000 Value ETF,59946357055.0,Financial Services,Asset Management,0.87,191.99,3.45374,570505,New York Stock Exchange Arca,AMEX,US,False
+COF,Capital One Financial Corporation,59733734080.0,Financial Services,Financial - Credit Services,1.446,156.43,2.4,1210186,New York Stock Exchange,NYSE,US,False
+AEM.TO,Agnico Eagle Mines Limited,59698469587.0,Basic Materials,Gold,1.098,119.83,2.17,730770,Toronto Stock Exchange,TSX,CA,False
+ROP,"Roper Technologies, Inc.",59528140695.0,Industrials,Industrial - Machinery,1.021,555.305,3.0,124039,NASDAQ Global Select,NASDAQ,US,False
+VEIPX,Vanguard Equity Income Fund,59524947957.0,Financial Services,Asset Management - Income,0.75,46.48,0.978,0,NASDAQ,NASDAQ,US,True
+VEIRX,Vanguard Equity-Income Fund Admiral Shares,59524947935.0,Financial Services,Asset Management - Income,0.75,97.41,2.107,0,NASDAQ,NASDAQ,US,True
+MET,"MetLife, Inc.",59499612000.0,Financial Services,Insurance - Life,1.031,84.96,2.18,864620,New York Stock Exchange,NYSE,US,False
+VWA.BR,Volkswagen AG,59355246500.0,Consumer Cyclical,Auto - Manufacturers,1.249249,125.0,8.7,136,Brussels,EURONEXT,DE,False
+VWAP.BR,Volkswagen AG,59355164590.0,Consumer Cyclical,Auto - Manufacturers,1.249249,108.36,8.76,123,Brussels,EURONEXT,DE,False
+VBIRX,Vanguard Short-Term Bond Index Fund Admiral Shares,59339706360.0,Financial Services,Asset Management - Bonds,0.41000000000000003,10.22,0.268999999999999,0,NASDAQ,NASDAQ,,True
+BSV,Vanguard Short-Term Bond Index Fund,59233226490.0,Financial Services,Asset Management,0.41000000000000003,77.88,2.474299999999999,967756,New York Stock Exchange Arca,AMEX,US,True
+TRV,"The Travelers Companies, Inc.",58875107460.0,Financial Services,Insurance - Property & Casualty,0.63,259.34,4.2,642577,New York Stock Exchange,NYSE,US,False
+CCZ,Comcast Holdings Corp.,58491698389.0,Communication Services,Broadcasting,0.07425066,61.75,2.0745783700000002,7485,New York Stock Exchange,NYSE,US,False
+CM,Canadian Imperial Bank of Commerce,58387047765.0,Financial Services,Banks - Diversified,1.123,62.295,2.66,357085,New York Stock Exchange,NYSE,CA,False
+PSA,Public Storage,58362377370.0,Real Estate,REIT - Industrial,0.672,333.465,12.0,280449,New York Stock Exchange,NYSE,US,False
+HLT,Hilton Worldwide Holdings Inc.,58342824385.0,Consumer Cyclical,Travel Lodging,1.311,236.755,0.6000000000000001,613456,New York Stock Exchange,NYSE,US,False
+NXPI,NXP Semiconductors N.V.,58262531760.0,Technology,Semiconductors,1.4929999999999999,228.72,4.06,661687,NASDAQ Global Select,NASDAQ,NL,False
+TTD,"The Trade Desk, Inc.",58141206953.0,Technology,Software - Application,1.482,117.955,0.0,902623,NASDAQ Global Market,NASDAQ,US,False
+VBIAX,Vanguard Balanced Index Fund Admiral Shares,58070994910.0,Financial Services,Asset Management,1.01,50.19,0.512,0,NASDAQ,NASDAQ,US,True
+VBINX,Vanguard Balanced Index Fund,58070994895.0,Financial Services,Asset Management,1.01,50.2,0.487,0,NASDAQ,NASDAQ,US,True
+VBAIX,Vanguard Balanced Index Fund Institutional Shares,58070994895.0,Financial Services,Asset Management,1.01,50.2,0.515,0,NASDAQ,NASDAQ,US,True
+TLT,iShares 20+ Year Treasury Bond ETF,58026079993.0,Financial Services,Asset Management - Bonds,2.12,92.46,3.6540600000000003,24581816,NASDAQ Global Market,NASDAQ,US,False
+SANTA.BR,"Banco Santander, S.A.",57971445627.0,Financial Services,Banks - Diversified,1.334084,3.582,0.16,4727,Brussels,EURONEXT,ES,False
+SLB.PA,Schlumberger Limited,57645504000.0,Energy,Oil & Gas Equipment & Services,1.566,40.6,1.01,2549,Paris,EURONEXT,US,False
+PCAR,PACCAR Inc,57601513360.0,Industrials,Agricultural - Machinery,0.901,109.88,1.2,1165987,NASDAQ Global Select,NASDAQ,US,False
+FEGRX,First Eagle Global Fund Class R6,57580445679.0,Financial Services,Asset Management - Global,1.02,75.42,1.011,0,NASDAQ,NASDAQ,,True
+FESGX,First Eagle Global Fund Class C,57580445652.0,Financial Services,Asset Management - Global,1.02,71.12,0.31,0,NASDAQ,NASDAQ,US,True
+SGENX,First Eagle Global Fund,57580445639.0,Financial Services,Asset Management - Global,1.02,74.8,0.8140000000000001,0,NASDAQ,NASDAQ,US,True
+IMO.TO,Imperial Oil Limited,57232749970.0,Energy,Oil & Gas Integrated,1.776,106.81,2.4,375233,Toronto Stock Exchange,TSX,CA,False
+TFC,Truist Financial Corporation,56967015600.0,Financial Services,Banks - Regional,1.038,42.54,2.08,3583249,New York Stock Exchange,NYSE,US,False
+SPG,"Simon Property Group, Inc.",56873545400.0,Real Estate,REIT - Retail,1.768,174.44,8.2,376968,New York Stock Exchange,NYSE,US,False
+SE,Sea Limited,56687359481.0,Consumer Cyclical,Specialty Retail,1.5190000000000001,98.7,0.0,1553158,New York Stock Exchange,NYSE,SG,False
+OKE,"ONEOK, Inc.",56588009490.0,Energy,Oil & Gas Midstream,1.631,96.885,3.96,730622,New York Stock Exchange,NYSE,US,False
+BBVA,"Banco Bilbao Vizcaya Argentaria, S.A.",56491514403.0,Financial Services,Banks - Diversified,1.464,9.8207,0.75,517879,New York Stock Exchange,NYSE,ES,False
+NSC,Norfolk Southern Corporation,56275294400.0,Industrials,Railroads,1.305,248.9,5.4,567505,New York Stock Exchange,NYSE,US,False
+ET,Energy Transfer LP,56039016250.0,Energy,Oil & Gas Midstream,1.645,16.375,1.28,6574786,New York Stock Exchange,NYSE,US,False
+O,Realty Income Corporation,55709425960.0,Real Estate,REIT - Retail,0.993,63.97,3.16,1848189,New York Stock Exchange,NYSE,US,False
+ING,ING Groep N.V.,55673900800.0,Financial Services,Banks - Diversified,1.58,17.185,1.2,1499176,New York Stock Exchange,NYSE,NL,False
+VTTWX,Vanguard Institutional Target Retirement 2030 Fund Institutional Shares,55447125990.0,Financial Services,Asset Management,1.09,28.83,0.0,0,NASDAQ,NASDAQ,US,True
+FSPSX,Fidelity Concord Street Trust - Fidelity International Index Fund,55443312596.0,Financial Services,Asset Management,1.06,52.26,1.5,0,NASDAQ,NASDAQ,US,True
+VFSUX,Vanguard Short-Term Investment-Grade Fund Admiral Shares,55242170360.0,Financial Services,Asset Management - Leveraged,0.47000000000000003,10.4,0.337,0,NASDAQ,NASDAQ,US,True
+VFSTX,Vanguard Short-Term Investment Grade Fund Investor Shrs,55242170360.0,Financial Services,Asset Management - Leveraged,0.47000000000000003,10.4,0.328,0,NASDAQ,NASDAQ,US,True
+BK,The Bank of New York Mellon Corporation,55228844880.0,Financial Services,Asset Management,1.069,75.96,1.88,974608,New York Stock Exchange,NYSE,US,False
+KMI,"Kinder Morgan, Inc.",55046899050.0,Energy,Oil & Gas Midstream,0.921,24.765,1.15,5186753,New York Stock Exchange,NYSE,US,False
+URI,"United Rentals, Inc.",55038295980.0,Industrials,Rental & Leasing Services,1.683,832.2,6.52,175791,New York Stock Exchange,NYSE,US,False
+VDIGX,Vanguard Dividend Growth Fund Investor Shares,55038001127.0,Financial Services,Asset Management,0.72,42.21,0.673,0,NASDAQ,NASDAQ,US,True
+GM,General Motors Company,54977221152.0,Consumer Cyclical,Auto - Manufacturers,1.432,48.9156,0.48,6204605,New York Stock Exchange,NYSE,US,False
+PSX,Phillips 66,54914159955.0,Energy,Oil & Gas Refining & Marketing,1.318,131.195,4.6,548197,New York Stock Exchange,NYSE,US,False
+GWW,"W.W. Grainger, Inc.",54795618339.0,Industrials,Industrial - Distribution,1.16,1122.27,8.2,71710,New York Stock Exchange,NYSE,US,False
+AZO,"AutoZone, Inc.",54792397688.0,Consumer Cyclical,Specialty Retail,0.707,3207.46,0.0,45837,New York Stock Exchange,NYSE,US,False
+VUSA.AS,Vanguard S&P 500 UCITS ETF,54253642826.0,Financial Services,Asset Management,0.8712900000000001,102.078,1.03024,80662,Amsterdam,EURONEXT,US,False
+SREA,SEMPRA ENERGY,54228422041.0,Utilities,Regulated Electric,0.54686785,24.8,1.4375200000000001,15004,New York Stock Exchange,NYSE,US,False
+DLR,"Digital Realty Trust, Inc.",54102375873.0,Real Estate,REIT - Office,0.622,165.243,4.88,635884,New York Stock Exchange,NYSE,US,False
+VTAPX,Vanguard Short-Term Inflation-Protected Securities Index Fd Admiral Cl,54073929706.0,Financial Services,Asset Management - Leveraged,0.30000000000000004,24.54,0.7050000000000001,0,NASDAQ,NASDAQ,,True
+MFG,"Mizuho Financial Group, Inc.",54057095770.0,Financial Services,Banks - Regional,0.425,4.265,0.14,523342,New York Stock Exchange,NYSE,JP,False
+IVW,iShares S&P 500 Growth ETF,54020260454.0,Financial Services,Asset Management,1.12,97.7,0.515479,700818,New York Stock Exchange Arca,AMEX,US,False
+VTIP,Vanguard Short-Term Inflation-Protected Securities Index Fund,54007608460.0,Financial Services,Asset Management - Leveraged,0.29,48.86,1.416,441825,NASDAQ Global Market,NASDAQ,US,True
+FANG,"Diamondback Energy, Inc.",53890810120.0,Energy,Oil & Gas Exploration & Production,1.876,182.84,10.76,611676,NASDAQ Global Select,NASDAQ,US,False
+VTWAX,Vanguard Total World Stock Index Fund Admiral Shares,53856653310.0,Financial Services,Asset Management,1.02,42.7,0.775,0,NASDAQ,NASDAQ,,True
+VTWIX,Vanguard Total World Stock Index I,53856653123.0,,,1.02,246.15,4.506,0,Nasdaq,NASDAQ,,True
+SRE,Sempra,53602140360.0,Utilities,Diversified Utilities,0.759,84.66,2.48,1291859,New York Stock Exchange,NYSE,US,False
+VT,Vanguard Total World Stock Index Fund,53555041689.0,Financial Services,Asset Management,1.02,119.855,2.2173,695582,New York Stock Exchange Arca,AMEX,US,True
+L-PB.TO,Loblaw Companies Limited,53514494147.0,Consumer Defensive,Grocery Stores,0.169,23.25,1.33,2596,Toronto Stock Exchange,TSX,CA,False
+AEP,"American Electric Power Company, Inc.",53419526800.0,Utilities,Regulated Electric,0.534,100.39,3.52,859237,NASDAQ Global Select,NASDAQ,US,False
+L.TO,Loblaw Companies Limited,53375516250.0,Consumer Defensive,Grocery Stores,0.169,174.93,2.05,102356,Toronto Stock Exchange,TSX,CA,False
+MFC,Manulife Financial Corporation,53311635200.0,Financial Services,Insurance - Life,1.058,29.98,1.18,410225,New York Stock Exchange,NYSE,CA,False
+VICSX,Vanguard IT Corporate Bond Index Fund Admiral Shs,53279784959.0,Financial Services,Asset Management - Bonds,1.19,22.28,0.85,0,NASDAQ,NASDAQ,,True
+CEO,CNOOC Limited,53212528549.0,Energy,Oil & Gas Exploration & Production,0.0,121.76,93.57789200000002,96500,New York Stock Exchange,NYSE,HK,False
+MNST,Monster Beverage Corporation,52993330400.0,Consumer Defensive,Beverages - Non-Alcoholic,0.741,54.1,0.0,2121933,NASDAQ Global Select,NASDAQ,US,False
+VCIT,Vanguard Intermediate-Term Corporate Bond Index Fund,52950498773.0,Financial Services,Asset Management - Bonds,1.18,82.01,3.4396,4180754,NASDAQ Global Market,NASDAQ,US,True
+COIN,"Coinbase Global, Inc.",52843755862.0,Technology,Software - Application,3.352,212.67,0.0,9075272,NASDAQ Global Select,NASDAQ,US,False
+APP,AppLovin Corporation,52736007435.0,Technology,Software - Application,1.92,157.7748,0.0,3789329,NASDAQ Global Select,NASDAQ,US,False
+AEH,Aegon N.V. PRP CP SEC 6.375,52474613743.0,,,0.0,25.67,0.0,162310,New York Stock Exchange,NYSE,,False
+MPC,Marathon Petroleum Corporation,52337883920.0,Energy,Oil & Gas Refining & Marketing,1.358,156.38,3.3,828453,New York Stock Exchange,NYSE,US,False
+AMX,"América Móvil, S.A.B. de C.V.",52313131250.0,Communication Services,Telecommunications Services,0.299,16.825,0.51,504069,New York Stock Exchange,NYSE,MX,False
+AED,Aegon N.V. PERP CAP SECS,52167983081.0,,,0.0,25.52,0.0,32686,New York Stock Exchange,NYSE,,False
+VFFVX,Vanguard Target Retirement 2055 Fund,52015751129.0,Financial Services,Asset Management,1.23,57.96,1.083,0,NASDAQ,NASDAQ,US,True
+VWIAX,Vanguard Wellesley Income Fund,51926511565.0,Financial Services,Asset Management - Income,0.76,63.82,1.734,0,NASDAQ Capital Market,NASDAQ,US,True
+MEURV.BR,Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München,51650757200.0,Financial Services,Insurance - Reinsurance,0.848723,379.4,11.6,5,Brussels,EURONEXT,DE,False
+INGA.AS,ING Groep N.V.,51439639040.0,Financial Services,Banks - Diversified,1.58,15.878,1.11,6005204,Amsterdam,EURONEXT,NL,False
+JCI,Johnson Controls International plc,51427057790.0,Industrials,Construction,1.302,76.985,1.48,677174,New York Stock Exchange,NYSE,IE,False
+RCL,Royal Caribbean Cruises Ltd.,51391328800.0,Consumer Cyclical,Travel Services,2.622,199.64,1.6,565626,New York Stock Exchange,NYSE,US,False
+AMP,"Ameriprise Financial, Inc.",51207370824.0,Financial Services,Asset Management,1.346,521.52,5.92,111495,New York Stock Exchange,NYSE,US,False
+AEB,Aegon N.V. PERP CAP FLTG RT,51125440499.0,Financial Services,Insurance - Diversified,0.0,25.01,0.0,2772,New York Stock Exchange,NYSE,SE,False
+ALL,The Allstate Corporation,50986317100.0,Financial Services,Insurance - Property & Casualty,0.47600000000000003,193.1,3.68,434573,New York Stock Exchange,NYSE,US,False
+CPRT,"Copart, Inc.",50967515170.0,Consumer Cyclical,Auto - Dealerships,1.2690000000000001,52.91,0.0,2346992,NASDAQ Global Select,NASDAQ,US,False
+PAYX,"Paychex, Inc.",50770810860.0,Industrials,Staffing & Employment Services,0.993,141.07,3.92,355050,NASDAQ Global Select,NASDAQ,US,False
+ABX.TO,Barrick Gold Corporation,50715242550.0,Basic Materials,Gold,0.48,28.935,0.54,1885172,Toronto Stock Exchange,TSX,CA,False
+FAETX,American Funds 2030 Target Date Retirement Fd Cl F-1,50537820144.0,Financial Services,Asset Management,0.96,17.99,0.314,0,NASDAQ,NASDAQ,,True
+RFETX,American Funds 2030 Target Date Retirement Fund,50537820143.0,Financial Services,Asset Management,0.96,18.3,0.373,0,NASDAQ,NASDAQ,,True
+NTES,"NetEase, Inc.",50361903686.0,Technology,Electronic Gaming & Multimedia,0.548,80.89,2.5,792118,NASDAQ Global Select,NASDAQ,CN,False
+KDP,Keurig Dr Pepper Inc.,50331280350.0,Consumer Defensive,Beverages - Non-Alcoholic,0.619,37.115,0.92,4226620,NASDAQ Global Select,NASDAQ,US,False
+D,"Dominion Energy, Inc.",50315306550.0,Utilities,Regulated Electric,0.603,59.975,2.67,1688803,New York Stock Exchange,NYSE,US,False
+QUAL,iShares MSCI USA Quality Factor ETF,50261452134.0,Financial Services,Asset Management,1.05,181.9392,1.808652,364266,New York Stock Exchange Arca,AMEX,US,False
+PTTRX,PIMCO Total Return Fund Institutional Class,50146283513.0,Financial Services,Asset Management,1.02,8.71,0.31,0,NASDAQ,NASDAQ,US,True
+EDF.PA,Electricité de France S.A.,50023560192.0,Utilities,Diversified Utilities,0.8557049999999999,12.0,0.5700000000000001,239213,Paris,EURONEXT,FR,False
+TEAM,Atlassian Corporation,49943581609.0,Technology,Software - Application,0.734,192.07,0.0,882108,NASDAQ Global Select,NASDAQ,AU,False
+AIG,"American International Group, Inc.",49941619805.0,Financial Services,Insurance - Diversified,1.072,77.555,1.6,944701,New York Stock Exchange,NYSE,US,False
+IAU,iShares Gold Trust,49830396437.0,Financial Services,Asset Management,0.16,51.3636,0.0,4439740,New York Stock Exchange Arca,AMEX,US,True
+GSINX,Goldman Sachs GQG Partners International Opportunities Fund,49558802425.0,Financial Services,Asset Management,0.87,22.97,0.448,0,NASDAQ,NASDAQ,,True
+GSIYX,Goldman Sachs GQG Partners International Opportunities Fund Class R6 Shares,49558802415.0,Financial Services,Asset Management,0.86,23.06,0.0,0,NASDAQ,NASDAQ,,True
+STLA.PA,Stellantis N.V.,49485897723.0,Consumer Cyclical,Auto - Manufacturers,0.0,15.4,2.256677,3298959,Paris,EURONEXT,NL,False
+FIS,"Fidelity National Information Services, Inc.",49409184790.0,Technology,Information Technology Services,1.086,90.565,1.6,1181824,New York Stock Exchange,NYSE,US,False
+RFFTX,American Funds 2035 Trgt Date Retire R6,49267916787.0,Financial Services,Asset Management,1.06,20.24,0.357,0,Nasdaq,NASDAQ,,True
+AAFTX,American Funds 2035 Target Date Retirement Fund,49267916781.0,Financial Services,Asset Management,1.06,20.08,0.302,0,NASDAQ,NASDAQ,,True
+FAQTX,American Funds 2035 Target Date Retirement Fd Cl F-1,49267916780.0,Financial Services,Asset Management,1.06,19.92,0.298,0,NASDAQ,NASDAQ,,True
+SU,Suncor Energy Inc.,49226362800.0,Energy,Oil & Gas Integrated,1.471,38.76,1.62,1287108,New York Stock Exchange,NYSE,CA,False
+BAGIX,Baird Aggregate Bond Fund Institutional Class,49222774778.0,Financial Services,Asset Management - Bonds,1.01,9.93,0.28600000000000003,0,NASDAQ,NASDAQ,,True
+BAGSX,Baird Aggregate Bond Fd Investor Class,49222774775.0,Financial Services,Asset Management - Bonds,1.01,10.33,0.268,0,NASDAQ,NASDAQ,,True
+TRP,TC Energy Corporation,49114776600.0,Energy,Oil & Gas Midstream,0.8190000000000001,47.34,2.85,519033,New York Stock Exchange,NYSE,CA,False
+HMC,"Honda Motor Co., Ltd.",49076266307.0,Consumer Cyclical,Auto - Manufacturers,0.515,30.53,1.34,476456,New York Stock Exchange,NYSE,JP,False
+E,Eni S.p.A.,48992103591.0,Energy,Oil & Gas Integrated,1.012,30.8,2.1,186918,New York Stock Exchange,NYSE,IT,False
+ROST,"Ross Stores, Inc.",48926748425.0,Consumer Cyclical,Apparel - Retail,1.091,147.475,1.47,803691,NASDAQ Global Select,NASDAQ,US,False
+LEN,Lennar Corporation,48852013001.0,Consumer Cyclical,Residential Construction,1.608,181.595,2.0,667876,New York Stock Exchange,NYSE,US,False
+WOBDX,JPMorgan Core Bond Fund,48818036728.0,Financial Services,Asset Management - Bonds,0.92,10.38,0.29700000000000004,0,NASDAQ,NASDAQ,US,True
+JCBZX,JPMorgan Core Bond Fund Class R2,48818036728.0,Financial Services,Asset Management - Bonds,0.92,10.37,0.252,0,NASDAQ,NASDAQ,,True
+JCBUX,JPMorgan Core Bond Fund,48818036727.0,,,0.92,10.39,0.37600000000000006,0,Nasdaq,NASDAQ,,True
+LYG,Lloyds Banking Group plc,48788533630.0,Financial Services,Banks - Regional,1.234,3.185,0.15,3655689,New York Stock Exchange,NYSE,GB,False
+VGHAX,Vanguard Health Care Fund Admiral Shares,48664424390.0,Financial Services,Asset Management,0.63,95.63,0.8,0,NASDAQ,NASDAQ,US,True
+VGHCX,Vanguard Health Care Fund,48664424361.0,Financial Services,Asset Management,0.63,226.73,1.792,0,NASDAQ,NASDAQ,US,True
+KMB,Kimberly-Clark Corporation,48654705840.0,Consumer Defensive,Household & Personal Products,0.402,144.46,4.88,1148581,New York Stock Exchange,NYSE,US,False
+FBALX,Fidelity Balanced Fund,48574472176.0,Financial Services,Asset Management,1.06,30.08,0.391,0,NASDAQ,NASDAQ,US,True
+FICO,Fair Isaac Corporation,48519169280.0,Technology,Software - Application,1.3519999999999999,1978.88,0.0,99448,New York Stock Exchange,NYSE,US,False
+TIEIX,TIAA-CREF Equity Index Fund,48230150143.0,Financial Services,Asset Management,1.01,41.41,0.495,0,NASDAQ,NASDAQ,,True
+CCI,Crown Castle Inc.,48187125000.0,Real Estate,REIT - Specialty,0.863,110.775,6.26,699897,New York Stock Exchange,NYSE,US,False
+IFC.TO,Intact Financial Corporation,47671346280.0,Financial Services,Insurance - Property & Casualty,0.5750000000000001,267.27,4.84,130520,Toronto Stock Exchange,TSX,CA,False
+MSCI,MSCI Inc.,47503813500.0,Financial Services,Financial - Data & Stock Exchanges,1.11,603.99,6.4,113329,New York Stock Exchange,NYSE,US,False
+VIRSX,Vanguard Institutional Target Retirement 2040 Fund Institutional Shares,47412973550.0,Financial Services,Asset Management,1.32,30.89,0.0,0,NASDAQ,NASDAQ,US,True
+LHX,"L3Harris Technologies, Inc.",47016487200.0,Industrials,Aerospace & Defense,0.731,247.84,4.64,224799,New York Stock Exchange,NYSE,US,False
+OXY,Occidental Petroleum Corporation,46901762078.0,Energy,Oil & Gas Exploration & Production,1.5979999999999999,51.7899,0.88,5900474,New York Stock Exchange,NYSE,US,False
+COR,Cencora,46729696050.0,Healthcare,Medical - Distribution,0.437,237.15,2.04,363158,New York Stock Exchange,NYSE,US,False
+WCN,"Waste Connections, Inc.",46722759409.0,Industrials,Waste Management,0.718,181.07,1.1400000000000001,205388,New York Stock Exchange,NYSE,CA,False
+PWR,"Quanta Services, Inc.",46720685547.0,Industrials,Engineering & Construction,1.011,317.1159,0.36,255111,New York Stock Exchange,NYSE,US,False
+ALC,Alcon Inc.,46606984000.0,Healthcare,Medical - Instruments & Supplies,0.717,94.48,0.27,311247,New York Stock Exchange,NYSE,CH,False
+OIEJX,JPMorgan Equity Income Fund Class R6,46569369600.0,Financial Services,Asset Management - Income,0.74,26.66,0.61136,0,NASDAQ,NASDAQ,US,True
+HLIEX,JPMorgan Equity Income Fund I Class,46569369595.0,Financial Services,Asset Management - Income,0.74,26.65,0.43258,0,NASDAQ,NASDAQ,US,True
+OIEIX,JPMorgan Equity Income A,46569369587.0,,,0.74,26.1,0.308,0,Nasdaq,NASDAQ,,True
+MFEGX,MFS Growth Fund Class A,46535016422.0,Financial Services,Asset Management,1.1,201.7,0.0,0,NASDAQ,NASDAQ,,True
+MFEKX,MFS Growth R6,46535016402.0,,,1.1,222.0,0.328,0,Nasdaq,NASDAQ,,True
+MFEIX,MFS Growth Fund,46535016348.0,Financial Services,Asset Management,1.1,220.21,0.17500000000000002,0,NASDAQ,NASDAQ,,True
+MFEJX,MFS Growth R4,46535016252.0,,,1.1,213.2,0.116,0,Nasdaq,NASDAQ,,True
+BBV.BR,"Banco Bilbao Vizcaya Argentaria, S.A.",46530667622.0,Financial Services,Banks - Diversified,1.570779,7.8,0.43,274,Brussels,EURONEXT,ES,False
+SPLG,SPDR Portfolio S&P 500 ETF,46459032011.0,Financial Services,Asset Management,1.0,68.566,0.86214,3625189,New York Stock Exchange Arca,AMEX,US,False
+VWIGX,Vanguard International Growth Fund,46430822370.0,Financial Services,Asset Management,1.3,36.86,0.323,0,NASDAQ,NASDAQ,US,True
+VWILX,Vanguard World Fund - Vanguard International Growth Fund,46430822285.0,Financial Services,Asset Management,1.3,117.3,1.125,0,NASDAQ,NASDAQ,US,True
+TD-PFJ.TO,The Toronto-Dominion Bank NCUM 5Y PFD SR18,46394712050.0,,,0.0,25.22,0.0,13114,Toronto Stock Exchange,TSX,,False
+SCHX,Schwab U.S. Large-Cap ETF,46209524090.0,Financial Services,Asset Management,1.01,23.005,0.8321000000000001,5665245,New York Stock Exchange Arca,AMEX,US,False
+VWUSX,Vanguard U.S. Growth Fund,46169812958.0,Financial Services,Asset Management,1.24,71.63,0.159,0,NASDAQ,NASDAQ,US,True
+VWUAX,Vanguard U.S. Growth Fund Admiral Shares,46169812917.0,Financial Services,Asset Management,1.24,185.7,0.539,0,NASDAQ,NASDAQ,US,True
+CMI,Cummins Inc.,45878188480.0,Industrials,Industrial - Machinery,0.976,334.76,7.28,141901,New York Stock Exchange,NYSE,US,False
+ENI.BR,Eni S.p.A.,45805080565.0,Energy,Oil & Gas Integrated,1.164053,13.692,0.899999999999999,29054,Brussels,EURONEXT,IT,False
+BCS,Barclays PLC,45690251750.0,Financial Services,Banks - Diversified,1.363,12.595,0.36,5479616,New York Stock Exchange,NYSE,GB,False
+SQ,"Block, Inc.",45576202163.0,Technology,Software - Infrastructure,2.492,74.03,0.0,2020253,New York Stock Exchange,NYSE,US,False
+SLF.TO,Sun Life Financial Inc.,45512358400.0,Financial Services,Insurance - Diversified,0.9380000000000001,78.8,3.24,238505,Toronto Stock Exchange,TSX,CA,False
+HLN,Haleon plc,45481289265.0,Healthcare,Drug Manufacturers - Specialty & Generic,0.187,9.9801,0.16,1524344,New York Stock Exchange,NYSE,GB,False
+OAKIX,Oakmark International Fund Investor Class,45437669358.0,Financial Services,Asset Management,1.3,27.49,0.495,0,NASDAQ,NASDAQ,,True
+MFC-PC.TO,Manulife Financial Corporation,45423461175.0,Financial Services,Insurance - Life,1.058,20.06,1.13,400,Toronto Stock Exchange,TSX,CA,False
+PRH,"Prudential Financial, Inc. 5.95",45243506713.0,Financial Services,Insurance - Life,0.2943668,26.6,1.48776,6370,New York Stock Exchange,NYSE,US,False
+VALE,Vale S.A.,45207534104.0,Basic Materials,Industrial Materials,0.909,10.585,1.78,13470967,New York Stock Exchange,NYSE,BR,False
+RFGTX,American Funds 2040 Target Date Retirement Fund Class R-6,45177581568.0,Financial Services,Asset Management,1.16,21.69,0.329,0,NASDAQ,NASDAQ,,True
+REGTX,American Funds 2040 Trgt Date Retire R5,45177581564.0,,,1.16,21.78,0.32,0,Nasdaq,NASDAQ,,True
+RCKTX,American Funds 2040 Trgt Date Retire R3,45177581563.0,,,1.16,21.18,0.22,0,Nasdaq,NASDAQ,,True
+AAGTX,American Funds 2040 Target Date Retirement Fund Class A,45177581555.0,Financial Services,Asset Management,1.16,21.5,0.271,0,NASDAQ,NASDAQ,,True
+FAUTX,American Funds 2040 Target Date Retirement Fd Cl F-1,45177581553.0,Financial Services,Asset Management,1.16,21.32,0.266,0,NASDAQ,NASDAQ,,True
+CHTR,"Charter Communications, Inc.",45156115350.0,Communication Services,Telecommunications Services,1.047,316.35,0.0,385720,NASDAQ Global Select,NASDAQ,US,False
+PEG,Public Service Enterprise Group Incorporated,44939194020.0,Utilities,Regulated Electric,0.627,90.21,2.4,737361,New York Stock Exchange,NYSE,US,False
+TAK,Takeda Pharmaceutical Company Limited,44932801816.0,Healthcare,Drug Manufacturers - Specialty & Generic,0.498,14.175,0.58,620896,New York Stock Exchange,NYSE,JP,False
+PFH,CABCO Trust for JC Penney Debentures,44897559251.0,Financial Services,Banks,0.0,20.7796,1.031419999999999,18444,New York Stock Exchange,NYSE,US,True
+PRU,"Prudential Financial, Inc.",44855265000.0,Financial Services,Insurance - Life,1.2850000000000001,125.645,5.2,416110,New York Stock Exchange,NYSE,US,False
+MPLX,MPLX LP,44849388100.0,Energy,Oil & Gas Midstream,1.341,43.945,3.4,840933,New York Stock Exchange,NYSE,US,False
+TEL,TE Connectivity Ltd.,44761190320.0,Technology,"Hardware, Equipment & Parts",1.323,147.28,2.6,491705,New York Stock Exchange,NYSE,CH,False
+CPNG,"Coupang, Inc.",44681174038.0,Consumer Cyclical,Specialty Retail,1.113,24.91,0.0,3738625,New York Stock Exchange,NYSE,KR,False
+FAST,Fastenal Company,44504648910.0,Industrials,Industrial - Distribution,0.997,77.685,1.56,1211822,NASDAQ Global Select,NASDAQ,US,False
+BSPAX,iShares S&P 500 Index Fund Investor A Shares,44459568868.0,Financial Services,Asset Management,1.0,686.95,6.518,0,NASDAQ,NASDAQ,US,True
+BSPIX,iShares S&P 500 Index Fund Institutional Shares,44459568656.0,Financial Services,Asset Management,1.0,687.14,7.993,0,NASDAQ,NASDAQ,US,True
+WFSPX,iShares S&P 500 Index K,44459568575.0,,,1.0,687.34,6.249,0,Nasdaq,NASDAQ,,True
+NA.TO,National Bank of Canada,44457105350.0,Financial Services,Banks - Diversified,1.125,130.55,4.4,310024,Toronto Stock Exchange,TSX,CA,False
+PRS,"Prudential Financial, Inc. 5.62",44412193516.0,Financial Services,Insurance - Life,0.2742021,25.17,1.40624,8422,New York Stock Exchange,NYSE,US,False
+CCIV,"Lucid Group, Inc.",44388413664.0,Financial Services,Shell Companies,0.0,24.25,0.0,17905570,New York Stock Exchange,NYSE,US,False
+VST,Vistra Corp.,44372277394.0,Utilities,Independent Power Producers,1.116,129.154,0.88,3046754,New York Stock Exchange,NYSE,US,False
+GWO.TO,Great-West Lifeco Inc.,44325358000.0,Financial Services,Insurance - Life,0.839,47.6,2.22,173394,Toronto Stock Exchange,TSX,CA,False
+GWO-PN.TO,Great-West Lifeco Inc.,44113542620.0,Financial Services,Insurance - Life,0.839,14.72,0.44,400,Toronto Stock Exchange,TSX,CA,False
+ADYEN.AS,Adyen N.V.,44056125600.0,Technology,Software - Infrastructure,1.647,1418.0,0.0,45873,Amsterdam,EURONEXT,NL,False
+GWO-PM.TO,Great-West Lifeco Inc,43848665033.0,,,0.0,24.33,1.45,1696,Toronto Stock Exchange,TSX,,False
+KVUE,Kenvue Inc.,43847757623.0,Consumer Defensive,Household & Personal Products,1.257601,22.895,0.8200000000000001,27756061,New York Stock Exchange,NYSE,US,False
+HEIA.AS,Heineken N.V.,43831928560.0,Consumer Defensive,Beverages - Alcoholic,0.596,77.52,1.73,573677,Amsterdam,EURONEXT,NL,False
+FUSIX,Strategic Advisers Fidelity International Fund,43749310456.0,Financial Services,Asset Management,1.04,12.99,0.29800000000000004,0,Nasdaq,NASDAQ,US,True
+UMG.AS,Universal Music Group N.V.,43622724800.0,Communication Services,Entertainment,0.857,23.85,0.51,1068026,Amsterdam,EURONEXT,NL,False
+PCG,PG&E Corporation,43390438000.0,Utilities,Regulated Electric,1.015,20.3,0.04,3153843,New York Stock Exchange,NYSE,US,False
+DSY.PA,Dassault Systèmes SE,43353194193.0,Technology,Software - Application,0.56,33.01,0.23,1155947,Paris,EURONEXT,FR,False
+STZ,"Constellation Brands, Inc.",43310858880.0,Consumer Defensive,Beverages - Wineries & Distilleries,0.876,238.58,4.04,532544,New York Stock Exchange,NYSE,US,False
+VLO,Valero Energy Corporation,43305899770.0,Energy,Oil & Gas Refining & Marketing,1.376,135.17,4.28,1063026,New York Stock Exchange,NYSE,US,False
+XVALO.MC,Vale S.A.,43288066898.0,Basic Materials,Industrial Materials,0.909,10.14,1.63,15760,Madrid Stock Exchange,EURONEXT,BR,False
+CVE.TO,Cenovus Energy Inc.,43228569000.0,Energy,Oil & Gas Integrated,2.635,23.29,0.72,1152523,Toronto Stock Exchange,TSX,CA,False
+HWM,Howmet Aerospace Inc.,43222767300.0,Industrials,Industrial - Machinery,1.292,105.9,0.32,896530,New York Stock Exchange,NYSE,US,False
+SGEN,Seagen Inc.,43154776450.0,Healthcare,Biotechnology,0.321,228.74,0.0,19392808,NASDAQ Global Select,NASDAQ,US,False
+AEM,Agnico Eagle Mines Limited,43150988427.0,Basic Materials,Gold,1.098,86.615,1.6,1886149,New York Stock Exchange,NYSE,CA,False
+MWTSX,Metropolitan West Total Return Bond Fund Plan Class,43052408829.0,Financial Services,Asset Management - Bonds,1.13,8.59,0.34178800000000004,0,NASDAQ,NASDAQ,US,True
+MWTIX,Metropolitan West Total Return Bond Fd Cl I,43052408829.0,Financial Services,Asset Management - Bonds,1.13,9.16,0.328,0,NASDAQ,NASDAQ,,True
+MWTRX,Metropolitan West Total Return Bond Fund,43052408826.0,Financial Services,Asset Management - Bonds,1.1400000000000001,9.17,0.312,0,NASDAQ,NASDAQ,US,True
+KHC,The Kraft Heinz Company,43043248000.0,Consumer Defensive,Packaged Foods,0.47700000000000004,35.6,1.6,4351629,NASDAQ Global Select,NASDAQ,US,False
+HES,Hess Corporation,43037503200.0,Energy,Oil & Gas Exploration & Production,1.162,139.68,2.0,518229,New York Stock Exchange,NYSE,US,False
+NDAQ,"Nasdaq, Inc.",42800887800.0,Financial Services,Financial - Data & Stock Exchanges,0.961,74.47,0.96,852288,NASDAQ Global Select,NASDAQ,US,False
+F,Ford Motor Company,42753180000.0,Consumer Cyclical,Auto - Manufacturers,1.631,10.95,0.6000000000000001,17781094,New York Stock Exchange,NYSE,US,False
+LLDYX,Lord Abbett Short Duration Income I,42704732160.0,Financial Services,Asset Management - Income,0.30000000000000004,3.88,0.166,0,Nasdaq,NASDAQ,,True
+LDLVX,Lord Abbett Short Duration Income Fund,42704732160.0,Financial Services,Asset Management - Income,0.31,3.88,0.19972700000000002,0,NASDAQ,NASDAQ,US,True
+LOLDX,Lord Abbett Short Duration Income F3,42704732157.0,,,0.30000000000000004,3.89,0.18400000000000002,0,Nasdaq,NASDAQ,,True
+MS-PQ,Morgan Stanley,42602754615.0,Financial Services,Financial - Capital Markets,1.3559999999999999,26.55,1.38,34518,New York Stock Exchange,NYSE,US,False
+VSCSX,Vanguard ST Corporate Bond Index Fund Admiral Shs,42401443836.0,Financial Services,Asset Management - Bonds,0.48,21.47,0.48600000000000004,0,NASDAQ,NASDAQ,,True
+MPWR,"Monolithic Power Systems, Inc.",42369631920.0,Technology,Semiconductors,1.117,869.085,5.0,405516,NASDAQ Global Select,NASDAQ,US,False
+ODFL,"Old Dominion Freight Line, Inc.",42338658290.0,Industrials,Trucking,0.992,197.57,1.04,572836,NASDAQ Global Select,NASDAQ,US,False
+VCSH,Vanguard Short-Term Corporate Bond Index Fund,42315425134.0,Financial Services,Asset Management - Bonds,0.48,78.6601,2.9384,1076769,NASDAQ Global Market,NASDAQ,US,True
+TD-PFA.TO,The Toronto-Dominion Bank 5 YR RST PFD 1,42310800023.0,,,0.0,23.0,0.0,5700,Toronto Stock Exchange,TSX,,False
+DDOG,"Datadog, Inc.",42300035862.0,Technology,Software - Application,1.103,125.4627,0.0,2171988,NASDAQ Global Select,NASDAQ,US,False
+IQV,IQVIA Holdings Inc.,42284485000.0,Healthcare,Medical - Diagnostics & Research,1.494,231.95,0.0,359386,New York Stock Exchange,NYSE,US,False
+OTIS,Otis Worldwide Corporation,42246535850.0,Industrials,Industrial - Machinery,0.932,105.47,1.56,437732,New York Stock Exchange,NYSE,US,False
+BCE.TO,BCE Inc.,42202211580.0,Communication Services,Telecommunications Services,0.482,46.26,3.99,1108551,Toronto Stock Exchange,TSX,CA,False
+SGO.PA,Compagnie de Saint-Gobain S.A.,42092962169.0,Industrials,Construction,1.392,84.26,2.1,692098,Paris,EURONEXT,FR,False
+VRT,Vertiv Holdings Co,42080351160.0,Industrials,Electrical Equipment & Parts,1.5939999999999999,112.17,0.1,3717194,New York Stock Exchange,NYSE,US,False
+VBILX,Vanguard Intermediate-Term Bond Index Fund Admiral Shares,42051403770.0,Financial Services,Asset Management - Bonds,1.05,10.42,0.311,0,NASDAQ,NASDAQ,,True
+EW,Edwards Lifesciences Corporation,42026436000.0,Healthcare,Medical - Devices,1.1280000000000001,69.765,0.0,1873491,New York Stock Exchange,NYSE,US,False
+WPM.TO,Wheaton Precious Metals Corp.,42015673700.0,Basic Materials,Gold,0.6990000000000001,92.62,0.84,250994,Toronto Stock Exchange,TSX,CA,False
+SCHF,Schwab International Equity ETF,41851785380.0,Financial Services,Asset Management,1.03,19.9448,0.8853000000000001,3559613,New York Stock Exchange Arca,AMEX,US,False
+BIV,Vanguard Intermediate-Term Bond Index Fund,41830023031.0,Financial Services,Asset Management - Bonds,1.06,76.525,2.74465,488679,New York Stock Exchange Arca,AMEX,US,True
+ENBA,Enbridge Inc. 6.375 SNT18 B 78,41782996977.0,Energy,Oil & Gas Midstream,0.0,25.4,0.3984375,21497,New York Stock Exchange,NYSE,US,False
+XLF,Financial Select Sector SPDR Fund,41769959324.0,Financial Services,Asset Management,1.02,47.24,0.6641300000000001,16175270,New York Stock Exchange Arca,AMEX,US,False
+VSIAX,Vanguard Small-Cap Value Index Fd Admiral,41762676719.0,,,1.02,88.09,1.03661,0,NASDAQ,NASDAQ,,True
+FSMAX,Fidelity Extended Market Index Fund,41754705844.0,Financial Services,Asset Management,1.11,89.98,0.8300000000000001,0,NASDAQ,NASDAQ,US,True
+STM.PA,STMicroelectronics N.V.,41748402090.0,Technology,Semiconductors,1.394584,46.26,0.23,2233437,Paris,EURONEXT,CH,False
+ENB-PFA.TO,Enbridge Inc.,41730254300.0,Energy,Oil & Gas Midstream,0.904,19.165,1.02424,465,Toronto Stock Exchange,TSX,CA,False
+BN.PA,Danone S.A.,41618587074.0,Consumer Defensive,Packaged Foods,0.466,64.66,2.1,859715,Paris,EURONEXT,FR,False
+IMO,Imperial Oil Limited,41393408250.0,Energy,Oil & Gas Integrated,1.776,77.25,1.77,154855,American Stock Exchange,AMEX,CA,False
+GEHC,GE HealthCare Technologies Inc.,41145269626.0,Healthcare,Medical - Healthcare Information Services,1.2092775,90.1,0.12,646740,NASDAQ Global Select,NASDAQ,US,False
+TWTR,"Twitter, Inc. (delisted)",41093709770.0,Communication Services,Internet Content & Information,0.0,53.7,0.0,75139089,New York Stock Exchange,NYSE,US,False
+FTBFX,Fidelity Total Bond,41003073529.0,Financial Services,Asset Management - Bonds,0.98,9.64,0.34800000000000003,0,NASDAQ,NASDAQ,US,True
+LNG,"Cheniere Energy, Inc.",40925996063.0,Energy,Oil & Gas Midstream,0.9460000000000001,180.87,1.74,455024,New York Stock Exchange,NYSE,US,False
+ACGL,Arch Capital Group Ltd.,40915110400.0,Financial Services,Insurance - Diversified,0.594,108.8,0.0,592379,NASDAQ Global Select,NASDAQ,BM,False
+IT,"Gartner, Inc.",40906264980.0,Technology,Information Technology Services,1.323,530.84,0.0,41687,New York Stock Exchange,NYSE,US,False
+FLUT,Flutter Entertainment plc,40857361339.0,Consumer Cyclical,"Gambling, Resorts & Casinos",1.235,229.855,0.0,731531,New York Stock Exchange,NYSE,IE,False
+KR,The Kroger Co.,40837601362.0,Consumer Defensive,Grocery Stores,0.463,56.4456,1.28,899802,New York Stock Exchange,NYSE,US,False
+KIM-PN,Kimco Realty Corporation,40799163761.0,Real Estate,REIT - Retail,1.492,61.87,3.63,81,New York Stock Exchange,NYSE,US,False
+CTVA,"Corteva, Inc.",40711046070.0,Basic Materials,Agricultural Inputs,0.774,58.81,0.68,1487574,New York Stock Exchange,NYSE,US,False
+ITOT,iShares Core S&P Total U.S. Stock Market ETF,40691637759.0,Financial Services,Asset Management,1.02,127.7001,1.58258,446243,New York Stock Exchange Arca,AMEX,US,False
+EXC,Exelon Corporation,40663721700.0,Utilities,Regulated Electric,0.604,40.6434,1.52,1285051,NASDAQ Global Select,NASDAQ,US,False
+ACA.PA,Crédit Agricole S.A.,40621727279.0,Financial Services,Banks - Regional,1.5110000000000001,14.27,1.05,2957644,Paris,EURONEXT,FR,False
+MDIJX,MFS International Diversification Fund,40535384045.0,Financial Services,Asset Management,1.0,25.23,0.5730000000000001,0,NASDAQ,NASDAQ,US,True
+MDIDX,MFS International Diversification Fund Class A,40535384042.0,Financial Services,Asset Management,1.0,24.88,0.518,0,NASDAQ,NASDAQ,US,True
+MDIZX,MFS International Diversification Fund Class R6,40535384039.0,Financial Services,Asset Management,1.0,25.26,0.596,0,NASDAQ,NASDAQ,US,True
+XLV,Health Care Select Sector SPDR Fund,40492758157.0,Financial Services,Asset Management,0.67,151.75,2.27042,2617660,New York Stock Exchange Arca,AMEX,US,False
+IR,Ingersoll Rand Inc.,40445236160.0,Industrials,Industrial - Machinery,1.425,100.24,0.08,562723,New York Stock Exchange,NYSE,US,False
+FERG,Ferguson plc,40312328395.0,Industrials,Industrial - Distribution,1.206,199.625,3.16,698776,New York Stock Exchange,NYSE,GB,False
+FFH.TO,Fairfax Financial Holdings Limited,40290468777.0,Financial Services,Insurance - Property & Casualty,0.833,1735.11,20.29,15117,Toronto Stock Exchange,TSX,CA,False
+DOL.TO,Dollarama Inc.,40255901370.0,Consumer Defensive,Discount Stores,0.555,143.21,0.37,183901,Toronto Stock Exchange,TSX,CA,False
+GLW,Corning Incorporated,40252175040.0,Technology,"Hardware, Equipment & Parts",1.039,47.04,1.12,2714156,New York Stock Exchange,NYSE,US,False
+MCHP,Microchip Technology Incorporated,40133256525.0,Technology,Semiconductors,1.516,74.805,1.82,2213751,NASDAQ Global Select,NASDAQ,US,False
+IWB,iShares Russell 1000 ETF,40034909361.0,Financial Services,Asset Management,1.01,319.64,3.646219999999999,417750,New York Stock Exchange Arca,AMEX,US,False
+SNOW,Snowflake Inc.,39875392000.0,Technology,Software - Application,0.833,118.96,0.0,1636690,New York Stock Exchange,NYSE,US,False
+MSTR,MicroStrategy Incorporated,39857225975.0,Technology,Software - Application,3.116,217.805,0.0,12355416,NASDAQ Global Select,NASDAQ,US,False
+TRAIX,T. Rowe Price Capital Appreciation Fund I Class,39707377641.0,Financial Services,Asset Management,0.97,38.54,0.758,0,NASDAQ,NASDAQ,US,True
+PRWCX,T. Rowe Price Capital Appreciation Fund,39676465127.0,Financial Services,Asset Management,0.97,38.51,0.715,0,NASDAQ,NASDAQ,US,True
+IXUS,iShares Core MSCI Total International Stock ETF,39386148834.0,Financial Services,Asset Management,1.04,70.866,2.06761,586042,NASDAQ Global Market,NASDAQ,US,False
+A,"Agilent Technologies, Inc.",39323710080.0,Healthcare,Medical - Diagnostics & Research,1.055,136.86,0.9400000000000001,431977,New York Stock Exchange,NYSE,US,False
+CVNA,Carvana Co.,39267539941.0,Consumer Cyclical,Specialty Retail,3.444,189.75,0.0,833436,New York Stock Exchange,NYSE,US,False
+MUB,iShares National Muni Bond ETF,39205340161.0,Financial Services,Asset Management,0.9,107.555,3.152569999999999,3383257,New York Stock Exchange Arca,AMEX,US,False
+AME,"AMETEK, Inc.",39120322560.0,Industrials,Industrial - Machinery,1.172,168.96,1.12,392815,New York Stock Exchange,NYSE,US,False
+PACLX,T. Rowe Price Capital Appreciation Fund Advisor Class,38986174432.0,Financial Services,Asset Management,0.97,37.84,0.633,0,NASDAQ,NASDAQ,US,True
+NWG,NatWest Group plc,38936386200.0,Financial Services,Banks - Diversified,1.282,9.39,0.44,1335462,New York Stock Exchange,NYSE,GB,False
+TCOM,Trip.com Group Limited,38845026407.0,Consumer Cyclical,Travel Services,0.404,60.31,0.0,948374,NASDAQ Global Select,NASDAQ,CN,False
+ODVIX,Invesco Developing Markets Fund Class R6,38824730608.0,Financial Services,Asset Management,1.02,41.76,0.368,0,NASDAQ,NASDAQ,US,True
+EA,Electronic Arts Inc.,38433174000.0,Technology,Electronic Gaming & Multimedia,0.788,145.47,0.76,652739,NASDAQ Global Select,NASDAQ,US,False
+CTSH,Cognizant Technology Solutions Corporation,38349059460.0,Technology,Information Technology Services,1.049,77.37,1.2,581314,NASDAQ Global Select,NASDAQ,US,False
+ENGI.PA,ENGIE SA,38331626840.0,Utilities,Diversified Utilities,0.9430000000000001,15.83,1.43,3659146,Paris,EURONEXT,FR,False
+VRSK,"Verisk Analytics, Inc.",38273601520.0,Industrials,Consulting Services,0.861,268.73,1.56,157881,NASDAQ Global Select,NASDAQ,US,False
+GIS,"General Mills, Inc.",38156078070.0,Consumer Defensive,Packaged Foods,0.091,68.73,2.4,1702253,New York Stock Exchange,NYSE,US,False
+FATTX,American Funds 2045 Target Date Retirement Fd Cl F-1,38038429695.0,Financial Services,Asset Management,1.19,21.97,0.254,0,NASDAQ,NASDAQ,,True
+RBHTX,American Funds 2045 Target Date Retirement Fund Class R-2,38038429685.0,Financial Services,Asset Management,1.19,21.35,0.134,0,NASDAQ,NASDAQ,US,True
+VSIGX,Vanguard Intermediate-Term Treasury Index Fund Admiral Shares,38035550197.0,Financial Services,Asset Management,0.79,20.08,0.635,0,NASDAQ,NASDAQ,,True
+CBRE,"CBRE Group, Inc.",37946882885.0,Real Estate,Real Estate - Services,1.4020000000000001,123.835,1.5,985361,New York Stock Exchange,NYSE,US,False
+VGIT,Vanguard Intermediate-Term Treasury Index Fund,37881948747.0,Financial Services,Asset Management,0.79,59.19,2.0479,1119297,NASDAQ Global Market,NASDAQ,US,True
+VTWNX,Vanguard Target Retirement 2020 Fund,37873348583.0,Financial Services,Asset Management,0.8,29.34,0.79,0,NASDAQ,NASDAQ,,True
+ENB-PFK.TO,Enbridge Inc. CUM RED PFD 19,37853700366.0,,,0.0,22.9,0.0,3500,Toronto Stock Exchange,TSX,US,False
+VEUSX,Vanguard European Stock Index Fund Admiral Shares,37785370557.0,Financial Services,Asset Management,1.1400000000000001,87.04,2.313,0,NASDAQ,NASDAQ,US,True
+YUM,"Yum! Brands, Inc.",37740777950.0,Consumer Cyclical,Restaurants,1.082,134.23,2.68,640862,New York Stock Exchange,NYSE,US,False
+XLE,Energy Select Sector SPDR Fund,37545514960.0,Financial Services,Asset Management,0.72,90.215,2.9784,5132942,New York Stock Exchange Arca,AMEX,US,False
+LVS,Las Vegas Sands Corp.,37524892560.0,Consumer Cyclical,"Gambling, Resorts & Casinos",1.127,50.955,0.8,1481952,New York Stock Exchange,NYSE,US,False
+VTEAX,Vanguard Tax-Exempt Bond Index Fund Admiral,37491044343.0,Financial Services,Asset Management - Bonds,0.96,20.3,0.562,0,NASDAQ,NASDAQ,,True
+IDXX,"IDEXX Laboratories, Inc.",37476345447.0,Healthcare,Medical - Diagnostics & Research,1.333,455.33,0.0,638361,NASDAQ Global Select,NASDAQ,US,False
+VTEB,Vanguard Tax-Exempt Bond Index Fund,37402360580.0,Financial Services,Asset Management,0.96,50.61,1.5509,3035063,New York Stock Exchange Arca,AMEX,US,True
+HSY,The Hershey Company,37342374768.0,Consumer Defensive,Food Confectioners,0.361,184.6,5.48,556858,New York Stock Exchange,NYSE,US,False
+STLA,Stellantis N.V.,37267942751.0,Consumer Cyclical,Auto - Manufacturers,1.293,12.925,1.6600000000000001,3812777,New York Stock Exchange,NYSE,NL,False
+ALNY,"Alnylam Pharmaceuticals, Inc.",37231773810.0,Healthcare,Biotechnology,0.381,290.01,0.0,421474,NASDAQ Global Select,NASDAQ,US,False
+BSBR,Banco Santander (Brasil) S.A.,37188050230.0,Financial Services,Banks - Regional,0.737,4.985,0.32,144897,New York Stock Exchange,NYSE,BR,False
+TRLGX,T. Rowe Price Large-Cap Growth Fund I Class,37161230285.0,Financial Services,Asset Management,1.09,83.85,0.0,0,NASDAQ,NASDAQ,US,True
+GBTC,Grayscale Bitcoin Trust ETF (BTC),37053356776.0,Financial Services,Asset Management - Cryptocurrency,0.0,53.5167,0.0,2524207,New York Stock Exchange Arca,AMEX,US,False
+NUE,Nucor Corporation,36970140260.0,Basic Materials,Steel,1.561,155.77,2.16,760250,New York Stock Exchange,NYSE,US,False
+BBCPX,Bridge Builder Core Plus Bond,36966690812.0,,,1.02,8.91,0.387,0,Nasdaq,NASDAQ,,True
+SYY,Sysco Corporation,36921448080.0,Consumer Defensive,Food Distribution,1.197,75.16,2.04,1219181,New York Stock Exchange,NYSE,US,False
+ED,"Consolidated Edison, Inc.",36847348150.0,Utilities,Regulated Electric,0.34800000000000003,106.45,3.32,542608,New York Stock Exchange,NYSE,US,False
+GOLD,Barrick Gold Corporation,36657296312.0,Basic Materials,Gold,0.48,20.9144,0.4,14775685,New York Stock Exchange,NYSE,CA,False
+DFS,Discover Financial Services,36588898310.0,Financial Services,Financial - Credit Services,1.4100000000000001,145.7307,2.8,571995,New York Stock Exchange,NYSE,US,False
+DOW,Dow Inc.,36549525545.0,Basic Materials,Chemicals,1.213,52.145,2.8,1688461,New York Stock Exchange,NYSE,US,False
+VTINX,Vanguard Target Retirement Income Fund,36539195391.0,Financial Services,Asset Management - Income,0.68,13.78,0.359,0,NASDAQ,NASDAQ,,True
+IRM,Iron Mountain Incorporated,36432331200.0,Real Estate,REIT - Specialty,1.026,124.2,2.86,479463,New York Stock Exchange,NYSE,US,False
+FSMDX,Fidelity Mid Cap Index Fund,36378800126.0,Financial Services,Asset Management,1.05,35.07,0.341,0,NASDAQ,NASDAQ,US,True
+BKR,Baker Hughes Company,36155666480.0,Energy,Oil & Gas Equipment & Services,1.366,36.395,0.84,1870316,NASDAQ Global Select,NASDAQ,US,False
+ABC,AmerisourceBergen Corporation,36149702920.0,Healthcare,Medical - Distribution,0.562175,179.98,1.94,806054,New York Stock Exchange,NYSE,US,False
+WKL.AS,Wolters Kluwer N.V.,35961335076.0,Industrials,Specialty Business Services,0.257,158.8,2.19,353189,Amsterdam,EURONEXT,NL,False
+ANEFX,American Funds New Economy A,35955384309.0,,,1.04,67.21,0.129,0,Nasdaq,NASDAQ,,True
+RNNEX,American Funds The New Economy Fund Class R-2E,35955384275.0,Financial Services,Asset Management,1.04,64.3,0.0,0,NASDAQ,NASDAQ,,True
+ANFFX,American Funds New Economy Fund Cl F-1 Shs,35955384266.0,Financial Services,Asset Management,1.04,67.42,0.0,0,NASDAQ,NASDAQ,,True
+JEPI,JPMorgan Equity Premium Income ETF,35863044388.0,Financial Services,Asset Management - Income,0.58,59.6866,4.22166,1724591,New York Stock Exchange Arca,AMEX,US,False
+VEEV,Veeva Systems Inc.,35847329580.0,Healthcare,Medical - Healthcare Information Services,0.808,221.37,0.0,354474,New York Stock Exchange,NYSE,US,False
+DFEOX,DFA U.S. Core Equity 1 Portfolio,35828522992.0,,,0.99,43.7,0.396,0,NASDAQ,NASDAQ,,True
+IVE,iShares S&P 500 Value ETF,35788369628.0,Financial Services,Asset Management,0.88,199.13,3.6220600000000003,255642,New York Stock Exchange Arca,AMEX,US,False
+CCEP,Coca-Cola Europacific Partners PLC,35775508120.0,Consumer Defensive,Beverages - Non-Alcoholic,0.755,77.71,2.07,831607,NASDAQ Global Select,NASDAQ,GB,False
+CRG.IR,CRH plc,35771755423.0,Basic Materials,Construction Materials,0.90578,50.34,1.16,4366444,Irish,EURONEXT,IE,False
+ABEV,Ambev S.A.,35619900733.0,Consumer Defensive,Beverages - Alcoholic,0.525,2.265,0.15,13625834,New York Stock Exchange,NYSE,BR,False
+PAMCX,T. Rowe Price Mid-Cap Growth Fund Advisor Class,35537248175.0,Financial Services,Asset Management,1.0,105.16,0.0,0,NASDAQ,NASDAQ,US,True
+VFIDX,Vanguard Intermediate-Term Investment Grade Fund Admiral Shrs,35527118842.0,Financial Services,Asset Management,1.17,8.79,0.32,0,NASDAQ,NASDAQ,,True
+VFICX,Vanguard Intermediate-Term Investment Grade Fund Investor Shrs,35527118842.0,Financial Services,Asset Management,1.17,8.79,0.315,0,NASDAQ,NASDAQ,,True
+HIG,"The Hartford Financial Services Group, Inc.",35494250890.0,Financial Services,Insurance - Diversified,0.924,121.135,1.88,332913,New York Stock Exchange,NYSE,US,False
+VNQ,Vanguard Real Estate Index Fund,35472593175.0,Financial Services,Asset Management,1.2,95.825,3.6463,1817486,New York Stock Exchange Arca,AMEX,US,True
+TRGP,Targa Resources Corp.,35464670400.0,Energy,Oil & Gas Midstream,2.249,161.88,3.0,424773,New York Stock Exchange,NYSE,US,False
+DIA,SPDR Dow Jones Industrial Average ETF Trust,35457006632.0,Financial Services,Asset Management,0.87,429.355,7.029620000000001,1933588,New York Stock Exchange Arca,AMEX,US,False
+BCOIX,Baird Core Plus Bond Fund Institutional Class,35443699709.0,Financial Services,Asset Management - Bonds,0.99,10.28,0.30200000000000005,0,NASDAQ,NASDAQ,,True
+BCOSX,Baird Core Plus Bond Fund Investor Class,35443699708.0,Financial Services,Asset Management - Bonds,0.99,10.8,0.281,0,NASDAQ,NASDAQ,,True
+FNV.TO,Franco-Nevada Corporation,35441204860.0,Basic Materials,Gold,0.684,184.18,1.94,114037,Toronto Stock Exchange,TSX,CA,False
+GIB-A.TO,CGI Inc.,35439800541.0,Technology,Information Technology Services,0.856,159.14,0.0,58133,Toronto Stock Exchange,TSX,CA,False
+HPQ,HP Inc.,35373269190.0,Technology,Computer Hardware,1.081,36.705,1.1,2389981,New York Stock Exchange,NYSE,US,False
+XEL,Xcel Energy Inc.,35342775895.0,Utilities,Regulated Electric,0.4,63.395,2.19,807778,NASDAQ Global Select,NASDAQ,US,False
+DAL,"Delta Air Lines, Inc.",35296870700.0,Industrials,"Airlines, Airports & Air Services",1.358,54.7,0.6000000000000001,4076412,New York Stock Exchange,NYSE,US,False
+DD,"DuPont de Nemours, Inc.",35290852350.0,Basic Materials,Chemicals - Specialty,1.326,84.53,1.52,434727,New York Stock Exchange,NYSE,US,False
+TECK-B.TO,Teck Resources Limited,35252441239.0,Basic Materials,Industrial Materials,1.365,68.21,0.5,612436,Toronto Stock Exchange,TSX,CA,False
+RMD,ResMed Inc.,35217969360.0,Healthcare,Medical - Instruments & Supplies,0.6890000000000001,239.96,2.12,418626,New York Stock Exchange,NYSE,US,False
+MLM,"Martin Marietta Materials, Inc.",35209561310.0,Basic Materials,Construction Materials,0.907,576.1,3.16,107345,New York Stock Exchange,NYSE,US,False
+TECK-A.TO,Teck Resources Limited,35143908580.0,Basic Materials,Industrial Materials,1.365,68.0,0.5,955,Toronto Stock Exchange,TSX,CA,False
+EXR,Extra Space Storage Inc.,35057295180.0,Real Estate,REIT - Industrial,0.871,165.42,6.48,226125,New York Stock Exchange,NYSE,US,False
+LULU,Lululemon Athletica Inc.,34991216556.0,Consumer Cyclical,Apparel - Retail,1.254,297.3901,0.0,1537311,NASDAQ Global Select,NASDAQ,CA,False
+OWL,Blue Owl Capital Inc.,34896813584.0,Financial Services,Asset Management,1.175,23.845,0.72,2092806,New York Stock Exchange,NYSE,US,False
+CCO.TO,Cameco Corporation,34705684750.0,Energy,Uranium,0.899,79.75,0.12,743380,Toronto Stock Exchange,TSX,CA,False
+WIT,Wipro Limited,34592791861.0,Technology,Information Technology Services,0.726,6.62,0.01,1035650,New York Stock Exchange,NYSE,IN,False
+FAPTX,American Funds 2025 Target Retirement Fd Cl F-1,34432643068.0,Financial Services,Asset Management,0.86,16.04,0.339,0,NASDAQ,NASDAQ,,True
+CCDTX,American Funds 2025 Target Date Retirement Fund Class C,34432643062.0,Financial Services,Asset Management,0.86,15.76,0.233,0,NASDAQ,NASDAQ,,True
+PPL-PQ.TO,Pembina Pipeline Corporation,34424096614.0,Energy,Oil & Gas Midstream,1.478,23.7,1.65,2100,Toronto Stock Exchange,TSX,CA,False
+PPL.TO,Pembina Pipeline Corporation,34412492340.0,Energy,Oil & Gas Midstream,1.478,59.31,2.76,313752,Toronto Stock Exchange,TSX,CA,False
+STLAP.PA,Stellantis N.V.,34410493523.0,Consumer Cyclical,Auto - Manufacturers,1.293,11.934,1.55,2670401,Paris,EURONEXT,NL,False
+DFQTX,DFA U.S. Core Equity 2 Portfolio,34395529197.0,,,0.99,39.13,0.330999999999999,0,NASDAQ,NASDAQ,US,True
+PPL-PC.TO,Pembina Pipeline Corporation,34366026678.0,Energy,Oil & Gas Midstream,1.478,21.53,1.5,550,Toronto Stock Exchange,TSX,CA,False
+EEM,iShares MSCI Emerging Markets ETF,34259253372.0,Financial Services,Asset Management,0.98,45.5333,1.0379,13281581,New York Stock Exchange Arca,AMEX,US,False
+VICI,VICI Properties Inc.,34258166550.0,Real Estate,REIT - Diversified,0.9570000000000001,32.715,1.73,1354333,New York Stock Exchange,NYSE,US,False
+VMC,Vulcan Materials Company,34225990200.0,Basic Materials,Construction Materials,0.8150000000000001,259.17,1.8399999999999999,291023,New York Stock Exchange,NYSE,US,False
+PPL-PA.TO,Pembina Pipeline Corporation,34222112853.0,Energy,Oil & Gas Midstream,1.478,22.7,1.63,6724,Toronto Stock Exchange,TSX,CA,False
+RBHEX,American Funds 2050 Target Date Retirement Fund,34178019319.0,Financial Services,Asset Management,1.21,21.29,0.166,0,NASDAQ,NASDAQ,,True
+RFITX,American Funds 2050 Target Date Retirement Fund Class R-6,34178019317.0,Financial Services,Asset Management,1.21,22.01,0.295,0,NASDAQ,NASDAQ,,True
+AALTX,American Funds 2050 Trgt Date Retire A,34178019315.0,Financial Services,Asset Management,1.21,21.81,0.23800000000000002,0,Nasdaq,NASDAQ,,True
+FAITX,American Funds 2050 Target Date Retirment Fd Cl F-1,34178019310.0,Financial Services,Asset Management,1.21,21.62,0.231,0,NASDAQ,NASDAQ,,True
+EFX,Equifax Inc.,34172789800.0,Industrials,Consulting Services,1.58,276.175,1.56,448697,New York Stock Exchange,NYSE,US,False
+MBB,iShares MBS ETF,34119402469.0,Financial Services,Asset Management,1.09,93.5285,3.52677,1630642,NASDAQ Global Market,NASDAQ,US,False
+DB,Deutsche Bank Aktiengesellschaft,34006842000.0,Financial Services,Banks - Regional,1.113,17.46,0.49,629766,New York Stock Exchange,NYSE,DE,False
+VTRLX,Vanguard Institutional Target Retirement 2050 Fund Institutional Shares,33946150882.0,Financial Services,Asset Management,1.43,32.04,0.0,0,NASDAQ,NASDAQ,US,True
+FFFEX,Fidelity Freedom 2030 Fund,33915467761.0,Financial Services,Asset Management,1.05,18.55,0.331,0,NASDAQ,NASDAQ,US,True
+QQQM,Invesco NASDAQ 100 ETF,33873822296.0,Financial Services,Asset Management,1.18,203.54,1.34583,989493,NASDAQ Global Market,NASDAQ,US,False
+PRUIX,T. Rowe Price Equity Index 500 Fund I Class,33723039666.0,Financial Services,Asset Management,1.0,154.35,0.974,0,NASDAQ,NASDAQ,US,True
+PREIX,T. Rowe Price Equity Index 500 Fund,33723039661.0,Financial Services,Asset Management,1.0,154.34,0.893,0,NASDAQ,NASDAQ,US,True
+BIL,SPDR Bloomberg 1-3 Month T-Bill ETF,33612292675.0,Financial Services,Asset Management,-0.0011929048000000001,91.68,4.768869999999999,3317763,New York Stock Exchange Arca,AMEX,US,False
+RRMGX,T. Rowe Price Mid-Cap Growth Fund,33485979645.0,Financial Services,Asset Management,1.0,99.09,0.0,0,NASDAQ,NASDAQ,US,True
+ARES,Ares Management Corporation,33472997950.0,Financial Services,Asset Management,1.235,168.77,3.7199999999999998,509903,New York Stock Exchange,NYSE,US,False
+T.TO,TELUS Corporation,33450640000.0,Communication Services,Telecommunications Services,0.721,22.42,1.56,1107974,Toronto Stock Exchange,TSX,CA,False
+ARGX,argenx SE,33387862068.0,Healthcare,Biotechnology,0.306,558.36,0.0,111729,NASDAQ Global Select,NASDAQ,NL,False
+WAB,Westinghouse Air Brake Technologies Corporation,33351339540.0,Industrials,Railroads,1.275,190.38,0.8,532795,New York Stock Exchange,NYSE,US,False
+IEF,iShares 7-10 Year Treasury Bond ETF,33335905792.0,Financial Services,Asset Management - Bonds,1.1400000000000001,95.29,3.235909999999999,3235187,NASDAQ Global Market,NASDAQ,US,False
+AXON,"Axon Enterprise, Inc.",33171071756.0,Industrials,Aerospace & Defense,0.9400000000000001,438.92,0.0,125495,NASDAQ Global Select,NASDAQ,US,False
+CCEP.AS,Coca-Cola Europacific Partners PLC,33100746800.0,Consumer Defensive,Beverages - Non-Alcoholic,0.755,71.9,1.9100000000000001,18111,Amsterdam,EURONEXT,GB,False
+IUSB,iShares Core Total USD Bond Market ETF,33006481117.0,Financial Services,Asset Management - Bonds,0.98,46.105,1.77471,1365857,NASDAQ Global Market,NASDAQ,US,False
+UCB.BR,UCB SA,33001807220.0,Healthcare,Biotechnology,0.363,173.95,1.3599999999999999,124340,Brussels,EURONEXT,BE,False
+SLF,Sun Life Financial Inc.,32892497600.0,Financial Services,Insurance - Diversified,0.9380000000000001,56.95,2.4,112694,New York Stock Exchange,NYSE,CA,False
+SCHG,Schwab U.S. Large-Cap Growth ETF,32821459885.0,Financial Services,Asset Management,1.17,26.6302,0.27955,2387929,New York Stock Exchange Arca,AMEX,US,False
+MTB-PJ,M&T Bank Corporation,32809710720.0,Financial Services,Banks - Regional,0.745,27.705,1.88,89213,New York Stock Exchange,NYSE,US,False
+EIX,Edison International,32751671370.0,Utilities,Regulated Electric,0.921,84.81,3.12,484484,New York Stock Exchange,NYSE,US,False
+DFIEX,DFA International Core Equity Portfolio,32705781752.0,,,1.06,16.5,0.41100000000000003,0,NASDAQ,NASDAQ,,True
+PEQSX,Putnam Large Cap Value R6,32632887284.0,,,0.8,37.84,0.5700000000000001,0,Nasdaq,NASDAQ,,True
+PEYAX,Putnam Large Cap Value Fund Class A,32632887269.0,Financial Services,Asset Management,0.8,37.82,0.458,0,NASDAQ,NASDAQ,,True
+BIDU,"Baidu, Inc.",32542563050.0,Communication Services,Internet Content & Information,0.486,91.22,0.0,3205840,NASDAQ Global Select,NASDAQ,CN,False
+MTB,M&T Bank Corporation,32398194000.0,Financial Services,Banks - Regional,0.745,194.0,5.4,553486,New York Stock Exchange,NYSE,US,False
+XYL,Xylem Inc.,32288980955.0,Industrials,Industrial - Machinery,1.035,132.935,1.44,276616,New York Stock Exchange,NYSE,US,False
+CNC,Centene Corporation,32219337500.0,Healthcare,Medical - Healthcare Plans,0.48,61.25,0.0,12222600,New York Stock Exchange,NYSE,US,False
+LQD,iShares iBoxx $ Investment Grade Corporate Bond ETF,32213092280.0,Financial Services,Asset Management - Bonds,1.49,109.755,4.748429999999999,19754682,New York Stock Exchange Arca,AMEX,US,False
+FLTR.IR,Flutter Entertainment plc,32206786094.0,Consumer Cyclical,"Gambling, Resorts & Casinos",0.841,181.95,0.0,2878578,Irish,EURONEXT,IE,False
+GRMN,Garmin Ltd.,32053606640.0,Technology,"Hardware, Equipment & Parts",1.006,166.76,3.0,173605,New York Stock Exchange,NYSE,CH,False
+NTR.TO,Nutrien Ltd.,32010777900.0,Basic Materials,Agricultural Inputs,0.9540000000000001,64.7,2.92,488212,Toronto Stock Exchange,TSX,CA,False
+MDY,SPDR S&P MIDCAP 400 ETF Trust,32001113103.0,Financial Services,Asset Management,1.05,577.48,6.55175,252061,New York Stock Exchange Arca,AMEX,US,False
+FPURX,Fidelity Puritan Fund,31930523647.0,Financial Services,Asset Management,1.01,25.29,0.319,0,NASDAQ,NASDAQ,US,True
+AVB,"AvalonBay Communities, Inc.",31918472395.0,Real Estate,REIT - Residential,0.985,224.435,6.8,191153,New York Stock Exchange,NYSE,US,False
+EL,The Estée Lauder Companies Inc.,31815867747.0,Consumer Defensive,Household & Personal Products,1.002,88.63,2.64,990318,New York Stock Exchange,NYSE,US,False
+JUEMX,JPMorgan U.S. Equity Fund Class R6,31811395584.0,Financial Services,Asset Management,0.98,26.74,0.115999999999999,0,NASDAQ,NASDAQ,US,True
+JUEAX,JPMorgan U.S. Equity Fund Class A,31811395582.0,Financial Services,Asset Management,0.98,26.46,0.062,0,NASDAQ,NASDAQ,US,True
+JUSRX,JPMorgan U.S. Equity Fund,31811395581.0,Financial Services,Asset Management,0.98,26.67,0.105,0,NASDAQ,NASDAQ,US,True
+JUEZX,JPMorgan U.S. Equity Fund Class R2,31811395568.0,Financial Services,Asset Management,0.98,26.08,0.036000000000000004,0,NASDAQ,NASDAQ,US,True
+JUESX,JPMorgan U.S. Equity Fund Class I,31811395568.0,Financial Services,Asset Management,0.98,26.58,0.11326000000000001,0,NASDAQ,NASDAQ,US,True
+CSGP,"CoStar Group, Inc.",31809995540.0,Real Estate,Real Estate - Services,0.8140000000000001,77.62,0.0,1321393,NASDAQ Global Select,NASDAQ,US,False
+QSR.TO,Restaurant Brands International Inc.,31788096750.0,Consumer Cyclical,Restaurants,0.9540000000000001,100.27,3.14,189664,Toronto Stock Exchange,TSX,CA,False
+VXF,Vanguard Extended Market Index Fund,31775292028.0,Financial Services,Asset Management,1.11,185.6261,2.1768,130704,New York Stock Exchange Arca,AMEX,US,True
+TW,Tradeweb Markets Inc.,31702977625.0,Financial Services,Financial - Capital Markets,1.017,134.1625,0.4,405897,NASDAQ Global Select,NASDAQ,US,False
+RI.PA,Pernod Ricard SA,31664050362.0,Consumer Defensive,Beverages - Wineries & Distilleries,0.503,126.0,4.7,331867,Paris,EURONEXT,FR,False
+TSCO,Tractor Supply Company,31642292460.0,Consumer Cyclical,Specialty Retail,0.802,293.34,4.4,428887,NASDAQ Global Select,NASDAQ,US,False
+WDS,Woodside Energy Group Ltd,31507729809.0,Energy,Oil & Gas Exploration & Production,0.735,16.62,1.29,362337,New York Stock Exchange,NYSE,AU,False
+WEC,"WEC Energy Group, Inc.",31446699710.0,Utilities,Regulated Electric,0.437,99.49,3.34,706279,New York Stock Exchange,NYSE,US,False
+HUM,Humana Inc.,31444788330.0,Healthcare,Medical - Healthcare Plans,0.503,261.165,3.54,2207435,New York Stock Exchange,NYSE,US,False
+VITNX,Vanguard Institutional Total Stock Market Index Fund Institutional Shares,31427762155.0,Financial Services,Asset Management,1.01,100.14,0.707430999999999,0,NASDAQ,NASDAQ,US,True
+VITPX,Vanguard Institutional Total Stock Market Index Fund,31427762113.0,Financial Services,Asset Management,1.01,100.12,0.7074239999999999,0,NASDAQ,NASDAQ,US,True
+HEI,HEICO Corporation,31372320114.0,Industrials,Aerospace & Defense,1.228,261.01,0.22,117459,New York Stock Exchange,NYSE,US,False
+EBAY,eBay Inc.,31365584700.0,Consumer Cyclical,Specialty Retail,1.316,64.1423,1.08,1564206,NASDAQ Global Select,NASDAQ,US,False
+WSP.TO,WSP Global Inc.,31300217760.0,Industrials,Engineering & Construction,0.8160000000000001,250.98,1.5,80318,Toronto Stock Exchange,TSX,CA,False
+CVE,Cenovus Energy Inc.,31256724000.0,Energy,Oil & Gas Integrated,2.635,16.84,0.47000000000000003,2337364,New York Stock Exchange,NYSE,CA,False
+IWR,iShares Russell Mid-Cap ETF,31223707624.0,Financial Services,Asset Management,1.05,89.2999,1.14222,416657,New York Stock Exchange Arca,AMEX,US,False
+TRVLX,T. Rowe Price Value Fund,31183783913.0,Financial Services,Asset Management,0.8,50.07,0.556,0,NASDAQ,NASDAQ,US,True
+PAVLX,T. Rowe Price Value Fund Advisor Class,31183783910.0,Financial Services,Asset Management,0.8,48.74,0.485,0,NASDAQ,NASDAQ,US,True
+VMVAX,Vanguard Mid-Cap Value Index Fd Admiral,31167557557.0,,,0.9400000000000001,88.37,1.035,0,NASDAQ,NASDAQ,,True
+SCHB,Schwab U.S. Broad Market ETF,31128474792.0,Financial Services,Asset Management,1.02,22.525,0.5587662600000001,1558401,New York Stock Exchange Arca,AMEX,US,False
+DFAC,Dimensional U.S. Core Equity 2 ETF,31078534121.0,Financial Services,Asset Management,0.99,34.849,0.35905599999999904,832797,New York Stock Exchange Arca,AMEX,US,False
+CAP.PA,Capgemini SE,31020226919.0,Technology,Information Technology Services,1.02,181.1,3.4,266227,Paris,EURONEXT,FR,False
+VOE,Vanguard Mid-Cap Value Index Fund,30910857787.0,Financial Services,Asset Management,0.9400000000000001,169.185,3.5300000000000002,249090,New York Stock Exchange Arca,AMEX,US,True
+FOCPX,Fidelity OTC Portfolio,30896732158.0,,,1.09,20.98,0.01,0,NASDAQ,NASDAQ,US,True
+FOCKX,Fidelity OTC K,30896732148.0,,,1.1,21.53,0.017,0,Nasdaq,NASDAQ,,True
+DLTNX,DoubleLine Total Return Bond Fund Class N,30882263037.0,Financial Services,Asset Management - Bonds,0.9,8.88,0.377,0,NASDAQ,NASDAQ,,True
+DBLTX,DoubleLine Total Return Bond Fund Class I,30882263036.0,Financial Services,Asset Management - Bonds,0.9,8.89,0.396,0,NASDAQ,NASDAQ,,True
+DSFIR.AS,DSM-Firmenich AG,30879037579.0,Consumer Defensive,Household & Personal Products,0.71528,116.4,2.5,353903,Amsterdam,EURONEXT,CH,False
+NET,"Cloudflare, Inc.",30862591025.0,Technology,Software - Infrastructure,1.098,90.32,0.0,783787,New York Stock Exchange,NYSE,US,False
+PRBLX,Parnassus Core Equity Fund,30837284835.0,Financial Services,Asset Management,0.96,66.17,0.18,0,NASDAQ,NASDAQ,US,True
+PRILX,Parnassus Core Equity Fund - Institutional Shares,30837284824.0,Financial Services,Asset Management,0.96,66.36,0.259,0,NASDAQ,NASDAQ,US,True
+HO.PA,Thales S.A.,30800218721.0,Industrials,Aerospace & Defense,0.5720000000000001,153.15,3.45,158316,Paris,EURONEXT,FR,False
+TRRCX,T. Rowe Price Retirement 2030 Fund,30777989100.0,Financial Services,Asset Management,1.02,27.05,0.46900000000000003,0,NASDAQ,NASDAQ,US,True
+TRFHX,T. Rowe Price Retirement 2030 I,30777989096.0,,,1.02,27.08,0.47400000000000003,0,Nasdaq,NASDAQ,,True
+FTS.TO,Fortis Inc.,30771728000.0,Utilities,Regulated Electric,0.229,62.14,2.46,296095,Toronto Stock Exchange,TSX,CA,False
+GEN.BR,Assicurazioni Generali S.p.A.,30721274688.0,Financial Services,Insurance - Diversified,1.026651,19.5,1.16,77,Brussels,EURONEXT,IT,False
+ROK,"Rockwell Automation, Inc.",30636090000.0,Industrials,Industrial - Machinery,1.361,270.0,5.0,204235,New York Stock Exchange,NYSE,US,False
+ARGX.BR,argenx SE,30627664860.0,Healthcare,Biotechnology,0.306,512.2,0.0,53808,Brussels,EURONEXT,NL,False
+IIVI,II-VI Incorporated,30513807103.0,Technology,"Hardware, Equipment & Parts",1.4961259999999998,227.08,12.0,247144,NASDAQ Global Select,NASDAQ,US,False
+BCE,BCE Inc.,30502182105.0,Communication Services,Telecommunications Services,0.482,33.435,2.89,593429,New York Stock Exchange,NYSE,CA,False
+VONG,Vanguard Russell 1000 Growth Index Fund,30411623270.0,Financial Services,Asset Management,1.1400000000000001,98.66,0.5999000000000001,431733,NASDAQ Global Market,NASDAQ,US,True
+VMLUX,Vanguard Limited-Term Tax-Exempt Fund Admiral Shares,30358544383.0,Financial Services,Asset Management,0.42,10.92,0.24999999999999903,0,NASDAQ,NASDAQ,US,True
+VMLTX,Vanguard Limited Term Tax-Exempt Fund,30358544383.0,Financial Services,Asset Management,0.42,10.92,0.24099999999999902,0,NASDAQ,NASDAQ,,True
+WPM,Wheaton Precious Metals Corp.,30348635135.0,Basic Materials,Gold,0.6990000000000001,66.901,0.62,1313404,New York Stock Exchange,NYSE,CA,False
+VSGAX,Vanguard Small-Cap Growth Index Fd Admiral,30281355192.0,,,1.1400000000000001,96.2,0.363,0,NASDAQ,NASDAQ,,True
+BRO,"Brown & Brown, Inc.",30277602540.0,Financial Services,Insurance - Brokers,0.8270000000000001,106.14,0.52,345725,New York Stock Exchange,NYSE,US,False
+FFFFX,Fidelity Freedom 2040,30174412800.0,,,1.26,12.19,0.138,0,NASDAQ,NASDAQ,US,True
+FSNVX,Fidelity Freedom 2040 K,30174412793.0,,,1.26,12.2,0.152,0,Nasdaq,NASDAQ,,True
+DGRO,iShares Core Dividend Growth ETF,30044264272.0,Financial Services,Asset Management,0.8200000000000001,63.38,1.3771,589712,New York Stock Exchange Arca,AMEX,US,False
+PHM,"PulteGroup, Inc.",30010045640.0,Consumer Cyclical,Residential Construction,1.63,144.61,0.8,1264132,New York Stock Exchange,NYSE,US,False
+PHG,Koninklijke Philips N.V.,29952451344.0,Healthcare,Medical - Devices,0.72,32.065,0.92,366050,New York Stock Exchange,NYSE,NL,False
+PPG,"PPG Industries, Inc.",29951200000.0,Basic Materials,Chemicals - Specialty,1.25,129.1,2.66,572463,New York Stock Exchange,NYSE,US,False
+NVR,"NVR, Inc.",29920422308.0,Consumer Cyclical,Residential Construction,1.189,9722.03,0.0,4866,New York Stock Exchange,NYSE,US,False
+FCNCA,"First Citizens BancShares, Inc.",29780131115.0,Financial Services,Banks - Regional,0.812,2074.995,6.5600000000000005,27505,NASDAQ Global Select,NASDAQ,US,False
+ORAN,Orange S.A.,29641382643.0,Communication Services,Telecommunications Services,0.165,11.15,0.78,1034345,New York Stock Exchange,NYSE,FR,False
+BAM.TO,Brookfield Asset Management Ltd.,29621307498.0,Financial Services,Asset Management,1.7861387999999998,70.72,2.05,189172,Toronto Stock Exchange,TSX,CA,False
+SPYG,SPDR Portfolio S&P 500 Growth ETF,29598992135.0,Financial Services,Asset Management,1.12,84.5941,0.56501,801753,New York Stock Exchange Arca,AMEX,US,False
+FER,Ferrovial SE,29582347534.0,Industrials,Industrial - Infrastructure Operations,0.965,41.395,0.79,44423,NASDAQ Global Select,NASDAQ,NL,False
+VTTSX,Vanguard Target Retirement 2060 Fund,29575972825.0,Financial Services,Asset Management,1.23,53.4,0.978,0,NASDAQ,NASDAQ,,True
+DFCEX,DFA  Emerging Markets Core Equity Portfolio,29564332017.0,,,0.93,25.04,0.513,0,NASDAQ,NASDAQ,,True
+EON.BR,E.ON SE,29549501962.0,Utilities,Diversified Utilities,0.6471469999999999,11.32,0.51,75,Brussels,EURONEXT,DE,False
+CHT,"Chunghwa Telecom Co., Ltd.",29517097250.0,Communication Services,Telecommunications Services,0.064,38.05,1.47,21490,New York Stock Exchange,NYSE,TW,False
+WTW,Willis Towers Watson Public Limited Company,29467488960.0,Financial Services,Insurance - Brokers,0.744,290.16,3.52,130873,NASDAQ Global Select,NASDAQ,GB,False
+FITB,Fifth Third Bancorp,29460973410.0,Financial Services,Banks - Regional,1.237,43.53,1.48,1988878,NASDAQ Global Select,NASDAQ,US,False
+RCI-A.TO,Rogers Communications Inc.,29443069500.0,Communication Services,Telecommunications Services,0.615,58.16,2.0,312,Toronto Stock Exchange,TSX,CA,False
+FFTHX,Fidelity Freedom 2035 Fund,29381748723.0,Financial Services,Asset Management,1.15,16.54,0.24300000000000002,0,NASDAQ,NASDAQ,US,True
+RCI-B.TO,Rogers Communications Inc.,29327977210.0,Communication Services,Telecommunications Services,0.615,54.05,2.0,361607,Toronto Stock Exchange,TSX,CA,False
+CDW,CDW Corporation,29259822800.0,Technology,Information Technology Services,1.032,219.05,2.48,421726,NASDAQ Global Select,NASDAQ,US,False
+LYB,LyondellBasell Industries N.V.,29179988640.0,Basic Materials,Chemicals - Specialty,1.08,89.76,5.36,886050,New York Stock Exchange,NYSE,US,False
+DXCM,"DexCom, Inc.",29140867440.0,Healthcare,Medical - Devices,1.18,72.72,0.0,1749654,NASDAQ Global Select,NASDAQ,US,False
+MTD,Mettler-Toledo International Inc.,29128289990.0,Healthcare,Medical - Diagnostics & Research,1.1400000000000001,1363.85,0.0,43183,New York Stock Exchange,NYSE,US,False
+WN.TO,George Weston Limited,29100540700.0,Consumer Defensive,Grocery Stores,0.424,222.05,3.2800000000000002,37973,Toronto Stock Exchange,TSX,CA,False
+ETR,Entergy Corporation,28946302470.0,Utilities,Regulated Electric,0.727,135.37,4.52,405375,New York Stock Exchange,NYSE,US,False
+FRDAX,Franklin Rising Dividends Fund,28884674524.0,Financial Services,Asset Management,0.86,101.65,0.772999999999999,0,Nasdaq,NASDAQ,,True
+FRDPX,Franklin Rising Dividends Fund,28884674467.0,Financial Services,Asset Management,0.86,101.71,0.603,0,NASDAQ,NASDAQ,US,True
+HNACX,Harbor Capital Appreciation Fund - Retirement Class,28827469804.0,Financial Services,Asset Management,1.21,121.68,0.0,0,NASDAQ,NASDAQ,,True
+HCAIX,Harbor Capital Appreciation Fund,28827469766.0,Financial Services,Asset Management,1.21,111.36,0.0,0,NASDAQ,NASDAQ,US,True
+HACAX,Harbor Capital Appreciation Fund Institutional Class,28827469748.0,Financial Services,Asset Management,1.21,121.26,0.0,0,NASDAQ,NASDAQ,US,True
+HRCAX,Harbor Capital Appreciation Fund Administrative Class,28827469709.0,Financial Services,Asset Management,1.21,115.93,0.0,0,NASDAQ,NASDAQ,US,True
+VV,Vanguard Large Cap Index Fund,28818676041.0,Financial Services,Asset Management,1.01,267.65,3.395,119326,New York Stock Exchange Arca,AMEX,US,True
+ZS,"Zscaler, Inc.",28658970600.0,Technology,Software - Infrastructure,0.8140000000000001,187.94,0.0,557278,NASDAQ Global Select,NASDAQ,US,False
+ON,ON Semiconductor Corporation,28594904780.0,Technology,Semiconductors,1.65,66.755,0.0,3448879,NASDAQ Global Select,NASDAQ,US,False
+ANSS,"ANSYS, Inc.",28569301138.0,Technology,Software - Application,1.113,326.93,0.0,108277,NASDAQ Global Select,NASDAQ,US,False
+VWRL.AS,Vanguard FTSE All-World UCITS ETF,28513610936.0,Financial Services,Asset Management,,128.4,1.89947,41589,Amsterdam,EURONEXT,IE,False
+KER.PA,Kering SA,28495383715.0,Consumer Cyclical,Luxury Goods,1.017,232.45,14.0,241247,Paris,EURONEXT,FR,False
+ELC,"Entergy Louisiana, LLC COLLATERAL TR MT",28495009281.0,Utilities,Regulated Electric,0.26186863,23.0111,0.60599,8539,New York Stock Exchange,NYSE,US,False
+POW.TO,Power Corporation of Canada,28489022571.0,Financial Services,Insurance - Life,1.093,44.26,2.25,318837,Toronto Stock Exchange,TSX,CA,False
+VEU,Vanguard FTSE All-World ex-US Index Fund,28443333068.0,Financial Services,Asset Management,1.03,61.4781,1.7642,623243,New York Stock Exchange Arca,AMEX,US,True
+RJF,"Raymond James Financial, Inc.",28343935090.0,Financial Services,Financial - Capital Markets,1.03,137.63,1.8,455353,New York Stock Exchange,NYSE,US,False
+SMCI,"Super Micro Computer, Inc.",28262294725.0,Technology,Computer Hardware,1.231,48.265,0.0,28429601,NASDAQ Global Select,NASDAQ,US,False
+EQR,Equity Residential,28238049280.0,Real Estate,REIT - Residential,0.909,74.48,2.7,422286,New York Stock Exchange,NYSE,US,False
+FSPGX,Fidelity Large Cap Growth Index Fund,28187205607.0,Financial Services,Asset Management,1.1400000000000001,37.45,0.164,0,NASDAQ,NASDAQ,US,True
+PEMGX,Principal MidCap A,28000987116.0,,,1.12,45.06,0.0,0,Nasdaq,NASDAQ,,True
+PTRQX,PGIM Total Return Bond Fund -Class R6,28000956412.0,Financial Services,Asset Management - Bonds,1.03,12.12,0.537308999999999,0,NASDAQ,NASDAQ,US,True
+VLTO,Veralto Corporation,27962560224.0,Industrials,Industrial - Pollution & Treatment Controls,1.55,113.16,0.36,406108,New York Stock Exchange,NYSE,US,False
+PDBZX,PGIM Total Return Bond Fund Class Z,27954751484.0,Financial Services,Asset Management - Bonds,1.02,12.1,0.48099999999999904,0,NASDAQ,NASDAQ,,True
+K,Kellanova,27938442675.0,Consumer Defensive,Packaged Foods,0.394,81.055,2.2800000000000002,1515466,New York Stock Exchange,NYSE,US,False
+ERIC,Telefonaktiebolaget LM Ericsson (publ),27912146461.0,Technology,Communication Equipment,0.394,8.4684,0.26,16774091,NASDAQ Global Select,NASDAQ,SE,False
+AD.AS,Koninklijke Ahold Delhaize N.V.,27841678129.0,Consumer Defensive,Grocery Stores,0.232,30.56,1.11,1375295,Amsterdam,EURONEXT,NL,False
+NETE,"Net Element, Inc.",27819785360.0,Technology,Software - Infrastructure,1.9854539999999998,13.09,0.0,4070566,NASDAQ Capital Market,NASDAQ,US,False
+LR.PA,Legrand SA,27746367246.0,Industrials,Electrical Equipment & Parts,0.897,105.85,2.09,413803,Paris,EURONEXT,FR,False

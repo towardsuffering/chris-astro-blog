@@ -13,11 +13,13 @@ const { modules } = Astro.props
 
 <style>
 	.toolkit-container {
-		@apply flex flex-wrap gap-12 justify-center;
+		@apply flex flex-wrap gap-12 justify-center items-start;
 	}
 
 	.module-card {
-		@apply relative bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex justify-center items-center transition-all ease-in-out cursor-pointer rounded-lg shadow-lg;
+		@apply relative bg-[#6366f1] text-white 
+               transition-all ease-in-out cursor-pointer rounded-lg shadow-lg
+               px-4; /* Added horizontal padding to the card */
 		width: 150px;
 		height: 80px;
 		overflow: hidden;
@@ -27,7 +29,7 @@ const { modules } = Astro.props
 	}
 
 	.module-card:hover {
-		@apply bg-gray-200 dark:bg-gray-800;
+		@apply bg-[#6366f1];
 		transform: scale(1.1);
 		z-index: 10;
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -35,15 +37,20 @@ const { modules } = Astro.props
 		height: 160px;
 	}
 
+	.content-container {
+		@apply absolute inset-0 flex items-center justify-center;
+	}
+
 	.module-title {
-		@apply text-xl transition-opacity ease-in-out;
+		@apply text-xl font-semibold transition-opacity ease-in-out 
+               text-center w-full;
+		line-height: 1.2;
 	}
 
 	.module-description {
-		@apply absolute text-base opacity-0 transition-opacity ease-in-out text-center;
-		padding: 10px;
-		max-width: 100%;
-		white-space: normal;
+		@apply absolute inset-0 text-base opacity-0 transition-opacity ease-in-out 
+               flex items-center justify-center text-center p-4;
+		transform: translateY(0);
 	}
 
 	.module-card:hover .module-title {
@@ -58,10 +65,12 @@ const { modules } = Astro.props
 <div class='toolkit-container'>
 	{
 		modules.map((module) => (
-			<div class='module-card'>
-				<div class='module-title'>{module.name}</div>
+			<button class='module-card'>
+				<div class='content-container'>
+					<div class='module-title'>{module.name}</div>
+				</div>
 				<div class='module-description'>{module.description}</div>
-			</div>
+			</button>
 		))
 	}
 </div>

@@ -1,14 +1,15 @@
 ---
+// PlotlyLineChart.astro
 import { parse } from 'csv-parse/sync'
 import { readFileSync } from 'fs'
 import { join } from 'path'
 
 // Read and parse the CSV file
 const csvPath = join(process.cwd(), 'public', 'historical_data.csv')
-let records: any[] = []
-let columns: string[] = []
-let dataTypes: string[] = []
-const companies = ['AAPL', 'MSFT', 'GOOGL', 'AMZN']
+let csvData, records, columns, companies, dataTypes, error
+
+// Define the companies we want to show
+const defaultCompanies = ['AAPL', 'MSFT', 'GOOGL', 'AMZN']
 const colors = {
 	AAPL: '#FF9900',
 	AMZN: '#FF6600',
@@ -17,7 +18,7 @@ const colors = {
 }
 
 try {
-	const csvData = readFileSync(csvPath, 'utf-8')
+	csvData = readFileSync(csvPath, 'utf-8')
 	records = parse(csvData, { columns: true, skip_empty_lines: true })
 	columns = Object.keys(records[0])
 
@@ -25,11 +26,11 @@ try {
 	dataTypes = [
 		...new Set(columns.map((col) => col.split('_')[0]).filter((type) => type !== 'Date'))
 	]
-} catch (error: unknown) {
-	const err = error as Error
-	console.error('Error reading or parsing CSV:', err.message)
-	// Set default value for dataTypes if there's an error
-	dataTypes = ['Cumulative Return']
+
+	companies = defaultCompanies
+} catch (e) {
+	error = e.message
+	console.error('Error reading or parsing CSV:', error)
 }
 
 // Client-side script for Plotly
@@ -123,9 +124,9 @@ const clientScript = `
 <div class='chart-container'>
 	<div class='controls-container mb-2 flex items-center gap-4'>
 		<div class='filter-container'>
-			<label for='dataTypeSelect' class='text-sm font-medium text-gray-700 dark:text-gray-300 mr-2'>
-				Select Filter:
-			</label>
+			<label for='dataTypeSelect' class='text-sm font-medium text-gray-700 dark:text-gray-300 mr-2'
+				>Select Filter:</label
+			>
 			<select
 				id='dataTypeSelect'
 				class='text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500'
