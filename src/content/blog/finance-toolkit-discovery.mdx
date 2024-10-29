@@ -1,7 +1,7 @@
 ---
 heroImage: ../../assets/images/financetoolkit.png
 category: 'Analytics'
-description: 'Master the Discovery module in Finance Toolkit to find and screen financial instruments. Learn how to efficiently search for stocks, cryptocurrencies, forex, and more for your investment analysis.'
+description: 'Master stock screening and discovery using Finance Toolkit. Learn how to efficiently search, filter, and analyze stocks using Python to find investment opportunities.'
 pubDate: 2024-10-19T15:42:00.000Z
 tags:
   [
@@ -9,120 +9,107 @@ tags:
     'Python',
     'Stock Screening',
     'Market Analysis',
-    'Financial Discovery',
+    'Stock Discovery',
     'Investment Research',
-    'Data Analysis'
+    'Financial Analysis'
   ]
-title: 'Finding Investment Opportunities with Finance Toolkit Discovery Module'
+title: 'Finding Stocks Using Finance Toolkit Discovery Module'
 ---
-
-import OutputDisplay from '../../components/OutputDisplay.astro'
-import ToolkitButton from '../../components/ToolkitButton.astro'
-import TwoColumnList from '../../components/TwoColumnList.astro'
-import 'katex/dist/katex.min.css'
 
 ## 1. Introduction
 
-Finding the right financial instruments to analyze is often the first challenge in investment research. The Discovery module of Finance Toolkit provides powerful tools to identify and screen potential investment opportunities across various asset classes. This guide will show you how to leverage these capabilities to build a robust investment research workflow.
+Welcome to the second part of our series on mastering financial analysis with the Finance Toolkit. Imagine you're an investor looking to find your next big opportunity or a financial analyst wanting to expand your toolkit—this guide is here to help. We dive deep into the Discovery Module—an essential part of the Finance Toolkit that allows users to find stocks, cryptocurrencies, commodities, ETFs, indices, and more.
 
-## 2. Understanding the Discovery Module
+Whether you are an investor looking to discover new opportunities or a financial analyst aiming to broaden your analysis capabilities, the Discovery Module is an invaluable tool for efficiently locating and filtering financial instruments.
 
-The Discovery module serves as your gateway to finding financial instruments that can be analyzed using Finance Toolkit's other capabilities. It provides comprehensive access to stocks, ETFs, indices, cryptocurrencies, forex pairs, and commodities, along with their associated metrics and screening capabilities.
+We will focus on using the Discovery Module for stock discovery and screening, while also showcasing its broader capabilities, such as searching for cryptocurrencies, forex, and commodities.
 
-### 2.1. Key Features and Capabilities
+## 2. What is the Discovery Module?
 
-The Discovery module includes several specialized functions designed to help you find and filter financial instruments effectively:
+The **Discovery Module** is a powerful feature within the Finance Toolkit that provides tools to search, filter, and analyze a wide range of financial instruments, including stocks, ETFs, cryptocurrencies, forex, and commodities. It offers advanced screening capabilities and performance metrics that allow you to identify the right investment opportunities.
 
-<ToolkitButton
-	modules={[
-		{
-			name: 'Instrument Lists',
-			description:
-				'Comprehensive lists of available stocks, ETFs, cryptocurrencies, forex pairs, and commodities.'
-		},
-		{
-			name: 'Search Function',
-			description:
-				'Powerful search capabilities to find specific instruments across all asset classes.'
-		},
-		{
-			name: 'Stock Screener',
-			description:
-				'Advanced screening functionality with multiple criteria including market cap, price, volume, and more.'
-		},
-		{
-			name: 'Market Movers',
-			description:
-				'Track top gainers, losers, and most active instruments across different markets.'
-		},
-		{
-			name: 'Real-time Quotes',
-			description: 'Access to current market quotes for various financial instruments.'
-		}
-	]}
-/>
+Key functionalities of the Discovery Module include:
 
-### 2.2. Key Concepts
+- **Search Instruments**: Quickly find financial instruments like stocks, cryptocurrencies, and more. For example, you can easily look up a stock like 'AAPL' or discover new cryptocurrencies such as 'BTC'.
+- **Stock Screener**: Filter stocks based on specific criteria such as market capitalization, price, beta, and dividend yield. For instance, you can use this feature to identify undervalued stocks with high dividend yields.
+- **Company Quotes**: Obtain real-time and historical quotes for stocks and other financial instruments.
+- **Sector Performance**: Analyze the performance of different market sectors to determine which sectors are performing well.
+- **Biggest Gainers and Losers**: Identify the stocks that are seeing the most movement in the market.
+- **Cryptocurrencies, FOREX, Commodities, ETFs & Indices**: Discover and analyze other asset classes beyond stocks.
 
-Before diving into practical applications, let's understand the fundamental concepts that underpin the Discovery module:
+This guide will showcase how to use these features, focusing primarily on stocks while also demonstrating the versatility of the Discovery Module for analyzing a wide range of financial assets.
 
-<TwoColumnList
-	leftTitle='Technical Concepts'
-	rightTitle='Market Concepts'
-	leftItems={[
-		'API Integration: Understanding how to authenticate and access market data',
-		'Data Structures: Working with multi-index DataFrames containing instrument information',
-		'Filtering Methods: Implementing screening criteria to narrow down instrument selection',
-		'Data Export: Converting and saving discovery results for further analysis',
-		'Error Handling: Managing API limits and data availability issues'
-	]}
-	rightItems={[
-		'Market Capitalization: Company size measured by total share value',
-		'Trading Volume: Amount of shares traded in a given period',
-		'Beta: Measure of volatility relative to the overall market',
-		'Dividend Yield: Annual dividend payments relative to share price',
-		'Market Screening: Process of filtering instruments based on specific criteria'
-	]}
-/>
+## 3. Setting Up the Discovery Module
 
-## 3. Getting Started with Discovery
-
-### 3.1. Installation and Setup
-
-Before using the Discovery module, ensure you have Finance Toolkit installed and properly configured:
+Before we begin exploring the Discovery Module, make sure you have the Finance Toolkit installed and set up. Below is a visual flowchart to help you understand the setup process step-by-step, ensuring you get started quickly.
 
 ```python
-# Install the financetoolkit package
+# Install the financetoolkit package using `pip`
 pip install financetoolkit -U
 
-# Import the Discovery module
-from financetoolkit import Discovery
+# Import the Discovery Module
+from financetoolkit.discovery import Discovery
 
-# Initialize with your API key
-discovery = Discovery(api_key="YOUR_API_KEY")
+# Set up API access to FMP
+API_KEY = "FINANCIAL_MODELING_PREP_API_KEY"
+
+discovery = Discovery(api_key=API_KEY)
 ```
 
-### 3.2. Basic Instrument Discovery
+## 4. Using the Discovery Module
 
-The module provides several methods to list available instruments:
+The Discovery Module provides several ways to find stocks and other financial instruments that meet your investment criteria. Imagine you are looking for a stock that has a stable price with moderate growth potential—this is where the Discovery Module shines. Let's go through the key features, starting with stock discovery.
+
+### 4.1. Stock List
+
+To get a complete list of available stocks, we use the `get_stock_list()` function. This function provides access to over 60,000 rows of stock data, allowing you to explore a comprehensive range of global equities.
 
 ```python
-# Get a list of all available stocks
-stocks = discovery.get_stock_list()
+stock_list = discovery.get_stock_list()
 
-# Search for specific instruments
-apple_instruments = discovery.search_instruments("Apple")
-
-# Get forex quotes
-forex_quotes = discovery.get_forex_quotes()
+# The total list equals over 60.000 rows
+stock_list.iloc[38000:38010]
 ```
 
-### 3.3. Advanced Stock Screening
+| Symbol   | Name                                         | Price  | Exchange                        | Exchange Code |
+| -------- | -------------------------------------------- | ------ | ------------------------------- | ------------- |
+| IBS.LS   | Ibersol, S.G.P.S., S.A.                      | 7.12   | Lisbon                          | EURONEXT      |
+| IBS.WA   | Noble Financials S.A.                        | 91.2   | Warsaw Stock Exchange           | WSE           |
+| IBSS     | Integrated Business Systems & Services, Inc. | 0.0001 | Other OTC                       | PNK           |
+| IBST.JK  | PT Inti Bangun Sejahtera Tbk                 | 5000.0 | Jakarta Stock Exchange          | JKT           |
+| IBST.L   | Ibstock plc                                  | 202.5  | London Stock Exchange           | LSE           |
+| IBSU.L   | Insight Business Support plc                 | 1.85   | London Stock Exchange           | LSE           |
+| IBT-B.ST | Infant Bacterial Therapeutics AB (publ)      | 37.4   | Stockholm Stock Exchange        | STO           |
+| IBT.L    | International Biotechnology Trust plc        | 688.0  | London Stock Exchange           | LSE           |
+| IBT.V    | IBEX Technologies Inc.                       | 1.45   | Toronto Stock Exchange Ventures | TSXV          |
+| IBTA     | Ibotta, Inc.                                 | 76.78  | New York Stock Exchange         | NYSE          |
 
-One of the most powerful features is the stock screener, which allows you to filter stocks based on multiple criteria:
+### 4.2. Searching for Instruments
+
+You can search for specific financial instruments by name or ticker symbol using the `search_instruments()` function. Here, we look for instruments related to .
 
 ```python
-screened_stocks = discovery.get_stock_screener(
+discovery = Discovery(api_key="FINANCIAL_MODELING_PREP_KEY")
+
+discovery.search_instruments(query='NVDA')
+```
+
+| Symbol  | Name                                     | Currency | Exchange                     | Exchange Code |
+| ------- | ---------------------------------------- | -------- | ---------------------------- | ------------- |
+| NVDA    | NVIDIA Corporation                       | USD      | NASDAQ Global Select         | NASDAQ        |
+| NVDA.NE | NVIDIA Corporation                       | CAD      | NEO                          | NEO           |
+| YNVD.NE | NVIDIA (NVDA) Yield Shares Purpose ETF   | CAD      | Cboe CA                      | NEO           |
+| NVDY    | YieldMax NVDA Option Income Strategy ETF | USD      | New York Stock Exchange Arca | AMEX          |
+| NVDS    | AXS 1.25X NVDA Bear Daily ETF            | USD      | NASDAQ Global Market         | NASDAQ        |
+| NVDD    | Direxion Daily NVDA Bear 1X Shares       | USD      | NASDAQ                       | NASDAQ        |
+| NVDU    | Direxion Daily NVDA Bull 1.5X Shares     | USD      | NASDAQ                       |
+
+### 4.3. Stock Screener
+
+The **Stock Screener** allows you to filter stocks based on specific criteria such as market cap, price, beta, volume, and dividend yield. This is a great tool for finding stocks that meet your investment strategy.
+
+```python
+discovery.get_stock_screener(
     market_cap_higher=1000000,
     market_cap_lower=200000000000,
     price_higher=100,
@@ -137,109 +124,92 @@ screened_stocks = discovery.get_stock_screener(
 )
 ```
 
-This screen would find stocks that meet the following criteria:
+<div style="overflow-x:auto;">
 
-- Market cap between $1M and $200B
-- Price between $100 and $200
-- Beta between 1 and 1.5
-- Daily volume between 100K and 2M shares
-- Dividend yield between 1% and 2%
-- Excludes ETFs
+| Symbol | Name                            | Market Cap  | Sector             | Industry                           | Beta  | Price   | Dividend | Volume  | Exchange                | Exchange Code | Country | isFund |
+| ------ | ------------------------------- | ----------- | ------------------ | ---------------------------------- | ----- | ------- | -------- | ------- | ----------------------- | ------------- | ------- | ------ |
+| ICE    | Intercontinental Exchange, Inc. | 95738178500 | Financial Services | Financial - Data & Stock Exchanges | 1.090 | 166.750 | 1.80     | 1134178 | New York Stock Exchange | NYSE          | US      | False  |
+| HES    | Hess Corporation                | 41546226600 | Energy             | Oil & Gas Exploration & Production | 1.162 | 134.840 | 2.00     | 659324  | New York Stock Exchange | NYSE          | US      | False  |
+| AME    | AMETEK, Inc.                    | 38944355200 | Industrials        | Industrial - Machinery             | 1.172 | 168.200 | 1.12     | 403693  | New York Stock Exchange | NYSE          | US      | False  |
 
-### 3.4. Market Movers Analysis
+</div>
 
-The Discovery module makes it easy to track market momentum:
+### 4.4. Sector Performance
 
-```python
-# Get top gainers
-gainers = discovery.get_biggest_gainers()
-
-# Get top losers
-losers = discovery.get_biggest_losers()
-
-# Get most active stocks
-active = discovery.get_most_active_stocks()
-```
-
-### 3.5. Integration with Finance Toolkit
-
-The Discovery module seamlessly integrates with other Finance Toolkit capabilities:
+Analyzing **sector performance** helps you understand which sectors are leading or lagging in the market, providing insight into broader economic trends.
 
 ```python
-from financetoolkit import Toolkit
-
-# Get tickers from screener
-tickers = screened_stocks.index.tolist()
-
-# Initialize Toolkit with discovered tickers
-companies = Toolkit(tickers=tickers, api_key="YOUR_API_KEY")
-
-# Analyze historical data
-historical_data = companies.get_historical_data()
+sectors_performance = discovery.get_sectors_performance()
+sectors_performance.tail()
 ```
 
-## 4. Best Practices and Tips
+<div style="overflow-x:auto;">
 
-1. **API Usage:**
+| Date       | Basic Materials | Communication Services | Consumer Cyclical | Consumer Defensive | Energy   | Financial Services | Healthcare | Industrials | Real Estate | Technology | Utilities |
+| ---------- | --------------- | ---------------------- | ----------------- | ------------------ | -------- | ------------------ | ---------- | ----------- | ----------- | ---------- | --------- |
+| 2024-10-29 | 0.0347          | 1.46147                | 0.63884           | -0.3767            | -1.18013 | 0.93243            | 0.20726    | 0.7431      | -0.51331    | 1.18355    | -0.4441   |
 
-   - Monitor your API call limits (250/day for free accounts)
-   - Cache results when performing repeated searches
-   - Use specific search criteria to minimize unnecessary API calls
+</div>
 
-2. **Screening Strategy:**
+### 4.5. Biggest Gainers and Losers
 
-   - Start with broad criteria and gradually narrow down
-   - Consider market conditions when setting screening parameters
-   - Combine multiple screening criteria for more precise results
+To identify market trends, you can use the **biggest gainers** and **biggest losers** functions to see which stocks have seen the most movement in recent trading sessions.
 
-3. **Data Management:**
+```python
+# Assuming `discovery` is already defined as in your example
+gainers_df = discovery.get_biggest_gainers()
 
-   - Export screening results to CSV for offline analysis
-   - Document screening criteria for reproducibility
-   - Regular updates to capture changing market conditions
+# Sort the result by '% Change' in descending order
+sorted_gainers_df = gainers_df.sort_values(by='Change %', ascending=False)
 
-4. **Integration Workflow:**
-   - Define clear research objectives before screening
-   - Plan how discovered instruments will be analyzed
-   - Create systematic processes for regular market scanning
+# Display the sorted DataFrame
+display(sorted_gainers_df)
+```
 
-## 5. Common Challenges and Solutions
+| Symbol | Name                        | Change | Price  | Change % |
+| ------ | --------------------------- | ------ | ------ | -------- |
+| GLYC   | GlycoMimetics, Inc.         | 0.3447 | 0.5129 | 207.0270 |
+| BKYI   | BIO-key International, Inc. | 0.5059 | 1.1796 | 76.1668  |
 
-1. **API Limits:**
+```python
+# Assuming `discovery` is already defined as in your example
+losers_df = discovery.get_biggest_losers()
 
-   - Challenge: Reaching daily API call limits
-   - Solution: Cache results and batch processing
+# Sort the result by '% Change' in descending order
+sorted_losers_df = losers_df.sort_values(by='Change %', ascending=True)
 
-2. **Data Availability:**
+# Display the sorted DataFrame
+display(sorted_losers_df)
+```
 
-   - Challenge: Missing data for some instruments
-   - Solution: Implement proper error handling and validation
+| Symbol | Name                  | Change  | Price  | Change % |
+| ------ | --------------------- | ------- | ------ | -------- |
+| EFSH   | 1847 Holdings LLC     | -0.7717 | 0.4883 | -61.2460 |
+| HRYU   | Hanryu Holdings, Inc. | -0.2609 | 0.2478 | -51.0967 |
 
-3. **Performance:**
+## 5. Key Takeaways
 
-   - Challenge: Slow processing with large datasets
-   - Solution: Use efficient filtering and limit initial scope
-
-4. **Market Coverage:**
-   - Challenge: Limited coverage in free tier
-   - Solution: Focus on major markets or upgrade to premium
+1. The **Discovery Module** in the Finance Toolkit allows users to search, filter, and discover a wide range of financial instruments, including stocks, cryptocurrencies, forex, commodities, ETFs, and indices.
+2. The **Stock Screener** is a powerful tool for finding stocks that meet specific criteria, allowing investors to identify potential opportunities efficiently.
+3. The module also provides insights into **sector performance**, **biggest gainers and losers**, and **most active stocks**, which are invaluable for understanding market trends.
+4. Users can explore additional asset classes such as **cryptocurrencies**, **forex**, **commodities**, **ETFs**, and **indices**, making the Discovery Module a versatile tool for comprehensive market analysis.
 
 ## 6. Conclusion
 
-The Discovery module is a powerful tool for finding and filtering investment opportunities. By combining its capabilities with other Finance Toolkit modules, you can build a comprehensive investment research workflow. Remember to:
+In this guide, we explored the Discovery Module of the Finance Toolkit, focusing on how it can be used to discover stocks and other financial instruments. You learned how to:
 
-1. Define clear screening criteria aligned with your investment strategy
-2. Efficiently manage API usage and data processing
-3. Integrate discovery results with deeper financial analysis
-4. Regularly update and refine your screening process
-5. Document your research methodology for consistency
+1. Use the **Stock Screener** to filter stocks based on specific criteria.
+2. **Search for instruments** and obtain **company quotes**.
+3. Analyze **sector performance** and identify **biggest gainers and losers**.
 
-## 7. Next Steps
+The Discovery Module is a versatile tool that can significantly enhance your financial analysis capabilities by providing easy access to a wide array of financial instruments and advanced screening tools.
 
-- Experiment with different screening criteria for your investment strategy
-- Combine Discovery module results with Ratios module for deeper analysis
-- Create automated screening workflows for regular market monitoring
-- Explore additional asset classes beyond stocks
-- Join the Finance Toolkit community to share screening strategies
+To get the most out of the Finance Toolkit, here are some suggested next steps:
 
-The Discovery module sets the foundation for successful investment research. By mastering its features, you can efficiently identify opportunities that align with your investment goals and merit deeper analysis using Finance Toolkit's other capabilities.
+- **Experiment with the Stock Screener**: Try using different filters to identify stocks that align with your investment strategy.
+- **Explore Additional Asset Classes**: Use the Discovery Module to analyze cryptocurrencies, commodities, and forex to diversify your financial research.
+- **Monitor Market Trends**: Utilize the sector performance analysis and biggest gainers/losers features to stay informed about market movements.
+
+We encourage you to download the Finance Toolkit and put the Discovery Module to the test. Whether you're an investor, analyst, or finance enthusiast, this tool will help you uncover new opportunities and make more informed investment decisions.
+
+Start exploring today and take your financial analysis to the next level!
