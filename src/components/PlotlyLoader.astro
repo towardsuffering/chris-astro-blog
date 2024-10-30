@@ -3,6 +3,7 @@ import PlotlyLineChart from './PlotlyLineChart.astro'
 import PlotlyStackedBar from './PlotlyStackedBar.astro'
 import PlotlyIncomeStatementChart from './PlotlyIncomeStatementChart.astro'
 import PlotlyCashFlowsChart from './PlotlyCashFlowsChart.astro'
+import FinanceRatios from './FinanceRatios.astro'
 
 const { charts = ['line', 'bar', 'income', 'cashflow'] } = Astro.props
 ---
@@ -12,6 +13,7 @@ const { charts = ['line', 'bar', 'income', 'cashflow'] } = Astro.props
 	{charts.includes('bar') && <PlotlyStackedBar />}
 	{charts.includes('income') && <PlotlyIncomeStatementChart />}
 	{charts.includes('cashflow') && <PlotlyCashFlowsChart />}
+	{charts.includes('ratios') && <FinanceRatios />}
 </div>
 
 <script>

@@ -1,5 +1,4 @@
 ---
-// FinancialRatiosChart.astro
 const ratiosData = {
 	roa: [
 		{ Date: '2020', AAPL: 0.1733, AMZN: 0.0781, META: 0.1992, WMT: null },
@@ -114,8 +113,6 @@ const colorScheme = {
 	<div id='chart' class='w-full h-[600px]'></div>
 </div>
 
-<script is:inline src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
-
 <script define:vars={{ ratiosData, ratioInfo, companies, colorScheme }}>
 	function isDarkMode() {
 		return document.documentElement.classList.contains('dark')
@@ -139,6 +136,8 @@ const colorScheme = {
 	}
 
 	function updateChart(ratio) {
+		if (!window.Plotly) return
+
 		const data = ratiosData[ratio]
 		const info = ratioInfo[ratio]
 		const colors = getChartColors()
@@ -154,19 +153,13 @@ const colorScheme = {
 		const layout = {
 			title: {
 				text: info.title,
-				font: {
-					color: colors.text,
-					size: 16
-				}
+				font: { color: colors.text, size: 16 }
 			},
 			xaxis: {
 				title: 'Year',
 				showgrid: true,
 				gridcolor: colors.grid,
-				tickfont: {
-					color: colors.subtext,
-					size: 12
-				},
+				tickfont: { color: colors.subtext, size: 12 },
 				tickcolor: colors.axis,
 				linecolor: colors.axis,
 				zerolinecolor: colors.axis
@@ -174,18 +167,12 @@ const colorScheme = {
 			yaxis: {
 				title: {
 					text: info.title,
-					font: {
-						color: colors.subtext,
-						size: 12
-					}
+					font: { color: colors.subtext, size: 12 }
 				},
 				tickformat: info.format,
 				showgrid: true,
 				gridcolor: colors.grid,
-				tickfont: {
-					color: colors.subtext,
-					size: 12
-				},
+				tickfont: { color: colors.subtext, size: 12 },
 				tickcolor: colors.axis,
 				linecolor: colors.axis,
 				zerolinecolor: colors.axis
@@ -196,10 +183,7 @@ const colorScheme = {
 			legend: {
 				orientation: 'h',
 				y: -0.2,
-				font: {
-					color: colors.subtext,
-					size: 12
-				},
+				font: { color: colors.subtext, size: 12 },
 				bgcolor: colors.background,
 				bordercolor: colors.axis
 			},
@@ -208,9 +192,7 @@ const colorScheme = {
 			paper_bgcolor: colors.background,
 			barmode: 'group',
 			hoverlabel: {
-				font: {
-					color: colors.text
-				},
+				font: { color: colors.text },
 				bordercolor: colors.axis
 			},
 			modebar: {
@@ -229,14 +211,16 @@ const colorScheme = {
 		document.getElementById('ratioDescription').textContent = info.description
 	}
 
-	// Initial chart render
-	document.addEventListener('DOMContentLoaded', function () {
+	function initializeChart() {
 		const selector = document.getElementById('ratioSelector')
-		updateChart(selector.value)
-		selector.addEventListener('change', (e) => updateChart(e.target.value))
-	})
+		if (selector) {
+			updateChart(selector.value)
+			selector.addEventListener('change', (e) => updateChart(e.target.value))
+		}
+	}
 
-	// Watch for dark mode changes
+	window.addEventListener('plotlyLoaded', initializeChart)
+
 	const observer = new MutationObserver((mutations) => {
 		mutations.forEach((mutation) => {
 			if (mutation.attributeName === 'class') {
