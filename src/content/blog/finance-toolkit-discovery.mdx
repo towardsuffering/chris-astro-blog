@@ -73,6 +73,8 @@ stock_list = discovery.get_stock_list()
 stock_list.iloc[38000:38010]
 ```
 
+<div style="overflow-x:auto;">
+
 | Symbol   | Name                                         | Price  | Exchange                        | Exchange Code |
 | -------- | -------------------------------------------- | ------ | ------------------------------- | ------------- |
 | IBS.LS   | Ibersol, S.G.P.S., S.A.                      | 7.12   | Lisbon                          | EURONEXT      |
@@ -86,6 +88,8 @@ stock_list.iloc[38000:38010]
 | IBT.V    | IBEX Technologies Inc.                       | 1.45   | Toronto Stock Exchange Ventures | TSXV          |
 | IBTA     | Ibotta, Inc.                                 | 76.78  | New York Stock Exchange         | NYSE          |
 
+</div>
+
 ### 4.2. Searching for Instruments
 
 You can search for specific financial instruments by name or ticker symbol using the `search_instruments()` function. Here, we look for instruments related to .
@@ -96,6 +100,8 @@ discovery = Discovery(api_key="FINANCIAL_MODELING_PREP_KEY")
 discovery.search_instruments(query='NVDA')
 ```
 
+<div style="overflow-x:auto;">
+
 | Symbol  | Name                                     | Currency | Exchange                     | Exchange Code |
 | ------- | ---------------------------------------- | -------- | ---------------------------- | ------------- |
 | NVDA    | NVIDIA Corporation                       | USD      | NASDAQ Global Select         | NASDAQ        |
@@ -105,6 +111,8 @@ discovery.search_instruments(query='NVDA')
 | NVDS    | AXS 1.25X NVDA Bear Daily ETF            | USD      | NASDAQ Global Market         | NASDAQ        |
 | NVDD    | Direxion Daily NVDA Bear 1X Shares       | USD      | NASDAQ                       | NASDAQ        |
 | NVDU    | Direxion Daily NVDA Bull 1.5X Shares     | USD      | NASDAQ                       |
+
+</div>
 
 ### 4.3. Stock Screener
 
@@ -168,10 +176,14 @@ sorted_gainers_df = gainers_df.sort_values(by='Change %', ascending=False)
 display(sorted_gainers_df)
 ```
 
+<div style="overflow-x:auto;">
+
 | Symbol | Name                        | Change | Price  | Change % |
 | ------ | --------------------------- | ------ | ------ | -------- |
 | GLYC   | GlycoMimetics, Inc.         | 0.3447 | 0.5129 | 207.0270 |
 | BKYI   | BIO-key International, Inc. | 0.5059 | 1.1796 | 76.1668  |
+
+</div>
 
 ```python
 # Assuming `discovery` is already defined as in your example
@@ -184,10 +196,14 @@ sorted_losers_df = losers_df.sort_values(by='Change %', ascending=True)
 display(sorted_losers_df)
 ```
 
+<div style="overflow-x:auto;">
+
 | Symbol | Name                  | Change  | Price  | Change % |
 | ------ | --------------------- | ------- | ------ | -------- |
 | EFSH   | 1847 Holdings LLC     | -0.7717 | 0.4883 | -61.2460 |
 | HRYU   | Hanryu Holdings, Inc. | -0.2609 | 0.2478 | -51.0967 |
+
+</div>
 
 ## 5. Key Takeaways
 
