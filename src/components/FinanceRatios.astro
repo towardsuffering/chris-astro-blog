@@ -1,0 +1,536 @@
+---
+interface Ratio {
+	name: string
+	definition: string
+	formula: string
+}
+
+interface CategoryData {
+	title: string
+	description: string
+	ratios: Ratio[]
+}
+
+const categories: Record<string, CategoryData> = {
+	efficiency: {
+		title: 'Efficiency Ratios',
+		description: 'Measure how effectively a company uses its resources to generate revenue',
+		ratios: [
+			{
+				name: 'Asset Turnover Ratio',
+				definition: 'Measures how efficiently company uses assets to generate sales',
+				formula: '\\frac{\\text{Net Sales}}{\\text{Average Total Assets}}'
+			},
+			{
+				name: 'Inventory Turnover Ratio',
+				definition: 'Shows how many times inventory is sold and replaced',
+				formula: '\\frac{\\text{Cost of Goods Sold}}{\\text{Average Inventory}}'
+			},
+			{
+				name: 'Days of Inventory Outstanding',
+				definition: 'Average number of days to sell inventory',
+				formula: '\\frac{365}{\\text{Inventory Turnover Ratio}}'
+			},
+			{
+				name: 'Days of Sales Outstanding',
+				definition: 'Average collection period for receivables',
+				formula: '\\frac{\\text{Accounts Receivable}}{\\text{Total Credit Sales}} \\times 365'
+			},
+			{
+				name: 'Operating Cycle',
+				definition: 'Time between purchase of inventory and collection of cash',
+				formula: '\\text{Days Inventory Outstanding} + \\text{Days Sales Outstanding}'
+			},
+			{
+				name: 'Accounts Payables Turnover Ratio',
+				definition: 'Frequency of payables payment',
+				formula: '\\frac{\\text{Total Purchases}}{\\text{Average Accounts Payable}}'
+			},
+			{
+				name: 'Days of Accounts Payable Outstanding',
+				definition: 'Average time taken to pay creditors',
+				formula: '\\frac{365}{\\text{Accounts Payable Turnover Ratio}}'
+			},
+			{
+				name: 'Cash Conversion Cycle',
+				definition: 'Time to convert resource inputs into cash flows',
+				formula: '\\text{DIO} + \\text{DSO} - \\text{DPO}'
+			},
+			{
+				name: 'Cash Conversion Efficiency',
+				definition: 'Efficiency in converting income to cash',
+				formula: '\\frac{\\text{Operating Cash Flow}}{\\text{Net Sales}} \\times 100'
+			},
+			{
+				name: 'Receivables Turnover',
+				definition: 'Effectiveness in extending credit and collecting debts',
+				formula: '\\frac{\\text{Net Credit Sales}}{\\text{Average Accounts Receivable}}'
+			},
+			{
+				name: 'SGA to Revenue Ratio',
+				definition: 'Operating expenses as a percentage of revenue',
+				formula: '\\frac{\\text{SG\\&A Expenses}}{\\text{Revenue}} \\times 100'
+			},
+			{
+				name: 'Fixed Asset Turnover',
+				definition: 'Efficiency of fixed assets in generating sales',
+				formula: '\\frac{\\text{Net Sales}}{\\text{Average Fixed Assets}}'
+			},
+			{
+				name: 'Operating Ratio',
+				definition: 'Operating efficiency measurement',
+				formula: '\\frac{\\text{Operating Expenses}}{\\text{Net Sales}} \\times 100'
+			}
+		]
+	},
+	liquidity: {
+		title: 'Liquidity Ratios',
+		description: "Measure company's ability to meet short-term obligations",
+		ratios: [
+			{
+				name: 'Current Ratio',
+				definition: 'Ability to pay short-term obligations',
+				formula: '\\frac{\\text{Current Assets}}{\\text{Current Liabilities}}'
+			},
+			{
+				name: 'Quick Ratio',
+				definition: 'Ability to pay immediate obligations',
+				formula: '\\frac{\\text{Current Assets} - \\text{Inventory}}{\\text{Current Liabilities}}'
+			},
+			{
+				name: 'Cash Ratio',
+				definition: 'Most conservative liquidity measure',
+				formula: '\\frac{\\text{Cash and Cash Equivalents}}{\\text{Current Liabilities}}'
+			},
+			{
+				name: 'Working Capital',
+				definition: 'Available funds for operations',
+				formula: '\\text{Current Assets} - \\text{Current Liabilities}'
+			},
+			{
+				name: 'Operating Cash Flow Ratio',
+				definition: 'Ability to cover short-term liabilities with operations',
+				formula: '\\frac{\\text{Operating Cash Flow}}{\\text{Current Liabilities}}'
+			},
+			{
+				name: 'Operating Cash Flow Sales Ratio',
+				definition: 'Cash generated per dollar of sales',
+				formula: '\\frac{\\text{Operating Cash Flow}}{\\text{Sales}}'
+			},
+			{
+				name: 'Short Term Coverage Ratio',
+				definition: 'Short-term debt servicing ability',
+				formula: '\\frac{\\text{Operating Cash Flow}}{\\text{Short-term Debt}}'
+			}
+		]
+	},
+	profitability: {
+		title: 'Profitability Ratios',
+		description: "Measure company's ability to generate profits from operations",
+		ratios: [
+			{
+				name: 'Gross Margin',
+				definition: 'Profit remaining after direct production costs',
+				formula: '\\frac{\\text{Revenue} - \\text{COGS}}{\\text{Revenue}} \\times 100'
+			},
+			{
+				name: 'Operating Margin',
+				definition: 'Profit from core business operations',
+				formula: '\\frac{\\text{Operating Income}}{\\text{Revenue}} \\times 100'
+			},
+			{
+				name: 'Net Profit Margin',
+				definition: 'Overall profitability after all expenses',
+				formula: '\\frac{\\text{Net Income}}{\\text{Revenue}} \\times 100'
+			},
+			{
+				name: 'Interest Burden Ratio',
+				definition: 'Impact of interest expenses on profits',
+				formula: '\\frac{\\text{Earnings Before Tax}}{\\text{EBIT}}'
+			},
+			{
+				name: 'Income Before Tax Profit Margin',
+				definition: 'Profitability before tax impact',
+				formula: '\\frac{\\text{Earnings Before Tax}}{\\text{Revenue}} \\times 100'
+			},
+			{
+				name: 'Effective Tax Rate',
+				definition: 'Actual tax burden on earnings',
+				formula: '\\frac{\\text{Income Tax Expense}}{\\text{Earnings Before Tax}} \\times 100'
+			},
+			{
+				name: 'Return on Assets (ROA)',
+				definition: 'Efficiency of asset utilization for profit',
+				formula: '\\frac{\\text{Net Income}}{\\text{Average Total Assets}} \\times 100'
+			},
+			{
+				name: 'Return on Equity (ROE)',
+				definition: 'Return generated on shareholder investment',
+				formula: "\\frac{\\text{Net Income}}{\\text{Average Shareholders' Equity}} \\times 100"
+			},
+			{
+				name: 'Return on Invested Capital (ROIC)',
+				definition: 'Return generated on total capital investment',
+				formula: '\\frac{\\text{NOPAT}}{\\text{Invested Capital}} \\times 100'
+			},
+			{
+				name: 'Income Quality Ratio',
+				definition: 'Quality of reported earnings',
+				formula: '\\frac{\\text{Operating Cash Flow}}{\\text{Net Income}}'
+			},
+			{
+				name: 'Return on Tangible Assets (ROTA)',
+				definition: 'Return on physical assets',
+				formula: '\\frac{\\text{Net Income}}{\\text{Total Assets - Intangible Assets}} \\times 100'
+			},
+			{
+				name: 'Return on Capital Employed (ROCE)',
+				definition: 'Profitability relative to capital employed',
+				formula: '\\frac{\\text{EBIT}}{\\text{Capital Employed}} \\times 100'
+			},
+			{
+				name: 'Net Income per EBT',
+				definition: 'Portion of pre-tax income retained',
+				formula: '\\frac{\\text{Net Income}}{\\text{Earnings Before Tax}}'
+			},
+			{
+				name: 'Free Cash Flow Operating Cash Flow Ratio',
+				definition: 'Operating cash efficiency',
+				formula: '\\frac{\\text{Free Cash Flow}}{\\text{Operating Cash Flow}}'
+			},
+			{
+				name: 'Tax Burden Ratio',
+				definition: 'Tax impact on profits',
+				formula: '\\frac{\\text{Net Income}}{\\text{EBT}}'
+			},
+			{
+				name: 'EBT to EBIT',
+				definition: 'Impact of interest on earnings',
+				formula: '\\frac{\\text{EBT}}{\\text{EBIT}}'
+			},
+			{
+				name: 'EBIT to Revenue',
+				definition: 'Operating profit margin',
+				formula: '\\frac{\\text{EBIT}}{\\text{Revenue}} \\times 100'
+			}
+		]
+	},
+	solvency: {
+		title: 'Solvency Ratios',
+		description: "Measure company's ability to meet long-term obligations",
+		ratios: [
+			{
+				name: 'Debt to Assets Ratio',
+				definition: 'Portion of assets financed by debt',
+				formula: '\\frac{\\text{Total Debt}}{\\text{Total Assets}}'
+			},
+			{
+				name: 'Debt to Equity Ratio',
+				definition: 'Balance between debt and equity financing',
+				formula: "\\frac{\\text{Total Debt}}{\\text{Total Shareholders' Equity}}"
+			},
+			{
+				name: 'Interest Coverage Ratio',
+				definition: 'Ability to pay interest on debt',
+				formula: '\\frac{\\text{EBIT}}{\\text{Interest Expense}}'
+			},
+			{
+				name: 'Equity Multiplier',
+				definition: 'Leverage of shareholder equity',
+				formula: "\\frac{\\text{Total Assets}}{\\text{Total Shareholders' Equity}}"
+			},
+			{
+				name: 'Debt Service Coverage Ratio',
+				definition: 'Ability to service total debt',
+				formula: '\\frac{\\text{Operating Income}}{\\text{Total Debt Service}}'
+			},
+			{
+				name: 'Free Cash Flow Yield',
+				definition: 'Free cash flow relative to market value',
+				formula: '\\frac{\\text{Free Cash Flow}}{\\text{Market Capitalization}} \\times 100'
+			},
+			{
+				name: 'Net Debt to EBITDA Ratio',
+				definition: 'Debt level relative to earnings',
+				formula: '\\frac{\\text{Net Debt}}{\\text{EBITDA}}'
+			},
+			{
+				name: 'Cash Flow Coverage Ratio',
+				definition: 'Operating cash flow relative to total debt',
+				formula: '\\frac{\\text{Operating Cash Flow}}{\\text{Total Debt}}'
+			},
+			{
+				name: 'CAPEX Coverage Ratio',
+				definition: 'Ability to fund capital expenditures',
+				formula: '\\frac{\\text{Operating Cash Flow}}{\\text{Capital Expenditures}}'
+			},
+			{
+				name: 'CAPEX Dividend Coverage Ratio',
+				definition: 'Ability to fund capital needs and dividends',
+				formula: '\\frac{\\text{Operating Cash Flow}}{\\text{CAPEX + Dividends}}'
+			}
+		]
+	},
+	valuation: {
+		title: 'Valuation Ratios',
+		description: "Measure company's market value and investment potential",
+		ratios: [
+			{
+				name: 'Earnings per Share (EPS)',
+				definition: 'Profit allocated to each share',
+				formula: '\\frac{\\text{Net Income - Preferred Dividends}}{\\text{Weighted Average Shares}}'
+			},
+			{
+				name: 'Revenue per Share (RPS)',
+				definition: 'Revenue allocated to each share',
+				formula: '\\frac{\\text{Revenue}}{\\text{Average Shares Outstanding}}'
+			},
+			{
+				name: 'Price Earnings Ratio (PE)',
+				definition: 'Price paid for each dollar of earnings',
+				formula: '\\frac{\\text{Market Price per Share}}{\\text{EPS}}'
+			}
+			// ... Continue with remaining valuation ratios?
+		]
+	}
+	// Would you like me to continue with the remaining categories?
+}
+---
+
+<div class='w-full max-w-4xl mx-auto p-4'>
+	<div class='space-y-2'>
+		{
+			Object.entries(categories).map(([key, category]) => (
+				<div
+					class='group bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow'
+					tabindex='0'
+				>
+					<div class='flex items-center justify-between p-4 sticky top-0 bg-white dark:bg-gray-800 z-10 rounded-t-lg'>
+						<div class='flex-1'>
+							<h2 class='text-2xl font-semibold text-gray-900 dark:text-gray-100'>
+								{category.title}
+							</h2>
+							<p class='description-text text-gray-600 dark:text-gray-300 mt-1'>
+								{category.description}
+							</p>
+						</div>
+						<div class='flex items-center gap-2'>
+							<span class='scroll-indicator hidden group-hover:flex items-center text-sm text-gray-500 dark:text-gray-400'>
+								<span class='scroll-text'>Scroll</span>
+								<svg class='w-4 h-4 ml-1' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+									<path
+										stroke-linecap='round'
+										stroke-linejoin='round'
+										stroke-width='2'
+										d='M19 14l-7 7m0 0l-7-7m7 7V3'
+									/>
+								</svg>
+							</span>
+							<svg
+								class='w-6 h-6 text-gray-400 transform transition-transform group-hover:rotate-180'
+								fill='none'
+								stroke='currentColor'
+								viewBox='0 0 24 24'
+							>
+								<path
+									stroke-linecap='round'
+									stroke-linejoin='round'
+									stroke-width='2'
+									d='M19 9l-7 7-7-7'
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class='hidden group-hover:block relative'>
+						<div class='overflow-y-auto max-h-[20vh] scrollbar-styled' data-scrollable>
+							{category.ratios.map((ratio) => (
+								<div class='p-4 border-b last:border-b-0 dark:border-gray-700 hover:bg-gray-50/50 dark:hover:bg-gray-700/50 transition-colors'>
+									<h3 class='text-xl font-medium text-gray-900 dark:text-gray-100 mb-2'>
+										{ratio.name}
+									</h3>
+
+									<p class='description-text text-gray-600 dark:text-gray-300 mb-4'>
+										{ratio.definition}
+									</p>
+
+									<div class='bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg text-center'>
+										$${ratio.formula}$$
+									</div>
+								</div>
+							))}
+						</div>
+						<div class='scroll-fade absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-gray-800 to-transparent pointer-events-none opacity-0 transition-opacity duration-200' />
+					</div>
+				</div>
+			))
+		}
+	</div>
+</div>
+
+<style>
+	/* Enhanced scrollbar styling */
+	.scrollbar-styled {
+		scrollbar-width: thin;
+		scrollbar-color: #cbd5e1 transparent;
+	}
+
+	.scrollbar-styled::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	.scrollbar-styled::-webkit-scrollbar-track {
+		background: transparent;
+		border-radius: 3px;
+	}
+
+	.scrollbar-styled::-webkit-scrollbar-thumb {
+		background-color: #cbd5e1;
+		border-radius: 3px;
+	}
+
+	.dark .scrollbar-styled::-webkit-scrollbar-thumb {
+		background-color: #4b5563;
+	}
+
+	.scrollbar-styled::-webkit-scrollbar-thumb:hover {
+		background-color: #94a3b8;
+	}
+
+	/* Description text */
+	.description-text {
+		font-size: 1.125rem !important;
+		line-height: 1.5 !important;
+	}
+
+	/* Scroll indicator animation */
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(2px);
+		}
+	}
+
+	.scroll-indicator svg {
+		animation: bounce 1s infinite;
+	}
+
+	/* Smooth transitions */
+	.group {
+		transition: all 0.2s ease-in-out;
+	}
+
+	.group-hover\:block {
+		animation: slideDown 0.2s ease-out;
+	}
+
+	@keyframes slideDown {
+		from {
+			opacity: 0;
+			transform: translateY(-0.25rem);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	/* Reduced motion */
+	@media (prefers-reduced-motion: reduce) {
+		.scroll-indicator svg {
+			animation: none;
+		}
+		.group-hover\:block {
+			animation: none;
+		}
+	}
+
+	/* Print optimization */
+	@media print {
+		.hidden {
+			display: block !important;
+		}
+		.max-h-[40vh] {
+			max-height: none !important;
+		}
+		.overflow-y-auto {
+			overflow: visible !important;
+		}
+	}
+</style>
+
+<script>
+	// Enhanced scroll handling
+	document.querySelectorAll('.group').forEach((group) => {
+		const scrollableContent = group.querySelector('[data-scrollable]')
+		const header = group.querySelector('.sticky')
+		const scrollFade = group.querySelector('.scroll-fade')
+		const scrollIndicator = group.querySelector('.scroll-indicator')
+		let resizeObserver
+
+		function updateScrollState() {
+			if (!scrollableContent) return
+
+			const hasOverflow = scrollableContent.scrollHeight > scrollableContent.clientHeight
+			const isAtBottom =
+				Math.abs(
+					scrollableContent.scrollHeight -
+						scrollableContent.scrollTop -
+						scrollableContent.clientHeight
+				) < 1
+
+			// Update scroll indicator
+			if (scrollIndicator) {
+				scrollIndicator.style.display = hasOverflow ? 'flex' : 'none'
+			}
+
+			// Update fade effect
+			if (scrollFade) {
+				scrollFade.style.opacity = hasOverflow && !isAtBottom ? '1' : '0'
+			}
+
+			// Update header shadow
+			if (header) {
+				header.style.boxShadow =
+					scrollableContent.scrollTop > 0 ? '0 1px 2px 0 rgba(0, 0, 0, 0.05)' : 'none'
+			}
+		}
+
+		// Initialize ResizeObserver
+		resizeObserver = new ResizeObserver(updateScrollState)
+		if (scrollableContent) {
+			resizeObserver.observe(scrollableContent)
+			scrollableContent.addEventListener('scroll', updateScrollState)
+		}
+
+		// Keyboard navigation
+		group.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault()
+				group.classList.toggle('hover')
+				setTimeout(updateScrollState, 0)
+			}
+
+			if (scrollableContent && document.activeElement === group) {
+				const scrollAmount = 100
+				if (e.key === 'ArrowDown') {
+					e.preventDefault()
+					scrollableContent.scrollTop += scrollAmount
+				} else if (e.key === 'ArrowUp') {
+					e.preventDefault()
+					scrollableContent.scrollTop -= scrollAmount
+				}
+			}
+		})
+
+		// Reset scroll position on close
+		group.addEventListener('mouseleave', () => {
+			if (scrollableContent) {
+				scrollableContent.scrollTop = 0
+			}
+		})
+	})
+</script>

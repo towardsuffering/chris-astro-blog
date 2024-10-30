@@ -1,0 +1,255 @@
+---
+// FinancialRatiosChart.astro
+const ratiosData = {
+	roa: [
+		{ Date: '2020', AAPL: 0.1733, AMZN: 0.0781, META: 0.1992, WMT: null },
+		{ Date: '2021', AAPL: 0.2806, AMZN: 0.09, META: 0.2421, WMT: 0.0553 },
+		{ Date: '2022', AAPL: 0.2836, AMZN: -0.0062, META: 0.1319, WMT: 0.055 },
+		{ Date: '2023', AAPL: 0.275, AMZN: 0.0614, META: 0.1883, WMT: 0.0478 },
+		{ Date: '2024', AAPL: null, AMZN: null, META: null, WMT: 0.0626 }
+	],
+	roe: [
+		{ Date: '2020', AAPL: 0.7369, AMZN: 0.2744, META: 0.2542, WMT: null },
+		{ Date: '2021', AAPL: 1.4744, AMZN: 0.2881, META: 0.311, WMT: 0.1598 },
+		{ Date: '2022', AAPL: 1.7546, AMZN: -0.0191, META: 0.1852, WMT: 0.1524 },
+		{ Date: '2023', AAPL: 1.7195, AMZN: 0.1749, META: 0.2804, WMT: 0.1328 },
+		{ Date: '2024', AAPL: null, AMZN: null, META: null, WMT: 0.1777 }
+	],
+	current: [
+		{ Date: '2020', AAPL: 1.3636, AMZN: 1.0502, META: 5.0511, WMT: 0.7945 },
+		{ Date: '2021', AAPL: 1.0746, AMZN: 1.1358, META: 3.1543, WMT: 0.9722 },
+		{ Date: '2022', AAPL: 0.8794, AMZN: 0.9446, META: 2.2034, WMT: 0.9278 },
+		{ Date: '2023', AAPL: 0.988, AMZN: 1.0451, META: 2.671, WMT: 0.8211 },
+		{ Date: '2024', AAPL: null, AMZN: null, META: null, WMT: 0.8319 }
+	],
+	quick: [
+		{ Date: '2020', AAPL: 1.2182, AMZN: 0.862, META: 4.8921, WMT: 0.2025 },
+		{ Date: '2021', AAPL: 0.9097, AMZN: 0.9063, META: 2.9353, WMT: 0.2618 },
+		{ Date: '2022', AAPL: 0.7094, AMZN: 0.7232, META: 2.0056, WMT: 0.2637 },
+		{ Date: '2023', AAPL: 0.8433, AMZN: 0.843, META: 2.5523, WMT: 0.1819 },
+		{ Date: '2024', AAPL: null, AMZN: null, META: null, WMT: 0.2019 }
+	],
+	asset_turnover: [
+		{ Date: '2020', AAPL: 0.8288, AMZN: 1.413, META: 0.5874, WMT: null },
+		{ Date: '2021', AAPL: 1.0841, AMZN: 1.2668, META: 0.725, WMT: 2.287 },
+		{ Date: '2022', AAPL: 1.1206, AMZN: 1.1639, META: 0.6631, WMT: 2.3032 },
+		{ Date: '2023', AAPL: 1.0868, AMZN: 1.1606, META: 0.6496, WMT: 2.5037 },
+		{ Date: '2024', AAPL: null, AMZN: null, META: null, WMT: 2.6142 }
+	],
+	pe: [
+		{ Date: '2020', AAPL: 39.6574, AMZN: 77.8702, META: 26.9855, WMT: 26.2619 },
+		{ Date: '2021', AAPL: 31.1543, AMZN: 51.4695, META: 24.3521, WMT: 29.2831 },
+		{ Date: '2022', AAPL: 21.0561, AMZN: -314.3713, META: 13.9736, WMT: 28.3727 },
+		{ Date: '2023', AAPL: 31.2678, AMZN: 52.3967, META: 23.7295, WMT: 36.5449 },
+		{ Date: '2024', AAPL: null, AMZN: null, META: null, WMT: 42.7078 }
+	]
+}
+
+const ratioInfo = {
+	roa: {
+		title: 'Return on Assets (ROA)',
+		description: 'Measures how efficiently a company uses its assets to generate profit',
+		format: '.2%'
+	},
+	roe: {
+		title: 'Return on Equity (ROE)',
+		description: 'Shows how much profit a company generates with shareholder investments',
+		format: '.2%'
+	},
+	current: {
+		title: 'Current Ratio',
+		description: 'Indicates ability to pay short-term obligations with current assets',
+		format: '.2f'
+	},
+	quick: {
+		title: 'Quick Ratio',
+		description: 'Measures ability to pay short-term obligations with most liquid assets',
+		format: '.2f'
+	},
+	asset_turnover: {
+		title: 'Asset Turnover Ratio',
+		description: 'Shows how efficiently a company uses assets to generate sales',
+		format: '.2f'
+	},
+	pe: {
+		title: 'Price to Earnings (P/E) Ratio',
+		description: 'Indicates market value relative to earnings per share',
+		format: '.2f'
+	}
+}
+
+const companies = ['AAPL', 'AMZN', 'META', 'WMT']
+const colorScheme = {
+	AAPL: '#FF9900',
+	AMZN: '#FF6600',
+	META: '#4267B2',
+	WMT: '#0071CE'
+}
+---
+
+<div class='w-full max-w-4xl mx-auto p-4'>
+	<div class='mb-6'>
+		<label for='ratioSelector' class='block text-sm font-medium mb-2 dark:text-gray-200'>
+			Select Financial Ratio
+		</label>
+		<div class='relative'>
+			<select
+				id='ratioSelector'
+				class='block w-full max-w-xs px-4 py-2 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white appearance-none'
+			>
+				{Object.entries(ratioInfo).map(([key, info]) => <option value={key}>{info.title}</option>)}
+			</select>
+			<div
+				class='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 dark:text-gray-200'
+			>
+				<svg class='w-4 h-4 fill-current' viewBox='0 0 20 20'>
+					<path
+						d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
+					></path>
+				</svg>
+			</div>
+		</div>
+		<p id='ratioDescription' class='mt-2 text-sm text-gray-600 dark:text-gray-400'></p>
+	</div>
+	<div id='chart' class='w-full h-[600px]'></div>
+</div>
+
+<script is:inline src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+
+<script define:vars={{ ratiosData, ratioInfo, companies, colorScheme }}>
+	function isDarkMode() {
+		return document.documentElement.classList.contains('dark')
+	}
+
+	function getChartColors() {
+		const mode = isDarkMode()
+		return {
+			text: mode ? '#E5E7EB' : '#111827',
+			subtext: mode ? '#9CA3AF' : '#4B5563',
+			grid: mode ? 'rgba(75, 85, 99, 0.2)' : 'rgba(229, 231, 235, 0.6)',
+			axis: mode ? '#4B5563' : '#E5E7EB',
+			background: mode ? 'rgba(17, 24, 39, 0)' : 'rgba(255, 255, 255, 0)',
+			companies: {
+				AAPL: mode ? '#FFB84D' : '#FF9900',
+				AMZN: mode ? '#FF944D' : '#FF6600',
+				META: mode ? '#6B8CD5' : '#4267B2',
+				WMT: mode ? '#339DFF' : '#0071CE'
+			}
+		}
+	}
+
+	function updateChart(ratio) {
+		const data = ratiosData[ratio]
+		const info = ratioInfo[ratio]
+		const colors = getChartColors()
+
+		const chartData = companies.map((company) => ({
+			x: data.map((record) => record.Date),
+			y: data.map((record) => (record[company] !== null ? record[company] : NaN)),
+			type: 'bar',
+			name: company,
+			marker: { color: colors.companies[company] }
+		}))
+
+		const layout = {
+			title: {
+				text: info.title,
+				font: {
+					color: colors.text,
+					size: 16
+				}
+			},
+			xaxis: {
+				title: 'Year',
+				showgrid: true,
+				gridcolor: colors.grid,
+				tickfont: {
+					color: colors.subtext,
+					size: 12
+				},
+				tickcolor: colors.axis,
+				linecolor: colors.axis,
+				zerolinecolor: colors.axis
+			},
+			yaxis: {
+				title: {
+					text: info.title,
+					font: {
+						color: colors.subtext,
+						size: 12
+					}
+				},
+				tickformat: info.format,
+				showgrid: true,
+				gridcolor: colors.grid,
+				tickfont: {
+					color: colors.subtext,
+					size: 12
+				},
+				tickcolor: colors.axis,
+				linecolor: colors.axis,
+				zerolinecolor: colors.axis
+			},
+			height: 600,
+			autosize: true,
+			showlegend: true,
+			legend: {
+				orientation: 'h',
+				y: -0.2,
+				font: {
+					color: colors.subtext,
+					size: 12
+				},
+				bgcolor: colors.background,
+				bordercolor: colors.axis
+			},
+			margin: { t: 50, b: 100, l: 100, r: 20 },
+			plot_bgcolor: colors.background,
+			paper_bgcolor: colors.background,
+			barmode: 'group',
+			hoverlabel: {
+				font: {
+					color: colors.text
+				},
+				bordercolor: colors.axis
+			},
+			modebar: {
+				bgcolor: colors.background,
+				color: colors.subtext,
+				activecolor: colors.text
+			}
+		}
+
+		const config = {
+			responsive: true,
+			displayModeBar: false
+		}
+
+		Plotly.newPlot('chart', chartData, layout, config)
+		document.getElementById('ratioDescription').textContent = info.description
+	}
+
+	// Initial chart render
+	document.addEventListener('DOMContentLoaded', function () {
+		const selector = document.getElementById('ratioSelector')
+		updateChart(selector.value)
+		selector.addEventListener('change', (e) => updateChart(e.target.value))
+	})
+
+	// Watch for dark mode changes
+	const observer = new MutationObserver((mutations) => {
+		mutations.forEach((mutation) => {
+			if (mutation.attributeName === 'class') {
+				const selector = document.getElementById('ratioSelector')
+				if (selector) {
+					updateChart(selector.value)
+				}
+			}
+		})
+	})
+
+	observer.observe(document.documentElement, {
+		attributes: true,
+		attributeFilter: ['class']
+	})
+</script>

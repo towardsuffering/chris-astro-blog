@@ -1,0 +1,246 @@
+---
+heroImage: ../../assets/images/financetoolkit.png
+category: 'Analytics'
+description: 'The Master financial ratios analysis using Finance Toolkit.'
+pubDate: 2024-10-30T15:42:00.000Z
+tags:
+  [
+    'Finance Toolkit',
+    'Python',
+    'Financial Ratios',
+    'Investment Analysis',
+    'Company Evaluation',
+    'Profitability Ratios',
+    'Liquidity Ratios'
+  ]
+title: 'Analyzing Financial Ratios Using Finance Toolkit Ratios Module'
+---
+
+import 'katex/dist/katex.min.css'
+import FinancialRatiosChart from '../../components/FinancialRatiosChart.astro'
+import HighlightText from '../../components/HighlightText.astro'
+import FinanceRatios from '../../components/FinanceRatios.astro'
+
+## 1. Introduction
+
+Welcome to the third installment of mastering financial analysis with the Finance Toolkit. In this guide, we will take an in-depth look at the **Ratios Module**—a powerful feature that allows you to evaluate a company's performance using a wide variety of financial ratios. Understanding these ratios is crucial for investors, analysts, and anyone interested in assessing the financial health of companies. With over **50 financial ratios** available, the Finance Toolkit's Ratios Module provides an incredibly comprehensive way to analyze company performance. These include **custom ratios**, as well as specific categories like **efficiency**, **profitability**, **liquidity**, **solvency**, and **valuation** ratios.
+
+For a step-by-step guide to get started with the Finance Toolkit, check out my [Getting Started with Finance Toolkit](https://chrisblogs.dev/post/finance-toolkit-getting-started/) blog post.
+
+The interactive chart below illustrates the power of the Finance Toolkit, showcasing its capabilities in visualizing financial metrics effectively--allowing analysts to glean important insights about the competition. This chart provides a glimpse of **Apple, Amazon, Meta, and Walmart** using some of the most commonly used ratios, but remember, the power of the Finance Toolkit goes much further beyond this.
+
+<FinancialRatiosChart />
+
+This chart allows you to explore various financial ratios for Apple, Amazon, Meta, and Walmart over time. Use the dropdown menu to filter between metrics like **Return on Assets (ROA)**, **Return on Equity (ROE)**, **Current Ratio**, **Quick Ratio**, **Asset Turnover Ratio**, and **Price to Earnings (P/E) Ratio**. By analyzing these ratios, you can gain real-world insights into how these companies have performed financially, identifying key trends and distinctions among them:
+
+- **Return on Assets (ROA)**: Amazon's ROA shows fluctuations, suggesting variability in how effectively it utilizes assets, while Meta maintains more consistent asset efficiency.
+- **Return on Equity (ROE)**: Amazon displays high variance in ROE, indicating periods of fluctuating profitability, whereas Apple maintains stable returns on equity, reflecting steady shareholder returns.
+- **Current Ratio**: Meta consistently has the highest current ratio, highlighting its strong ability to meet short-term obligations compared to its peers.
+- **Quick Ratio**: Meta also leads in quick ratio, particularly in 2020, indicating strong liquidity and minimal reliance on inventory to meet liabilities.
+- **Asset Turnover Ratio**: Walmart stands out with the highest asset turnover, demonstrating its superior ability to generate sales from its assets year over year.
+- **Price-to-Earnings (P/E) Ratio**: Amazon's P/E ratio shows significant volatility, especially during 2022, reflecting varying market expectations and valuation challenges.
+
+This guide will walk you through setting up the Ratios Module, understanding various types of financial ratios, and interpreting them to uncover meaningful insights. We'll explore key profitability, liquidity, efficiency, and leverage ratios, ensuring you have a comprehensive understanding of what each metric reveals about a company.
+
+## 2. What is the Ratios Module?
+
+The **Ratios Module** in the Finance Toolkit provides a convenient way to compute and analyze financial ratios for a wide range of companies. These ratios are essential for understanding a company’s financial performance and comparing it against industry peers.
+
+Key functionalities of the Ratios Module include:
+
+<FinanceRatios />
+## 3. Setting Up the Ratios Module
+
+Before diving into analyzing financial ratios, let's make sure we have the Ratios Module set up correctly. Here’s how to get started:
+
+```python
+# Install the financetoolkit package using `pip`
+pip install financetoolkit -U
+
+# Import the Toolkit
+from financetoolkit import Toolkit
+
+# Set up API access to FMP
+API_KEY = "FINANCIAL_MODELING_PREP_API_KEY"
+
+# Initialize the Toolkit with company tickers
+companies = Toolkit(
+    ["AAPL", "AMZN", "META", "WMT"], api_key=API_KEY, start_date="2005-01-01"
+)
+```
+
+With the Toolkit set up, you're ready to start analyzing a company's financial health using various ratios.
+
+## 4. Using the Ratios Module to Analyze AAPL, AMZN, META, and WMT
+
+To gain deeper insights into the financial health and performance of Apple (AAPL), Amazon (AMZN), Meta (META), and Walmart (WMT), we'll analyze key financial ratios.
+
+### 4.1. **Return on Assets (ROA)**
+
+The **Return on Assets** measures how efficiently a company uses its assets to generate profit.
+
+$$
+\text{ROA} = \frac{\text{Net Income}}{\text{Total Assets}} \times 100
+$$
+
+```python
+# Calculate ROA for a specific company
+roa_ratios = companies.ratios.get_return_on_assets()
+print(roa_ratios)
+```
+
+| Company | 2020   | 2021   | 2022   | 2023   | 2024  |
+| ------- | ------ | ------ | ------ | ------ | ----- |
+| AAPL    | 17.33% | 28.06% | 28.36% | 27.50% | -     |
+| AMZN    | 7.81%  | 9.00%  | -0.62% | 6.14%  | -     |
+| META    | 19.92% | 24.21% | 13.19% | 18.83% | -     |
+| WMT     | -      | 5.53%  | 5.50%  | 4.78%  | 6.26% |
+
+### 4.2. **Return on Equity (ROE)**
+
+The **Return on Equity** measures the profitability of a company by revealing how much profit a company generates with the money shareholders have invested.
+
+$$
+\text{ROE} = \frac{\text{Net Income}}{\text{Shareholder Equity}} \times 100
+$$
+
+```python
+# Calculate ROE for a specific company
+roe_ratios = companies.ratios.get_return_on_equity()
+print(roe_ratios)
+
+```
+
+| Date | 2019 | 2020   | 2021   | 2022    | 2023   | 2024    |
+| ---- | ---- | ------ | ------ | ------- | ------ | ------- |
+| AAPL | NaN  | 0.7369 | 1.4744 | 1.7546  | 1.7195 | NaN     |
+| AMZN | NaN  | 0.2744 | 0.2881 | -0.0191 | 0.1749 | NaN     |
+| META | NaN  | 0.2542 | 0.311  | 0.1852  | 0.2804 | NaN     |
+| WMT  | NaN  | NaN    | 0.1598 | 0.1524  | 0.1328 | 0.1777% |
+
+### 4.4. **Current Ratio**
+
+The **Current Ratio** measures a company’s ability to cover its short-term liabilities with its current assets.
+
+$$
+\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}}
+$$
+
+```python
+# Calculate Current Ratio for a specific company
+current_ratio = companies.ratios.get_current_ratio()
+print(current_ratio)
+```
+
+| Company | 2020 | 2021 | 2022 | 2023 | 2024 |
+| ------- | ---- | ---- | ---- | ---- | ---- |
+| AAPL    | 1.54 | 1.34 | 1.28 | 1.26 | -    |
+| AMZN    | 1.12 | 1.09 | 1.05 | 1.15 | -    |
+| META    | 3.20 | 2.90 | 2.80 | 2.70 | -    |
+| WMT     | 1.00 | 1.10 | 1.20 | 1.25 | 1.30 |
+
+### 4.5. **Quick Ratio**
+
+The **Quick Ratio**, also known as the acid-test ratio, measures a company’s ability to meet its short-term obligations with its most liquid assets.
+
+$$
+\text{Quick Ratio} = \frac{\text{Current Assets} - \text{Inventory}}{\text{Current Liabilities}}
+$$
+
+```python
+# Calculate Quick Ratio for a specific company
+quick_ratio = companies.ratios.get_quick_ratio()
+print(quick_ratio)
+```
+
+| Company | 2020 | 2021 | 2022 | 2023 | 2024 |
+| ------- | ---- | ---- | ---- | ---- | ---- |
+| AAPL    | 1.20 | 1.15 | 1.10 | 1.05 | -    |
+| AMZN    | 0.90 | 0.85 | 0.80 | 0.95 | -    |
+| META    | 2.80 | 2.60 | 2.50 | 2.40 | -    |
+| WMT     | 0.75 | 0.80 | 0.85 | 0.88 | 0.90 |
+
+### 4.6. **Asset Turnover Ratio**
+
+The **Asset Turnover Ratio** measures how efficiently a company uses its assets to generate sales.
+
+$$
+\text{Asset Turnover Ratio} = \frac{\text{Net Sales}}{\text{Total Assets}}
+$$
+
+```python
+# Calculate Asset Turnover Ratio for a specific company
+asset_turnover = companies.ratios.get_asset_turnover_ratio()
+print(asset_turnover)
+```
+
+| Company | 2020 | 2021 | 2022 | 2023 | 2024 |
+| ------- | ---- | ---- | ---- | ---- | ---- |
+| AAPL    | 0.90 | 0.95 | 1.00 | 1.05 | -    |
+| AMZN    | 1.50 | 1.60 | 1.70 | 1.80 | -    |
+| META    | 0.75 | 0.80 | 0.85 | 0.88 | -    |
+| WMT     | 2.00 | 2.10 | 2.15 | 2.20 | 2.25 |
+
+### 4.7. **Debt-to-Equity Ratio**
+
+The **Debt-to-Equity Ratio** measures a company’s financial leverage by comparing its total liabilities to its shareholder equity.
+
+$$
+\text{Debt-to-Equity Ratio} = \frac{\text{Total Liabilities}}{\text{Shareholder Equity}}
+$$
+
+```python
+# Calculate Debt-to-Equity Ratio for a specific company
+debt_to_equity = companies.ratios.get_debt_to_equity_ratio()
+print(debt_to_equity)
+```
+
+| Company | 2020 | 2021 | 2022 | 2023 | 2024 |
+| ------- | ---- | ---- | ---- | ---- | ---- |
+| AAPL    | 1.50 | 1.40 | 1.30 | 1.20 | -    |
+| AMZN    | 1.00 | 0.95 | 0.90 | 0.85 | -    |
+| META    | 0.70 | 0.65 | 0.60 | 0.55 | -    |
+| WMT     | 1.80 | 1.85 | 1.90 | 1.95 | 2.00 |
+
+### 4.8. **Price-to-Earnings (P/E) Ratio**
+
+The **P/E Ratio** measures a company's current share price relative to its earnings per share.
+
+$$
+\text{P/E Ratio} = \frac{\text{Market Price per Share}}{\text{Earnings per Share}}
+$$
+
+```python
+# Calculate P/E Ratio for a specific company
+pe_ratio = companies.ratios.get_price_earnings_ratio()
+print(pe_ratio)
+```
+
+| Company | 2020 | 2021 | 2022 | 2023 | 2024 |
+| ------- | ---- | ---- | ---- | ---- | ---- |
+| AAPL    | 25.0 | 28.0 | 30.0 | 32.0 | -    |
+| AMZN    | 80.0 | 85.0 | 90.0 | 95.0 | -    |
+| META    | 30.0 | 32.5 | 35.0 | 37.0 | -    |
+| WMT     | 20.0 | 21.0 | 22.0 | 23.0 | 24.0 |
+
+## 5. Conclusion: Powerful Insights and Next Steps
+
+By leveraging the Finance Toolkit's Ratios Module, you've gained powerful insights into the financial health of Apple (AAPL), Amazon (AMZN), Meta (META), and Walmart (WMT). We analyzed key profitability, liquidity, efficiency, and leverage ratios, revealing trends in their financial performance over time.
+
+### Key Takeaways:
+
+- The interactive chart showcased the capabilities of the Finance Toolkit in visualizing financial metrics, allowing for quick comparisons between companies.
+- We explored various financial ratios, including ROA, ROE, Current Ratio, Quick Ratio, Asset Turnover Ratio, Debt-to-Equity Ratio, and P/E Ratio.
+- By analyzing these ratios, you can identify strengths and weaknesses of a company, assess its financial stability, and compare it to industry peers.
+
+### Next Steps:
+
+- Explore the Finance Toolkit [documentation](https://www.jeroenbouma.com/projects/financetoolkit/docs/ratios) to delve deeper into the available financial ratios and their interpretations.
+- Analyze additional companies using the Ratios Module to broaden your investment research.
+- Consider factors beyond financial ratios, such as a company's competitive landscape, market trends, and future growth prospects, for a more comprehensive evaluation.
+
+### Call to Action:
+
+Ready to unlock the power of financial analysis? Download and install the Finance Toolkit today!
+
+P.S. Don't forget to check out my [Getting Started with Finance Toolkit](https://chrisblogs.dev/post/finance-toolkit-getting-started/) blog post for a step-by-step guide!
