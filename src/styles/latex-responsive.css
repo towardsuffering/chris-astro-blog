@@ -2,28 +2,28 @@
 
 /* Default desktop view */
 .latex-wrapper {
-    text-align: center;
-    font-size: 1em;
-    margin: 1em 0;
-  }
-  
-  /* Mobile-specific styling */
-  @media only screen and (max-width: 768px) {
-    .latex-wrapper {
-      font-size: 0.85em;
-      line-height: 1.2;
-    }
-  }
-  
-  /* Ensuring LaTeX elements do not overflow on mobile */
-  .latex-wrapper > div {
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-  
-  /* Additional padding for better display on small devices */
+  text-align: center;
+  font-size: 1em;
+  margin: 1em 0;
+}
+
+/* Mobile-specific styling */
+@media only screen and (max-width: 768px) {
   .latex-wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 0.75em; /* Reduce font size to better fit mobile screen */
+    line-height: 1.2;
+    overflow-wrap: break-word; /* Ensure long equations wrap properly */
   }
-  
+}
+
+/* Ensuring LaTeX elements do not overflow on mobile */
+.latex-wrapper > div {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Additional padding for better display on small devices */
+.latex-wrapper {
+  padding-left: 5px;
+  padding-right: 5px;
+}

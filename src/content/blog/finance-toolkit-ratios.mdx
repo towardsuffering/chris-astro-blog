@@ -42,7 +42,7 @@ This chart allows you to explore various financial ratios for Apple, Amazon, Met
 - **Asset Turnover Ratio**: Walmart stands out with the highest asset turnover, demonstrating its superior ability to generate sales from its assets year over year.
 - **Price-to-Earnings (P/E) Ratio**: Amazon's P/E ratio shows significant volatility, especially during 2022, reflecting varying market expectations and valuation challenges.
 
-This guide will walk you through setting up the Ratios Module, understanding various types of financial ratios, and interpreting them to uncover meaningful insights. We'll explore key profitability, liquidity, efficiency, and leverage ratios, ensuring you have a comprehensive understanding of what each metric reveals about a company.
+This guide will walk you through setting up the Ratios Module, understanding various types of financial ratios, and interpreting them to uncover meaningful insights. We'll explore key profitability, liquidity, efficiency, leverage, and valuation ratios, ensuring you have a comprehensive understanding of what each metric reveals about a company.
 
 ## 2. What is the Ratios Module?
 
@@ -51,6 +51,7 @@ The **Ratios Module** in the Finance Toolkit provides a convenient way to comput
 Key functionalities of the Ratios Module include:
 
 <FinanceRatios />
+
 ## 3. Setting Up the Ratios Module
 
 Before diving into analyzing financial ratios, let's make sure we have the Ratios Module set up correctly. Here’s how to get started:
@@ -120,7 +121,6 @@ $$
 # Calculate ROE for a specific company
 roe_ratios = companies.ratios.get_return_on_equity()
 print(roe_ratios)
-
 ```
 
 <div style="overflow-x:auto;">
@@ -133,6 +133,7 @@ print(roe_ratios)
 | WMT  | NaN  | NaN    | 0.1598 | 0.1524  | 0.1328 | 0.1777% |
 
 </div>
+
 ### 4.4. **Current Ratio**
 
 The **Current Ratio** measures a company’s ability to cover its short-term liabilities with its current assets.
@@ -190,6 +191,7 @@ print(quick_ratio)
 | WMT     | 0.75 | 0.80 | 0.85 | 0.88 | 0.90 |
 
 </div>
+
 ### 4.6. **Asset Turnover Ratio**
 
 The **Asset Turnover Ratio** measures how efficiently a company uses its assets to generate sales.
@@ -218,6 +220,7 @@ print(asset_turnover)
 | WMT     | 2.00 | 2.10 | 2.15 | 2.20 | 2.25 |
 
 </div>
+
 ### 4.7. **Debt-to-Equity Ratio**
 
 The **Debt-to-Equity Ratio** measures a company’s financial leverage by comparing its total liabilities to its shareholder equity.
@@ -246,6 +249,7 @@ print(debt_to_equity)
 | WMT     | 1.80 | 1.85 | 1.90 | 1.95 | 2.00 |
 
 </div>
+
 ### 4.8. **Price-to-Earnings (P/E) Ratio**
 
 The **P/E Ratio** measures a company's current share price relative to its earnings per share.
@@ -274,6 +278,7 @@ print(pe_ratio)
 | WMT     | 20.0 | 21.0 | 22.0 | 23.0 | 24.0 |
 
 </div>
+
 ## 5. Conclusion: Powerful Insights and Next Steps
 
 By leveraging the Finance Toolkit's Ratios Module, you've gained powerful insights into the financial health of Apple (AAPL), Amazon (AMZN), Meta (META), and Walmart (WMT). We analyzed key profitability, liquidity, efficiency, and leverage ratios, revealing trends in their financial performance over time.
