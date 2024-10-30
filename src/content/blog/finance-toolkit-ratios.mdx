@@ -90,12 +90,16 @@ roa_ratios = companies.ratios.get_return_on_assets()
 print(roa_ratios)
 ```
 
+<div style="overflow-x:auto;">
+
 | Company | 2020   | 2021   | 2022   | 2023   | 2024  |
 | ------- | ------ | ------ | ------ | ------ | ----- |
 | AAPL    | 17.33% | 28.06% | 28.36% | 27.50% | -     |
 | AMZN    | 7.81%  | 9.00%  | -0.62% | 6.14%  | -     |
 | META    | 19.92% | 24.21% | 13.19% | 18.83% | -     |
 | WMT     | -      | 5.53%  | 5.50%  | 4.78%  | 6.26% |
+
+</div>
 
 ### 4.2. **Return on Equity (ROE)**
 
@@ -112,6 +116,8 @@ print(roe_ratios)
 
 ```
 
+<div style="overflow-x:auto;">
+
 | Date | 2019 | 2020   | 2021   | 2022    | 2023   | 2024    |
 | ---- | ---- | ------ | ------ | ------- | ------ | ------- |
 | AAPL | NaN  | 0.7369 | 1.4744 | 1.7546  | 1.7195 | NaN     |
@@ -119,6 +125,7 @@ print(roe_ratios)
 | META | NaN  | 0.2542 | 0.311  | 0.1852  | 0.2804 | NaN     |
 | WMT  | NaN  | NaN    | 0.1598 | 0.1524  | 0.1328 | 0.1777% |
 
+</div>
 ### 4.4. **Current Ratio**
 
 The **Current Ratio** measures a company’s ability to cover its short-term liabilities with its current assets.
@@ -133,12 +140,16 @@ current_ratio = companies.ratios.get_current_ratio()
 print(current_ratio)
 ```
 
+<div style="overflow-x:auto;">
+
 | Company | 2020 | 2021 | 2022 | 2023 | 2024 |
 | ------- | ---- | ---- | ---- | ---- | ---- |
 | AAPL    | 1.54 | 1.34 | 1.28 | 1.26 | -    |
 | AMZN    | 1.12 | 1.09 | 1.05 | 1.15 | -    |
 | META    | 3.20 | 2.90 | 2.80 | 2.70 | -    |
 | WMT     | 1.00 | 1.10 | 1.20 | 1.25 | 1.30 |
+
+</div>
 
 ### 4.5. **Quick Ratio**
 
@@ -154,6 +165,8 @@ quick_ratio = companies.ratios.get_quick_ratio()
 print(quick_ratio)
 ```
 
+<div style="overflow-x:auto;">
+
 | Company | 2020 | 2021 | 2022 | 2023 | 2024 |
 | ------- | ---- | ---- | ---- | ---- | ---- |
 | AAPL    | 1.20 | 1.15 | 1.10 | 1.05 | -    |
@@ -161,6 +174,7 @@ print(quick_ratio)
 | META    | 2.80 | 2.60 | 2.50 | 2.40 | -    |
 | WMT     | 0.75 | 0.80 | 0.85 | 0.88 | 0.90 |
 
+</div>
 ### 4.6. **Asset Turnover Ratio**
 
 The **Asset Turnover Ratio** measures how efficiently a company uses its assets to generate sales.
@@ -175,6 +189,8 @@ asset_turnover = companies.ratios.get_asset_turnover_ratio()
 print(asset_turnover)
 ```
 
+<div style="overflow-x:auto;">
+
 | Company | 2020 | 2021 | 2022 | 2023 | 2024 |
 | ------- | ---- | ---- | ---- | ---- | ---- |
 | AAPL    | 0.90 | 0.95 | 1.00 | 1.05 | -    |
@@ -182,6 +198,7 @@ print(asset_turnover)
 | META    | 0.75 | 0.80 | 0.85 | 0.88 | -    |
 | WMT     | 2.00 | 2.10 | 2.15 | 2.20 | 2.25 |
 
+</div>
 ### 4.7. **Debt-to-Equity Ratio**
 
 The **Debt-to-Equity Ratio** measures a company’s financial leverage by comparing its total liabilities to its shareholder equity.
@@ -196,6 +213,8 @@ debt_to_equity = companies.ratios.get_debt_to_equity_ratio()
 print(debt_to_equity)
 ```
 
+<div style="overflow-x:auto;">
+
 | Company | 2020 | 2021 | 2022 | 2023 | 2024 |
 | ------- | ---- | ---- | ---- | ---- | ---- |
 | AAPL    | 1.50 | 1.40 | 1.30 | 1.20 | -    |
@@ -203,6 +222,7 @@ print(debt_to_equity)
 | META    | 0.70 | 0.65 | 0.60 | 0.55 | -    |
 | WMT     | 1.80 | 1.85 | 1.90 | 1.95 | 2.00 |
 
+</div>
 ### 4.8. **Price-to-Earnings (P/E) Ratio**
 
 The **P/E Ratio** measures a company's current share price relative to its earnings per share.
@@ -217,6 +237,8 @@ pe_ratio = companies.ratios.get_price_earnings_ratio()
 print(pe_ratio)
 ```
 
+<div style="overflow-x:auto;">
+
 | Company | 2020 | 2021 | 2022 | 2023 | 2024 |
 | ------- | ---- | ---- | ---- | ---- | ---- |
 | AAPL    | 25.0 | 28.0 | 30.0 | 32.0 | -    |
@@ -224,6 +246,7 @@ print(pe_ratio)
 | META    | 30.0 | 32.5 | 35.0 | 37.0 | -    |
 | WMT     | 20.0 | 21.0 | 22.0 | 23.0 | 24.0 |
 
+</div>
 ## 5. Conclusion: Powerful Insights and Next Steps
 
 By leveraging the Finance Toolkit's Ratios Module, you've gained powerful insights into the financial health of Apple (AAPL), Amazon (AMZN), Meta (META), and Walmart (WMT). We analyzed key profitability, liquidity, efficiency, and leverage ratios, revealing trends in their financial performance over time.
