@@ -35,7 +35,7 @@
 	"dependencies": {
 		"@astrojs/react": "^3.6.2",
 		"@astrojs/rss": "4.0.1",
-		"astro": "4.0.8",
+		"astro": "4.16.9",
 		"astro-font": "^0.0.72",
 		"babel-preset-solid": "^1.9.2",
 		"csv-parse": "^5.5.6",
