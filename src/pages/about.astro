@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '..//layouts/BaseLayout.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
 import { Image } from 'astro:assets'
 import devImage from '../assets/images/dev.svg' // Adjust this path as needed
 
@@ -8,7 +8,7 @@ const title = 'About Chris'
 
 <BaseLayout title={title}>
 	<div class='container mx-auto px-4 py-8 max-w-3xl'>
-		<h1 class='text-4xl font-bold mb-6 text-center'>Hello, my name is Chris.</h1>
+		<h1 class='text-4xl font-bold mb-6 text-center'>Hello, I'm Chris Rotunno.</h1>
 
 		<div class='flex flex-col md:flex-row items-center gap-8 mb-12'>
 			<Image
@@ -19,9 +19,10 @@ const title = 'About Chris'
 				class='w-full md:w-1/2 mb-4 md:mb-0'
 			/>
 			<p class='w-full md:w-1/2 text-lg leading-relaxed'>
-				I am a single, 32-year-old developer based out of Nashville, Tennessee. I am committed to
-				sharing my interests in music, behavioral economics, and tech with individuals, teams, and
-				organizations.
+				I'm a Nashville-based technical professional specializing in AI documentation and data
+				analytics to make complex enterprise systems accessible. My skills in music production,
+				market analysis, and computer programming bring a unique, multifaceted approach to
+				enterprise knowledge infrastructure.
 			</p>
 		</div>
 
@@ -40,43 +41,14 @@ const title = 'About Chris'
 			</div>
 		</div>
 
-		<style>
-			.video-container {
-				border-radius: 20px;
-				padding: 10px;
-				background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2);
-				box-shadow:
-					0 0 15px rgba(255, 182, 193, 0.7),
-					0 0 30px rgba(255, 182, 193, 0.5),
-					0 0 45px rgba(255, 182, 193, 0.3);
-				overflow: hidden;
-			}
-
-			.video-container::before {
-				content: '';
-				position: absolute;
-				top: 5px;
-				right: 5px;
-				bottom: 5px;
-				left: 5px;
-				background: white;
-				border-radius: 15px;
-				z-index: -1;
-			}
-
-			.video-container iframe {
-				border-radius: 10px;
-			}
-		</style>
-
 		<div class='mb-12'>
 			<h2 class='text-2xl font-semibold mb-4'>What I Love</h2>
 			<ul class='list-disc list-inside space-y-2 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg'>
-				<li>Books, Spanish, Music</li>
-				<li>Coding, Markets, The Internet</li>
-				<li>AI, ML, Open-Source</li>
-				<li>Friends, Family, Networking</li>
-				<li>Learning, Teaching, Evolving</li>
+				<li>Enterprise systems, coding, Spanish</li>
+				<li>AI, machine learning, open-source technologies</li>
+				<li>Market analysis, tech trends, music production</li>
+				<li>Networking, community building, evolving skills</li>
+				<li>Data-driven storytelling and user insights</li>
 			</ul>
 		</div>
 
@@ -84,13 +56,13 @@ const title = 'About Chris'
 			<h2 class='text-2xl font-semibold mb-4'>Mission</h2>
 			<div class='bg-blue-100 dark:bg-blue-900 p-6 rounded-lg'>
 				<h3 class='font-bold mb-2 text-blue-800 dark:text-blue-200'>
-					To Innovative Digital Products Online
+					Building Enterprise Knowledge Infrastructure
 				</h3>
 				<ul class='list-disc list-inside space-y-2'>
-					<li>Cultivate impactful internet-based businesses</li>
-					<li>Drive exceptional user experience through data-driven insights</li>
-					<li>Engaged community building and presence</li>
-					<li>Satisfied repeat users</li>
+					<li>Transforming complex systems into accessible knowledge</li>
+					<li>Enhancing user experience through AI-driven documentation</li>
+					<li>Supporting impactful, data-informed business decisions</li>
+					<li>Building strong, engaged community connections</li>
 				</ul>
 			</div>
 		</div>
